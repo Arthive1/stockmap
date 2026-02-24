@@ -80,11 +80,12 @@ function renderTable(data) {
         return;
     }
 
-    data.forEach(stock => {
+    data.forEach((stock, index) => {
         const row = document.createElement('tr');
         row.id = `row-${stock.ticker.toUpperCase()}`;
 
         row.innerHTML = `
+            <td class="sticky-col index-col">${index + 1}</td>
             <td class="sticky-col ticker">${stock.ticker}</td>
             <td class="name" style="text-align: left;">${stock.name}</td>
             <td class="industry">${stock.industry}</td>

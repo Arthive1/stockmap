@@ -16,13 +16,25 @@ def get_sp500_items():
     return list(zip(df['Symbol'].tolist(), df['Security'].tolist(), df['GICS Sector'].tolist()))
 
 def get_nasdaq_items():
-    print("Fetching NASDAQ 100 companies...")
-    url = 'https://en.wikipedia.org/wiki/Nasdaq-100'
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-    html = urllib.request.urlopen(req).read()
-    tables = pd.read_html(html)
-    df = tables[4] # NASDAQ-100 table
-    return list(zip(df['Ticker'].tolist(), df['Company'].tolist(), df.iloc[:, 2].tolist()))
+    print("Fetching NASDAQ top 300 companies...")
+    url = 'https://api.nasdaq.com/api/screener/stocks?tableonly=true&limit=5000&exchange=NASDAQ'
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json, text/plain, */*'})
+    resp = urllib.request.urlopen(req).read()
+    data = json.loads(resp)['data']['table']['rows']
+    
+    df_mcap = pd.DataFrame(data)
+    df_mcap['marketCapNum'] = df_mcap['marketCap'].astype(str).str.replace(',', '', regex=False).apply(pd.to_numeric, errors='coerce')
+    top300 = df_mcap.sort_values('marketCapNum', ascending=False).head(300).copy()
+    
+    df_fdr = fdr.StockListing('NASDAQ')
+    df_merged = top300.merge(df_fdr, left_on='symbol', right_on='Symbol', how='left')
+    
+    top300_tickers = df_merged['symbol'].tolist()
+    # Name formatting inside dataframe to remove corporate abbreviations could be optional
+    top300_names = df_merged['Name'].fillna(df_merged['name']).tolist()
+    top300_sectors = df_merged['Industry'].fillna("N/A").tolist()
+    
+    return list(zip(top300_tickers, top300_names, top300_sectors))
 
 def get_kospi_items():
     print("Fetching KOSPI 100 companies...")
