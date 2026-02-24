@@ -88,7 +88,6 @@ function renderTable(data) {
             <td class="sticky-col index-col">${index + 1}</td>
             <td class="sticky-col ticker">${stock.ticker}</td>
             <td class="name" style="text-align: left;">${stock.name}</td>
-            <td class="industry">${stock.industry}</td>
             <td>${currentMarket === 'KOSPI' ? '₩' : '$'}${formatNumber(stock.ath)}</td>
             <td>${currentMarket === 'KOSPI' ? '₩' : '$'}${formatNumber(stock.lowest_after_ath)}</td>
             <td>${currentMarket === 'KOSPI' ? '₩' : '$'}${formatNumber(stock.price)}</td>
@@ -397,14 +396,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // CSV Header
             let csvContent = "data:text/csv;charset=utf-8,\uFEFF"; // \uFEFF for UTF-8 BOM (Excel support)
-            csvContent += "티커,기업명,산업군,역사적 최고가,최고가 이후 최저가,오늘 종가,조정 비율,종가/최고가 비율,최고가 경과일,이동평균 이격도(하위 백분위수),EPS Q0,EPS Q-1,EPS Q-2,EPS Q-3,PER,ROE\n";
+            csvContent += "티커,기업명,역사적 최고가,최고가 이후 최저가,오늘 종가,조정 비율,종가/최고가 비율,최고가 경과일,이동평균 이격도(하위 백분위수),EPS Q0,EPS Q-1,EPS Q-2,EPS Q-3,PER,ROE\n";
 
             // CSV Rows
             displayData.forEach(row => {
                 const rowData = [
                     row.ticker,
                     `"${row.name.replace(/"/g, '""')}"`, // Handle commas quoting in names
-                    `"${row.industry}"`,
                     row.ath,
                     row.lowest_after_ath,
                     row.price,

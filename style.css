@@ -526,7 +526,7 @@ body {
 }
 
 
-/* Align text to left for Ticker, Name, and Industry */
+/* Align text to left for Name etc */
 .stock-table th:nth-child(1),
 .stock-table td:nth-child(1) {
     text-align: center;
@@ -535,9 +535,7 @@ body {
 .stock-table th:nth-child(2),
 .stock-table td:nth-child(2),
 .stock-table th:nth-child(3),
-.stock-table td:nth-child(3),
-.stock-table th:nth-child(4),
-.stock-table td:nth-child(4) {
+.stock-table td:nth-child(3) {
     text-align: left;
 }
 
