@@ -103,10 +103,60 @@ function renderTable(data) {
     });
 }
 
+// Function to find and render recommended stocks
+function renderRecommendations(data) {
+    const cardsContainer = document.getElementById('recommendationCards');
+    const noMsgWrapper = document.getElementById('noRecommendationsMessage');
+    cardsContainer.innerHTML = '';
+
+    // Filter logic based on criteria:
+    // 1. 조정 비율(correction_ratio) <= 0.40 (40% 이하)
+    // 2. 종가/최고가 비율(price_to_ath) >= 0.90 (90% 이상)
+    // 3. 최고가 경과일(days_since_ath) >= 40 && <= 365 (40일~365일 범위 이내)
+    // 4. EPS Q0 >= 20 && EPS Q1 >= 20 (모두 20% 이상)
+
+    const recommendedStocks = data.filter(stock => {
+        const cond1 = stock.correction_ratio <= 0.40;
+        const cond2 = stock.price_to_ath >= 0.90;
+        const cond3 = stock.days_since_ath >= 40 && stock.days_since_ath <= 365;
+        const cond4 = stock.eps_q0 >= 20 && stock.eps_q1 >= 20;
+
+        return cond1 && cond2 && cond3 && cond4;
+    });
+
+    if (recommendedStocks.length === 0) {
+        noMsgWrapper.style.display = 'block';
+    } else {
+        noMsgWrapper.style.display = 'none';
+
+        recommendedStocks.forEach(stock => {
+            const card = document.createElement('div');
+            card.className = 'rec-card';
+            card.innerHTML = `
+                <div class="rec-ticker">${stock.ticker}</div>
+                <div class="rec-name">${stock.name}</div>
+                <div class="rec-metrics">
+                    <span title="종가/최고가 비율"><i class="ri-arrow-up-circle-line"></i> ${formatPercent(stock.price_to_ath)}</span>
+                    <span title="EPS Q0"><i class="ri-bar-chart-box-line"></i> ${formatNumber(stock.eps_q0)}%</span>
+                </div>
+            `;
+            // Click to search
+            card.addEventListener('click', () => {
+                const searchInput = document.getElementById('searchInput');
+                searchInput.value = stock.ticker;
+                searchInput.dispatchEvent(new Event('input'));
+            });
+            cardsContainer.appendChild(card);
+        });
+    }
+}
+
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     // Initial render
     renderTable(displayData);
+    renderRecommendations(mockStockData);
 
     // Setup sorting
     const sortableHeaders = document.querySelectorAll('th.sortable');
