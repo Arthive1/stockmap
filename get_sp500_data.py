@@ -60,6 +60,30 @@ def fetch_data(item):
         else:
             all_time_high = float(info.get('fiftyTwoWeekHigh', 0))
             lowest_after_ath = float(info.get('fiftyTwoWeekLow', 0))
+
+        # Calculate Moving Average Spread Percentile over the last 1 year
+        hist_1y = t.history(period="1y", interval="1d")
+        ma_percentile = None
+        if not hist_1y.empty and len(hist_1y) > 50:
+            # Calculate MAs
+            hist_1y['MA10'] = hist_1y['Close'].rolling(window=10).mean()
+            hist_1y['MA20'] = hist_1y['Close'].rolling(window=20).mean()
+            hist_1y['MA50'] = hist_1y['Close'].rolling(window=50).mean()
+            
+            # Calculate the specific spread metric: |MA10 - MA50| + |MA20 - MA50|
+            hist_1y['Spread'] = abs(hist_1y['MA10'] - hist_1y['MA50']) + abs(hist_1y['MA20'] - hist_1y['MA50'])
+            
+            # Drop NaN values which occur in the first 50 days due to rolling window
+            spread_data = hist_1y['Spread'].dropna()
+            
+            if not spread_data.empty:
+                # The latest value is today's (or most recent) spread
+                today_spread = spread_data.iloc[-1]
+                
+                # Calculate what percentage of values in the past year are LESS THAN today's spread
+                # This gives the "하위 몇 %" (lower percentile)
+                lower_count = (spread_data < today_spread).sum()
+                ma_percentile = (lower_count / len(spread_data)) * 100
             
         per = info.get('trailingPE', 0)
         roe = info.get('returnOnEquity', 0)
@@ -87,6 +111,7 @@ def fetch_data(item):
             "correction_ratio": correction_ratio,
             "price_to_ath": price_to_ath,
             "days_since_ath": days_since_ath,
+            "ma_spread_percentile": round(ma_percentile, 2) if ma_percentile is not None else -1,
             "eps_q0": round(eps_curr, 2),
             "eps_q1": round(eps_curr * 0.9, 2),
             "eps_q2": round(eps_curr * 0.8, 2),

@@ -70,6 +70,8 @@
                                 <li><strong>조정 비율:</strong> 역사적 최고가 이후 가장 최저가까지의 주식 조정 비율 (하락폭)</li>
                                 <li><strong>종가/최고가 비율:</strong> 오늘 종가를 역사적 최고가로 나눈 값 (최고가에 얼마나 근접했는지 비율)</li>
                                 <li><strong>최고가 경과일:</strong> 역사적 최고가를 기록한 이후 오늘까지 경과한 일수</li>
+                                <li><strong>이격도 퍼센타일:</strong> 최근 1년간 각 일자의 (|10일선-50일선| + |20일선-50일선|) 값을 기준으로, 오늘 수치가
+                                    과거 1년 중 하위 몇 %에 위치하는지 나타내는 지표</li>
                                 <li><strong>EPS Q0 ~ Q-3:</strong> 분기별 EPS(주당순이익) 상승률 (Q0: 최근, Q-3: 3분기 전)</li>
                                 <li><strong>PER (Price-to-Earnings Ratio):</strong> 주가 수익 비율 (시가총액 / 순이익)</li>
                                 <li><strong>ROE (Return on Equity):</strong> 자기자본 이익률 (순이익 / 자기자본)</li>
@@ -102,6 +104,8 @@
                             <th class="sortable" data-sort="price_to_ath">종가/최고가 비율 <i
                                     class="ri-expand-up-down-line sort-icon"></i></th>
                             <th class="sortable" data-sort="days_since_ath">최고가 경과일 <i
+                                    class="ri-expand-up-down-line sort-icon"></i></th>
+                            <th class="sortable" data-sort="ma_spread_percentile">이동평균 이격도 <br>(하위 백분위수) <i
                                     class="ri-expand-up-down-line sort-icon"></i></th>
                             <th class="sortable" data-sort="eps_q0">EPS Q0 <i
                                     class="ri-expand-up-down-line sort-icon"></i></th>
