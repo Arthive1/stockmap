@@ -86,9 +86,9 @@ function renderTable(data) {
             <td class="sticky-col ticker">${stock.ticker}</td>
             <td class="name" style="text-align: left;">${stock.name}</td>
             <td class="industry">${stock.industry}</td>
-            <td>$${formatNumber(stock.ath)}</td>
-            <td>$${formatNumber(stock.lowest_after_ath)}</td>
-            <td>$${formatNumber(stock.price)}</td>
+            <td>${currentMarket === 'KOSPI' ? '₩' : '$'}${formatNumber(stock.ath)}</td>
+            <td>${currentMarket === 'KOSPI' ? '₩' : '$'}${formatNumber(stock.lowest_after_ath)}</td>
+            <td>${currentMarket === 'KOSPI' ? '₩' : '$'}${formatNumber(stock.price)}</td>
             <td class="${getCorrectionClass(stock.correction_ratio)}">${formatPercent(stock.correction_ratio)}</td>
             <td class="${getPriceToAthClass(stock.price_to_ath)}">${formatPercent(stock.price_to_ath)}</td>
             <td>${formatNumber(stock.days_since_ath)}일</td>

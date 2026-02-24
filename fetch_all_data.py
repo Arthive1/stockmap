@@ -136,7 +136,9 @@ def process_market(name, items):
                     ma_percentile = (lower_count / len(spread_data)) * 100
                     
             # PE
-            per = s.get('trailingPE', ks.get('trailingPE', 0))
+            per = s.get('trailingPE', ks.get('trailingPE'))
+            if per is None or per == 0:
+                per = s.get('forwardPE', ks.get('forwardPE', 0))
             if per is None: per = 0
             
             # ROE
