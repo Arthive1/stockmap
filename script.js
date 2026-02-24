@@ -59,7 +59,9 @@ function formatNumber(num) {
     if (num === null || num === undefined) return '-';
     if (typeof num === 'string') return num;
     if (isNaN(num)) return '-';
-    return Number.isInteger(num) ? num.toString() : num.toFixed(2);
+    return Number.isInteger(num)
+        ? num.toLocaleString('en-US')
+        : num.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
 // Helper to format percentages
@@ -116,11 +118,18 @@ function renderRecommendations() {
         { key: 'KOSPI', name: 'KOSPI' }
     ];
 
+    const sp500Tickers = new Set((mockMarketData['SP500'] || []).map(stock => stock.ticker));
+
     markets.forEach(m => {
         const marketItems = mockMarketData[m.key] || [];
 
         // Filter logic based on criteria:
         const recommendedStocks = marketItems.filter(stock => {
+            // Exclude stocks that are already in S&P 500 if the current market is not S&P 500
+            if (m.key !== 'SP500' && sp500Tickers.has(stock.ticker)) {
+                return false;
+            }
+
             const cond1 = stock.correction_ratio <= 0.40;
             const cond2 = stock.price_to_ath >= 0.90;
             const cond3 = stock.days_since_ath >= 40 && stock.days_since_ath <= 365;
