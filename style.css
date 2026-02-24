@@ -256,8 +256,8 @@ body {
     padding: 1rem;
     width: 140px;
     /* 고정 너비 */
-    height: 100px;
-    /* 고정 높이 */
+    height: 120px;
+    /* 고정 높이 늘림 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -275,14 +275,16 @@ body {
     padding: 1rem;
     width: 180px;
     /* 고정 너비 */
-    height: 100px;
-    /* 고정 높이 */
+    height: 120px;
+    /* 고정 높이 늘림 */
     flex-shrink: 0;
     cursor: pointer;
     transition: all 0.2s;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 4px;
+    /* 내부 요소 간격 추가 */
     overflow: hidden;
     /* 영역 밖 숨김 */
 }
