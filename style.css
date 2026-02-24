@@ -254,8 +254,8 @@ body {
     border: 1px solid var(--primary-color);
     border-radius: 8px;
     padding: 1rem;
-    width: 140px;
-    /* 고정 너비 */
+    width: 120px;
+    /* 가로 축소 */
     height: 120px;
     /* 고정 높이 늘림 */
     display: flex;
@@ -272,9 +272,9 @@ body {
     background: var(--surface-color);
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    padding: 1rem;
-    width: 180px;
-    /* 고정 너비 */
+    padding: 0.8rem;
+    width: 160px;
+    /* 가로 축소 */
     height: 120px;
     /* 고정 높이 늘림 */
     flex-shrink: 0;
@@ -296,13 +296,15 @@ body {
 }
 
 .rec-ticker {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    /* 폰트 축소 */
     font-weight: 700;
     color: var(--primary-color);
 }
 
 .rec-name {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    /* 폰트 축소 */
     color: var(--secondary-color);
     margin-bottom: 0.5rem;
     white-space: nowrap;
@@ -314,8 +316,10 @@ body {
 
 .rec-metrics {
     display: flex;
-    gap: 0.8rem;
-    font-size: 0.8rem;
+    gap: 0.5rem;
+    /* 간격 축소 */
+    font-size: 0.75rem;
+    /* 폰트 축소 */
     color: #fff;
 }
 
