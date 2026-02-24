@@ -217,13 +217,23 @@ document.addEventListener('DOMContentLoaded', () => {
         const query = e.target.value.trim().toUpperCase();
         if (!query) return;
 
-        // Try exact match first, then startsWith match
+        // 1. Try exact ticker match
         let targetRow = document.getElementById(`row-${query}`);
 
+        // 2. Try prefix ticker match
         if (!targetRow) {
-            const matchedStock = mockStockData.find(s => s.ticker.toUpperCase().startsWith(query));
-            if (matchedStock) {
-                targetRow = document.getElementById(`row-${matchedStock.ticker.toUpperCase()}`);
+            const matchedTicker = mockStockData.find(s => s.ticker.toUpperCase().startsWith(query));
+            if (matchedTicker) {
+                targetRow = document.getElementById(`row-${matchedTicker.ticker.toUpperCase()}`);
+            }
+        }
+
+        // 3. Try partial name match (case-insensitive)
+        if (!targetRow) {
+            const lowerQuery = e.target.value.trim().toLowerCase();
+            const matchedName = mockStockData.find(s => s.name.toLowerCase().includes(lowerQuery));
+            if (matchedName) {
+                targetRow = document.getElementById(`row-${matchedName.ticker.toUpperCase()}`);
             }
         }
 
