@@ -238,8 +238,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (targetRow) {
-            // Scroll table so row is visible
-            targetRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            // Scroll table so row is visible instantly (no smooth animation)
+            targetRow.scrollIntoView({ behavior: 'auto', block: 'center' });
 
             // Highlight the row temporarily
             targetRow.style.backgroundColor = 'rgba(88, 166, 255, 0.3)';
