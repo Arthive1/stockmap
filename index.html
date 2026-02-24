@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockMap - 프리미엄 주식 검색</title>
+    <meta name="description" content="실시간 주식 정보 및 S&P 500 종목 분석 플랫폼">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <div class="app-container">
+        <!-- Header / Search Section -->
+        <header class="hero-section">
+            <div class="logo">
+                <i class="ri-stock-line logo-icon"></i>
+                <span class="logo-text">StockMap</span>
+            </div>
+
+            <div class="title-container">
+                <h1>시장을 꿰뚫는 하나의 시선</h1>
+                <p>티커나 기업명을 검색하여 상세한 재무 정보를 확인하세요.</p>
+            </div>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="ri-search-line search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="주식 티커 또는 기업명 검색 (예: AAPL, 애플)..."
+                        autocomplete="off">
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <main class="main-content">
+            <div class="section-header">
+                <h2 class="section-title">S&P 500 주요 종목 분석</h2>
+                <div class="table-actions">
+                    <div class="glossary-wrapper">
+                        <button class="action-btn" id="glossaryBtn">
+                            <i class="ri-information-line"></i> 용어 설명
+                        </button>
+                        <div class="glossary-box" id="glossaryBox">
+                            <h3>용어 설명 (Glossary)</h3>
+                            <ul>
+                                <li><strong>역사적 최고가:</strong> 주식이 상장된 이후 달성한 가장 높은 가격 (All-Time High, ATH)</li>
+                                <li><strong>최고가 이후 최저가:</strong> 역사적 최고가를 기록한 이후 하락하여 도달한 가장 낮은 가격</li>
+                                <li><strong>오늘 종가:</strong> 오늘 주식의 종가 (현재가)</li>
+                                <li><strong>조정 비율:</strong> 역사적 최고가 이후 가장 최저가까지의 주식 조정 비율 (하락폭)</li>
+                                <li><strong>종가/최고가 비율:</strong> 오늘 종가를 역사적 최고가로 나눈 값 (최고가에 얼마나 근접했는지 비율)</li>
+                                <li><strong>EPS Q0 ~ Q-3:</strong> 분기별 EPS(주당순이익) 상승률 (Q0: 최근, Q-3: 3분기 전)</li>
+                                <li><strong>PER (Price-to-Earnings Ratio):</strong> 주가 수익 비율 (시가총액 / 순이익)</li>
+                                <li><strong>ROE (Return on Equity):</strong> 자기자본 이익률 (순이익 / 자기자본)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="action-btn"><i class="ri-filter-3-line"></i> 필터</button>
+                    <button class="action-btn"><i class="ri-download-line"></i> 다운로드</button>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table class="stock-table" id="stockTable">
+                    <thead>
+                        <tr>
+                            <th class="sticky-col sortable" data-sort="ticker">티커 <i
+                                    class="ri-expand-up-down-line sort-icon"></i></th>
+                            <th class="sortable" data-sort="name">기업명 <i class="ri-expand-up-down-line sort-icon"></i>
+                            </th>
+                            <th class="sortable" data-sort="industry">산업군 <i
+                                    class="ri-expand-up-down-line sort-icon"></i></th>
+                            <th class="sortable" data-sort="ath">역사적 최고가 <i
+                                    class="ri-expand-up-down-line sort-icon"></i></th>
+                            <th class="sortable" data-sort="lowest_after_ath">최고가 이후 최저가 <i
+                                    class="ri-expand-up-down-line sort-icon"></i></th>
+                            <th class="sortable" data-sort="price">오늘 종가 <i
+                                    class="ri-expand-up-down-line sort-icon"></i></th>
+                            <th class="sortable" data-sort="correction_ratio">조정 비율 <i
+                                    class="ri-expand-up-down-line sort-icon"></i></th>
+                            <th class="sortable" data-sort="price_to_ath">종가/최고가 비율 <i
+                                    class="ri-expand-up-down-line sort-icon"></i></th>
+                            <th class="sortable" data-sort="eps_q0">EPS Q0 <i
+                                    class="ri-expand-up-down-line sort-icon"></i></th>
+                            <th class="sortable" data-sort="eps_q1">EPS Q-1 <i
+                                    class="ri-expand-up-down-line sort-icon"></i></th>
+                            <th class="sortable" data-sort="eps_q2">EPS Q-2 <i
+                                    class="ri-expand-up-down-line sort-icon"></i></th>
+                            <th class="sortable" data-sort="eps_q3">EPS Q-3 <i
+                                    class="ri-expand-up-down-line sort-icon"></i></th>
+                            <th class="sortable" data-sort="per">PER <i class="ri-expand-up-down-line sort-icon"></i>
+                            </th>
+                            <th class="sortable" data-sort="roe">ROE <i class="ri-expand-up-down-line sort-icon"></i>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="stockTableBody">
+                        <!-- Data will be populated here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="sp500_data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

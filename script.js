@@ -1,0 +1,198 @@
+// We are now using the actual S&P 500 list from sp500_data.js which defines `sp500Data`
+const mockStockData = typeof sp500Data !== 'undefined' ? sp500Data : [];
+let displayData = [...mockStockData];
+let currentSortColumn = null;
+let currentSortOrder = null; // 'desc', 'asc', or null
+
+// Function to sort data
+function sortData(column, order) {
+    if (order === null) {
+        displayData = [...mockStockData];
+        return;
+    }
+
+    displayData.sort((a, b) => {
+        let valA = a[column];
+        let valB = b[column];
+
+        // String comparison
+        if (typeof valA === 'string' && typeof valB === 'string') {
+            return order === 'asc' ? valA.localeCompare(valB) : valB.localeCompare(valA);
+        }
+
+        // Handle nulls or undefined values in numbers
+        if (valA === undefined || valA === null) valA = -Infinity;
+        if (valB === undefined || valB === null) valB = -Infinity;
+
+        if (valA < valB) return order === 'asc' ? -1 : 1;
+        if (valA > valB) return order === 'asc' ? 1 : -1;
+        return 0;
+    });
+}
+
+// Helper for specific metric colors
+function getCorrectionClass(val) {
+    if (val > 0.50) return 'bg-orange';
+    return '';
+}
+function getPriceToAthClass(val) {
+    if (val >= 0.90) return 'bg-lightgreen';
+    return '';
+}
+function getEpsClass(val) {
+    if (val >= 20) return 'bg-lightgreen';
+    return '';
+}
+function getRoeClass(val) {
+    if (val >= 20) return 'bg-lightgreen';
+    return '';
+}
+function getPerClass(val) {
+    if (val > 50) return 'bg-orange';
+    if (val >= 15 && val <= 50) return 'bg-lightgreen';
+    return '';
+}
+
+// Helper to format numbers and strings safely
+function formatNumber(num) {
+    if (num === null || num === undefined) return '-';
+    if (typeof num === 'string') return num;
+    if (isNaN(num)) return '-';
+    return Number.isInteger(num) ? num.toString() : num.toFixed(2);
+}
+
+// Helper to format percentages
+function formatPercent(num) {
+    if (num === null || num === undefined || isNaN(num)) return '-';
+    return (num * 100).toFixed(2) + '%';
+}
+
+// Function to render table
+function renderTable(data) {
+    const tableBody = document.getElementById('stockTableBody');
+    tableBody.innerHTML = '';
+
+    if (data.length === 0) {
+        tableBody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding: 2rem;">검색 결과가 없습니다.</td></tr>';
+        return;
+    }
+
+    data.forEach(stock => {
+        const row = document.createElement('tr');
+        row.id = `row-${stock.ticker.toUpperCase()}`;
+
+        row.innerHTML = `
+            <td class="sticky-col ticker">${stock.ticker}</td>
+            <td class="name" style="text-align: left;">${stock.name}</td>
+            <td class="industry">${stock.industry}</td>
+            <td>$${formatNumber(stock.ath)}</td>
+            <td>$${formatNumber(stock.lowest_after_ath)}</td>
+            <td>$${formatNumber(stock.price)}</td>
+            <td class="${getCorrectionClass(stock.correction_ratio)}">${formatPercent(stock.correction_ratio)}</td>
+            <td class="${getPriceToAthClass(stock.price_to_ath)}">${formatPercent(stock.price_to_ath)}</td>
+            <td class="${getEpsClass(stock.eps_q0)}">${formatNumber(stock.eps_q0)}%</td>
+            <td class="${getEpsClass(stock.eps_q1)}">${formatNumber(stock.eps_q1)}%</td>
+            <td class="${getEpsClass(stock.eps_q2)}">${formatNumber(stock.eps_q2)}%</td>
+            <td class="${getEpsClass(stock.eps_q3)}">${formatNumber(stock.eps_q3)}%</td>
+            <td class="${getPerClass(stock.per)}">${formatNumber(stock.per)}</td>
+            <td class="${getRoeClass(stock.roe)}">${formatNumber(stock.roe)}</td>
+        `;
+
+        tableBody.appendChild(row);
+    });
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+    // Initial render
+    renderTable(displayData);
+
+    // Setup sorting
+    const sortableHeaders = document.querySelectorAll('th.sortable');
+    sortableHeaders.forEach(th => {
+        th.addEventListener('click', () => {
+            const column = th.getAttribute('data-sort');
+
+            // Determine new sort order
+            if (currentSortColumn === column) {
+                if (currentSortOrder === 'desc') {
+                    currentSortOrder = 'asc';
+                } else if (currentSortOrder === 'asc') {
+                    currentSortOrder = null;
+                    currentSortColumn = null;
+                } else {
+                    currentSortOrder = 'desc';
+                }
+            } else {
+                currentSortColumn = column;
+                currentSortOrder = 'desc';
+            }
+
+            // Update UI Icons
+            sortableHeaders.forEach(header => {
+                const icon = header.querySelector('.sort-icon');
+                if (icon) {
+                    icon.className = 'ri-expand-up-down-line sort-icon';
+                }
+            });
+
+            if (currentSortOrder !== null) {
+                const activeIcon = th.querySelector('.sort-icon');
+                if (activeIcon) {
+                    activeIcon.className = currentSortOrder === 'desc'
+                        ? 'ri-arrow-down-line sort-icon'
+                        : 'ri-arrow-up-line sort-icon';
+                }
+            }
+
+            // Sort and render
+            sortData(currentSortColumn, currentSortOrder);
+            renderTable(displayData);
+        });
+    });
+
+    // Search functionality (Scroll to ticker)
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.trim().toUpperCase();
+        if (!query) return;
+
+        // Try exact match first, then startsWith match
+        let targetRow = document.getElementById(`row-${query}`);
+
+        if (!targetRow) {
+            const matchedStock = mockStockData.find(s => s.ticker.toUpperCase().startsWith(query));
+            if (matchedStock) {
+                targetRow = document.getElementById(`row-${matchedStock.ticker.toUpperCase()}`);
+            }
+        }
+
+        if (targetRow) {
+            // Scroll table so row is visible
+            targetRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            // Highlight the row temporarily
+            targetRow.style.backgroundColor = 'rgba(88, 166, 255, 0.3)';
+            targetRow.style.transition = 'background-color 0.5s';
+            setTimeout(() => {
+                targetRow.style.backgroundColor = '';
+            }, 1000);
+        }
+    });
+
+    // Glossary toggle functionality
+    const glossaryBtn = document.getElementById('glossaryBtn');
+    const glossaryBox = document.getElementById('glossaryBox');
+
+    glossaryBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        glossaryBox.classList.toggle('active');
+    });
+
+    // Close glossary when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!glossaryBox.contains(e.target) && e.target !== glossaryBtn) {
+            glossaryBox.classList.remove('active');
+        }
+    });
+});
