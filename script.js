@@ -124,7 +124,8 @@ function renderRecommendations() {
             const cond1 = stock.correction_ratio <= 0.40;
             const cond2 = stock.price_to_ath >= 0.90;
             const cond3 = stock.days_since_ath >= 40 && stock.days_since_ath <= 365;
-            const cond4 = stock.eps_q0 >= 20 && stock.eps_q1 >= 20;
+            // Allow EPS check to pass if data is 0 (missing from Yahoo API) OR if it meets the >= 20 criterion.
+            const cond4 = (stock.eps_q0 === 0 && stock.eps_q1 === 0) || (stock.eps_q0 >= 20 && stock.eps_q1 >= 20);
             return cond1 && cond2 && cond3 && cond4;
         });
 

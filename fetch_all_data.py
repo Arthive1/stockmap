@@ -6,6 +6,8 @@ import concurrent.futures
 import pytz
 from datetime import datetime
 import FinanceDataReader as fdr
+import time
+import random
 
 def get_sp500_items():
     print("Fetching S&P 500 companies...")
@@ -42,6 +44,8 @@ if now.weekday() < 5 and now.hour >= 9 and now.hour < 16:
         is_market_open = True
 
 def fetch_data(item):
+    time.sleep(random.uniform(1.0, 2.0)) # Add delay to bypass rate limit
+    
     t_clean = item[0].replace('.', '-')
     if t_clean.endswith('-KS'):
         t_clean = t_clean.replace('-KS', '.KS')
@@ -89,7 +93,6 @@ def fetch_data(item):
         
         ath_date = hist.loc[ath_idx, 'date']
         ath_date_str = str(ath_date)
-        # convert whatever date format to datetime obj
         ath_dt = pd.to_datetime(ath_date_str).replace(tzinfo=None)
         days_since_ath = (datetime.now() - ath_dt).days
 
@@ -146,8 +149,8 @@ def fetch_data(item):
 def process_market(name, items):
     result = []
     print(f"[{name}] Fetching data from Yahoo Finance for {len(items)} companies...")
-    # use 30 workers because yahooquery has no rate limits initially, but 30 is safe
-    with concurrent.futures.ThreadPoolExecutor(max_workers=30) as executor:
+    # Reduce max workers to 5 to avoid API rate limits when fetching from key_stats and fin_data
+    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
         futures = [executor.submit(fetch_data, item) for item in items]
         count = 0
         for future in concurrent.futures.as_completed(futures):
@@ -155,7 +158,7 @@ def process_market(name, items):
             if res:
                 result.append(res)
             count += 1
-            if count % 50 == 0:
+            if count % 10 == 0:
                 print(f"[{name}] Processed {count}/{len(items)}")
                 
     result = sorted(result, key=lambda x: x['price_to_ath'], reverse=True)
