@@ -306,4 +306,51 @@ document.addEventListener('DOMContentLoaded', () => {
             glossaryBox.classList.remove('active');
         }
     });
+
+    // Download functionality
+    const downloadBtn = document.getElementById('downloadBtn');
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', () => {
+            if (displayData.length === 0) {
+                alert("다운로드할 데이터가 없습니다.");
+                return;
+            }
+
+            // CSV Header
+            let csvContent = "data:text/csv;charset=utf-8,\uFEFF"; // \uFEFF for UTF-8 BOM (Excel support)
+            csvContent += "티커,기업명,산업군,역사적 최고가,최고가 이후 최저가,오늘 종가,조정 비율,종가/최고가 비율,최고가 경과일,이동평균 이격도(하위 백분위수),EPS Q0,EPS Q-1,EPS Q-2,EPS Q-3,PER,ROE\n";
+
+            // CSV Rows
+            displayData.forEach(row => {
+                const rowData = [
+                    row.ticker,
+                    `"${row.name.replace(/"/g, '""')}"`, // Handle commas quoting in names
+                    `"${row.industry}"`,
+                    row.ath,
+                    row.lowest_after_ath,
+                    row.price,
+                    row.correction_ratio,
+                    row.price_to_ath,
+                    row.days_since_ath,
+                    row.ma_spread_percentile,
+                    row.eps_q0,
+                    row.eps_q1,
+                    row.eps_q2,
+                    row.eps_q3,
+                    row.per,
+                    row.roe
+                ];
+                csvContent += rowData.join(",") + "\n";
+            });
+
+            // Trigger Download
+            const encodedUri = encodeURI(csvContent);
+            const link = document.createElement("a");
+            link.setAttribute("href", encodedUri);
+            link.setAttribute("download", "StockMap_Data.csv");
+            document.body.appendChild(link); // Required for Firefox
+            link.click();
+            document.body.removeChild(link);
+        });
+    }
 });
