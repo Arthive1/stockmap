@@ -29,12 +29,12 @@ const marketData = {
             "price_to_ath": 0.999,
             "days_since_ath": 1,
             "ma_spread_percentile": 76.73,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 22.2,
+            "eps_q1": 19.98,
+            "eps_q2": 17.76,
+            "eps_q3": 15.54,
+            "per": 24.37,
+            "roe": 9.92
         },
         {
             "ticker": "MNST",
@@ -47,12 +47,12 @@ const marketData = {
             "price_to_ath": 0.998,
             "days_since_ath": 1,
             "ma_spread_percentile": 73.27,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 41.4,
+            "eps_q1": 37.26,
+            "eps_q2": 33.12,
+            "eps_q3": 28.98,
+            "per": 48.12,
+            "roe": 25.54
         },
         {
             "ticker": "ECL",
@@ -83,11 +83,11 @@ const marketData = {
             "price_to_ath": 0.997,
             "days_since_ath": 15,
             "ma_spread_percentile": 93.07,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": 7.3,
+            "eps_q1": 6.57,
+            "eps_q2": 5.84,
+            "eps_q3": 5.11,
+            "per": 28.02,
             "roe": 0
         },
         {
@@ -101,11 +101,11 @@ const marketData = {
             "price_to_ath": 0.997,
             "days_since_ath": 1,
             "ma_spread_percentile": 98.02,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": 26.5,
+            "eps_q1": 23.85,
+            "eps_q2": 21.2,
+            "eps_q3": 18.55,
+            "per": 30.05,
             "roe": 0
         },
         {
@@ -137,12 +137,12 @@ const marketData = {
             "price_to_ath": 0.996,
             "days_since_ath": 8,
             "ma_spread_percentile": 98.02,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 38.8,
+            "eps_q1": 34.92,
+            "eps_q2": 31.04,
+            "eps_q3": 27.16,
+            "per": 35.58,
+            "roe": 8.93
         },
         {
             "ticker": "LNT",
@@ -209,12 +209,12 @@ const marketData = {
             "price_to_ath": 0.995,
             "days_since_ath": 8,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 49.1,
+            "eps_q1": 44.19,
+            "eps_q2": 39.28,
+            "eps_q3": 34.37,
+            "per": 22.27,
+            "roe": 35.03
         },
         {
             "ticker": "LIN",
@@ -227,12 +227,12 @@ const marketData = {
             "price_to_ath": 0.995,
             "days_since_ath": 1,
             "ma_spread_percentile": 98.51,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -11.3,
+            "eps_q1": -10.17,
+            "eps_q2": -9.04,
+            "eps_q3": -7.91,
+            "per": 34.12,
+            "roe": 17.82
         },
         {
             "ticker": "AEP",
@@ -263,12 +263,12 @@ const marketData = {
             "price_to_ath": 0.994,
             "days_since_ath": 1,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 55.3,
+            "eps_q1": 49.77,
+            "eps_q2": 44.24,
+            "eps_q3": 38.71,
+            "per": 31.25,
+            "roe": 51.38
         },
         {
             "ticker": "CNP",
@@ -317,12 +317,12 @@ const marketData = {
             "price_to_ath": 0.993,
             "days_since_ath": 8,
             "ma_spread_percentile": 90.1,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 18.5,
+            "eps_q1": 16.65,
+            "eps_q2": 14.8,
+            "eps_q3": 12.95,
+            "per": 69.47,
+            "roe": 30.44
         },
         {
             "ticker": "ROST",
@@ -335,12 +335,12 @@ const marketData = {
             "price_to_ath": 0.993,
             "days_since_ath": 8,
             "ma_spread_percentile": 49.01,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 4.7,
+            "eps_q1": 4.23,
+            "eps_q2": 3.76,
+            "eps_q3": 3.29,
+            "per": 31.55,
+            "roe": 37.43
         },
         {
             "ticker": "ADI",
@@ -371,12 +371,12 @@ const marketData = {
             "price_to_ath": 0.989,
             "days_since_ath": 8,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -4.7,
+            "eps_q1": -4.23,
+            "eps_q2": -3.76,
+            "eps_q3": -3.29,
+            "per": 38.44,
+            "roe": 11.1
         },
         {
             "ticker": "CBOE",
@@ -425,12 +425,12 @@ const marketData = {
             "price_to_ath": 0.988,
             "days_since_ath": 1,
             "ma_spread_percentile": 97.52,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -77.0,
+            "eps_q1": -69.3,
+            "eps_q2": -61.6,
+            "eps_q3": -53.9,
+            "per": 32.15,
+            "roe": 26.14
         },
         {
             "ticker": "KEYS",
@@ -447,8 +447,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 48.8,
+            "roe": 15.82
         },
         {
             "ticker": "SNA",
@@ -461,12 +461,12 @@ const marketData = {
             "price_to_ath": 0.988,
             "days_since_ath": 15,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 1.0,
+            "eps_q1": 0.9,
+            "eps_q2": 0.8,
+            "eps_q3": 0.7,
+            "per": 20.08,
+            "roe": 18.33
         },
         {
             "ticker": "WMB",
@@ -479,12 +479,12 @@ const marketData = {
             "price_to_ath": 0.988,
             "days_since_ath": 1,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 51.0,
+            "eps_q1": 45.9,
+            "eps_q2": 40.8,
+            "eps_q3": 35.7,
+            "per": 34.1,
+            "roe": 18.55
         },
         {
             "ticker": "AEE",
@@ -551,12 +551,12 @@ const marketData = {
             "price_to_ath": 0.987,
             "days_since_ath": 8,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 7.8,
+            "eps_q1": 7.02,
+            "eps_q2": 6.24,
+            "eps_q3": 5.46,
+            "per": 22.5,
+            "roe": 8.57
         },
         {
             "ticker": "TRV",
@@ -569,12 +569,12 @@ const marketData = {
             "price_to_ath": 0.987,
             "days_since_ath": 1,
             "ma_spread_percentile": 89.6,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 19.9,
+            "eps_q1": 17.91,
+            "eps_q2": 15.92,
+            "eps_q3": 13.93,
+            "per": 11.14,
+            "roe": 20.7
         },
         {
             "ticker": "AMAT",
@@ -605,12 +605,12 @@ const marketData = {
             "price_to_ath": 0.986,
             "days_since_ath": 8,
             "ma_spread_percentile": 93.56,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 155.0,
+            "eps_q1": 139.5,
+            "eps_q2": 124.0,
+            "eps_q3": 108.5,
+            "per": 30.77,
+            "roe": 76.87
         },
         {
             "ticker": "AMGN",
@@ -641,12 +641,12 @@ const marketData = {
             "price_to_ath": 0.985,
             "days_since_ath": 8,
             "ma_spread_percentile": 24.75,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 33.8,
+            "eps_q1": 30.42,
+            "eps_q2": 27.04,
+            "eps_q3": 23.66,
+            "per": 42.22,
+            "roe": 44.69
         },
         {
             "ticker": "NSC",
@@ -659,12 +659,12 @@ const marketData = {
             "price_to_ath": 0.985,
             "days_since_ath": 15,
             "ma_spread_percentile": 83.17,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -12.1,
+            "eps_q1": -10.89,
+            "eps_q2": -9.68,
+            "eps_q3": -8.47,
+            "per": 24.69,
+            "roe": 19.25
         },
         {
             "ticker": "PH",
@@ -677,12 +677,12 @@ const marketData = {
             "price_to_ath": 0.985,
             "days_since_ath": 8,
             "ma_spread_percentile": 93.07,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -11.0,
+            "eps_q1": -9.9,
+            "eps_q2": -8.8,
+            "eps_q3": -7.7,
+            "per": 36.77,
+            "roe": 25.78
         },
         {
             "ticker": "NEE",
@@ -695,12 +695,12 @@ const marketData = {
             "price_to_ath": 0.984,
             "days_since_ath": 8,
             "ma_spread_percentile": 94.55,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 27.6,
+            "eps_q1": 24.84,
+            "eps_q2": 22.08,
+            "eps_q3": 19.32,
+            "per": 28.5,
+            "roe": 8.37
         },
         {
             "ticker": "DUK",
@@ -749,12 +749,12 @@ const marketData = {
             "price_to_ath": 0.983,
             "days_since_ath": 15,
             "ma_spread_percentile": 98.02,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 657.0,
+            "eps_q1": 591.3,
+            "eps_q2": 525.6,
+            "eps_q3": 459.9,
+            "per": 46.94,
+            "roe": 42.64
         },
         {
             "ticker": "JCI",
@@ -767,12 +767,12 @@ const marketData = {
             "price_to_ath": 0.983,
             "days_since_ath": 8,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 25.1,
+            "eps_q1": 22.59,
+            "eps_q2": 20.08,
+            "eps_q3": 17.57,
+            "per": 47.77,
+            "roe": 12.64
         },
         {
             "ticker": "TJX",
@@ -785,12 +785,12 @@ const marketData = {
             "price_to_ath": 0.983,
             "days_since_ath": 1,
             "ma_spread_percentile": 10.89,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 11.2,
+            "eps_q1": 10.08,
+            "eps_q2": 8.96,
+            "eps_q3": 7.84,
+            "per": 34.81,
+            "roe": 58.4
         },
         {
             "ticker": "NI",
@@ -803,12 +803,12 @@ const marketData = {
             "price_to_ath": 0.982,
             "days_since_ath": 8,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 15.1,
+            "eps_q1": 13.59,
+            "eps_q2": 12.08,
+            "eps_q3": 10.57,
+            "per": 24.32,
+            "roe": 9.07
         },
         {
             "ticker": "FDX",
@@ -821,12 +821,12 @@ const marketData = {
             "price_to_ath": 0.98,
             "days_since_ath": 1,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -10.7,
+            "eps_q1": -9.63,
+            "eps_q2": -8.56,
+            "eps_q3": -7.49,
+            "per": 21.23,
+            "roe": 15.89
         },
         {
             "ticker": "PM",
@@ -843,7 +843,7 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
+            "per": 25.79,
             "roe": 0
         },
         {
@@ -857,12 +857,12 @@ const marketData = {
             "price_to_ath": 0.98,
             "days_since_ath": 127,
             "ma_spread_percentile": 94.06,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -30.2,
+            "eps_q1": -27.18,
+            "eps_q2": -24.16,
+            "eps_q3": -21.14,
+            "per": 24.07,
+            "roe": 11.58
         },
         {
             "ticker": "EA",
@@ -893,12 +893,12 @@ const marketData = {
             "price_to_ath": 0.978,
             "days_since_ath": 8,
             "ma_spread_percentile": 87.62,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 29.3,
+            "eps_q1": 26.37,
+            "eps_q2": 23.44,
+            "eps_q3": 20.51,
+            "per": 28.5,
+            "roe": 12.42
         },
         {
             "ticker": "GLW",
@@ -929,11 +929,11 @@ const marketData = {
             "price_to_ath": 0.977,
             "days_since_ath": 22,
             "ma_spread_percentile": 99.01,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": 34.9,
+            "eps_q1": 31.41,
+            "eps_q2": 27.92,
+            "eps_q3": 24.43,
+            "per": 27.4,
             "roe": 0
         },
         {
@@ -947,12 +947,12 @@ const marketData = {
             "price_to_ath": 0.977,
             "days_since_ath": 8,
             "ma_spread_percentile": 68.81,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 9.4,
+            "eps_q1": 8.46,
+            "eps_q2": 7.52,
+            "eps_q3": 6.58,
+            "per": 40.63,
+            "roe": 10.95
         },
         {
             "ticker": "SRE",
@@ -965,12 +965,12 @@ const marketData = {
             "price_to_ath": 0.977,
             "days_since_ath": 456,
             "ma_spread_percentile": 43.56,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -85.4,
+            "eps_q1": -76.86,
+            "eps_q2": -68.32,
+            "eps_q3": -59.78,
+            "per": 28.8,
+            "roe": 6.77
         },
         {
             "ticker": "CVX",
@@ -1019,12 +1019,12 @@ const marketData = {
             "price_to_ath": 0.974,
             "days_since_ath": 8,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -4.2,
+            "eps_q1": -3.78,
+            "eps_q2": -3.36,
+            "eps_q3": -2.94,
+            "per": 24.11,
+            "roe": 82.34
         },
         {
             "ticker": "ED",
@@ -1055,12 +1055,12 @@ const marketData = {
             "price_to_ath": 0.973,
             "days_since_ath": 22,
             "ma_spread_percentile": 53.96,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 32.6,
+            "eps_q1": 29.34,
+            "eps_q2": 26.08,
+            "eps_q3": 22.82,
+            "per": 10.55,
+            "roe": 21.66
         },
         {
             "ticker": "NOC",
@@ -1073,12 +1073,12 @@ const marketData = {
             "price_to_ath": 0.973,
             "days_since_ath": 8,
             "ma_spread_percentile": 92.08,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 12.9,
+            "eps_q1": 11.61,
+            "eps_q2": 10.32,
+            "eps_q3": 9.03,
+            "per": 24.94,
+            "roe": 26.17
         },
         {
             "ticker": "DGX",
@@ -1091,12 +1091,12 @@ const marketData = {
             "price_to_ath": 0.973,
             "days_since_ath": 15,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 10.4,
+            "eps_q1": 9.36,
+            "eps_q2": 8.32,
+            "eps_q3": 7.28,
+            "per": 23.71,
+            "roe": 14.75
         },
         {
             "ticker": "TXT",
@@ -1109,12 +1109,12 @@ const marketData = {
             "price_to_ath": 0.973,
             "days_since_ath": 8,
             "ma_spread_percentile": 79.7,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 66.7,
+            "eps_q1": 60.03,
+            "eps_q2": 53.36,
+            "eps_q3": 46.69,
+            "per": 19.3,
+            "roe": 12.24
         },
         {
             "ticker": "DOV",
@@ -1145,12 +1145,12 @@ const marketData = {
             "price_to_ath": 0.971,
             "days_since_ath": 127,
             "ma_spread_percentile": 96.53,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 14.9,
+            "eps_q1": 13.41,
+            "eps_q2": 11.92,
+            "eps_q3": 10.43,
+            "per": 27.25,
+            "roe": 10.51
         },
         {
             "ticker": "TER",
@@ -1163,12 +1163,12 @@ const marketData = {
             "price_to_ath": 0.971,
             "days_since_ath": 15,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 75.9,
+            "eps_q1": 68.31,
+            "eps_q2": 60.72,
+            "eps_q3": 53.13,
+            "per": 91.79,
+            "roe": 19.73
         },
         {
             "ticker": "COR",
@@ -1203,8 +1203,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 26.39,
+            "roe": 64.19
         },
         {
             "ticker": "PWR",
@@ -1217,12 +1217,12 @@ const marketData = {
             "price_to_ath": 0.97,
             "days_since_ath": 8,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 3.4,
+            "eps_q1": 3.06,
+            "eps_q2": 2.72,
+            "eps_q3": 2.38,
+            "per": 81.35,
+            "roe": 12.74
         },
         {
             "ticker": "HCA",
@@ -1235,11 +1235,11 @@ const marketData = {
             "price_to_ath": 0.969,
             "days_since_ath": 15,
             "ma_spread_percentile": 90.1,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": 30.6,
+            "eps_q1": 27.54,
+            "eps_q2": 24.48,
+            "eps_q3": 21.42,
+            "per": 18.91,
             "roe": 0
         },
         {
@@ -1253,12 +1253,12 @@ const marketData = {
             "price_to_ath": 0.969,
             "days_since_ath": 15,
             "ma_spread_percentile": 99.01,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 13.1,
+            "eps_q1": 11.79,
+            "eps_q2": 10.48,
+            "eps_q3": 9.17,
+            "per": 31.26,
+            "roe": 24.54
         },
         {
             "ticker": "WELL",
@@ -1271,12 +1271,12 @@ const marketData = {
             "price_to_ath": 0.968,
             "days_since_ath": 8,
             "ma_spread_percentile": 90.1,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -19.6,
+            "eps_q1": -17.64,
+            "eps_q2": -15.68,
+            "eps_q3": -13.72,
+            "per": 147.56,
+            "roe": 2.54
         },
         {
             "ticker": "ITW",
@@ -1289,12 +1289,12 @@ const marketData = {
             "price_to_ath": 0.967,
             "days_since_ath": 15,
             "ma_spread_percentile": 99.01,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 5.3,
+            "eps_q1": 4.77,
+            "eps_q2": 4.24,
+            "eps_q3": 3.71,
+            "per": 27.93,
+            "roe": 93.72
         },
         {
             "ticker": "EME",
@@ -1307,12 +1307,12 @@ const marketData = {
             "price_to_ath": 0.966,
             "days_since_ath": 15,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 9.3,
+            "eps_q1": 8.37,
+            "eps_q2": 7.44,
+            "eps_q3": 6.51,
+            "per": 32.46,
+            "roe": 37.09
         },
         {
             "ticker": "TPR",
@@ -1325,12 +1325,12 @@ const marketData = {
             "price_to_ath": 0.966,
             "days_since_ath": 15,
             "ma_spread_percentile": 94.55,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 80.8,
+            "eps_q1": 72.72,
+            "eps_q2": 64.64,
+            "eps_q3": 56.56,
+            "per": 59.06,
+            "roe": 55.34
         },
         {
             "ticker": "AME",
@@ -1361,12 +1361,12 @@ const marketData = {
             "price_to_ath": 0.962,
             "days_since_ath": 29,
             "ma_spread_percentile": 88.12,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 33.8,
+            "eps_q1": 30.42,
+            "eps_q2": 27.04,
+            "eps_q3": 23.66,
+            "per": 49.75,
+            "roe": 65.56
         },
         {
             "ticker": "MLM",
@@ -1379,12 +1379,12 @@ const marketData = {
             "price_to_ath": 0.962,
             "days_since_ath": 15,
             "ma_spread_percentile": 70.3,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -5.1,
+            "eps_q1": -4.59,
+            "eps_q2": -4.08,
+            "eps_q3": -3.57,
+            "per": 35.09,
+            "roe": 10.16
         },
         {
             "ticker": "XOM",
@@ -1397,12 +1397,12 @@ const marketData = {
             "price_to_ath": 0.961,
             "days_since_ath": 15,
             "ma_spread_percentile": 97.03,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -14.6,
+            "eps_q1": -13.14,
+            "eps_q2": -11.68,
+            "eps_q3": -10.22,
+            "per": 22.54,
+            "roe": 11.08
         },
         {
             "ticker": "LHX",
@@ -1415,12 +1415,12 @@ const marketData = {
             "price_to_ath": 0.961,
             "days_since_ath": 29,
             "ma_spread_percentile": 87.13,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -33.8,
+            "eps_q1": -30.42,
+            "eps_q2": -27.04,
+            "eps_q3": -23.66,
+            "per": 41.68,
+            "roe": 8.19
         },
         {
             "ticker": "DE",
@@ -1451,12 +1451,12 @@ const marketData = {
             "price_to_ath": 0.959,
             "days_since_ath": 15,
             "ma_spread_percentile": 91.58,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -2.2,
+            "eps_q1": -1.98,
+            "eps_q2": -1.76,
+            "eps_q3": -1.54,
+            "per": 34.98,
+            "roe": 36.96
         },
         {
             "ticker": "CAT",
@@ -1505,12 +1505,12 @@ const marketData = {
             "price_to_ath": 0.956,
             "days_since_ath": 22,
             "ma_spread_percentile": 76.73,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -36.1,
+            "eps_q1": -32.49,
+            "eps_q2": -28.88,
+            "eps_q3": -25.27,
+            "per": 27.95,
+            "roe": 12.92
         },
         {
             "ticker": "VLO",
@@ -1523,12 +1523,12 @@ const marketData = {
             "price_to_ath": 0.955,
             "days_since_ath": 15,
             "ma_spread_percentile": 93.56,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 303.6,
+            "eps_q1": 273.24,
+            "eps_q2": 242.88,
+            "eps_q3": 212.52,
+            "per": 26.04,
+            "roe": 8.28
         },
         {
             "ticker": "GILD",
@@ -1541,12 +1541,12 @@ const marketData = {
             "price_to_ath": 0.953,
             "days_since_ath": 15,
             "ma_spread_percentile": 98.02,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 22.4,
+            "eps_q1": 20.16,
+            "eps_q2": 17.92,
+            "eps_q3": 15.68,
+            "per": 22.07,
+            "roe": 40.66
         },
         {
             "ticker": "MPWR",
@@ -1559,12 +1559,12 @@ const marketData = {
             "price_to_ath": 0.952,
             "days_since_ath": 22,
             "ma_spread_percentile": 95.54,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -88.3,
+            "eps_q1": -79.47,
+            "eps_q2": -70.64,
+            "eps_q3": -61.81,
+            "per": 93.48,
+            "roe": 17.94
         },
         {
             "ticker": "ALL",
@@ -1617,8 +1617,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 68.48,
+            "roe": 9.72
         },
         {
             "ticker": "CMI",
@@ -1649,12 +1649,12 @@ const marketData = {
             "price_to_ath": 0.95,
             "days_since_ath": 15,
             "ma_spread_percentile": 95.54,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -3.5,
+            "eps_q1": -3.15,
+            "eps_q2": -2.8,
+            "eps_q3": -2.45,
+            "per": 40.34,
+            "roe": 30.15
         },
         {
             "ticker": "WM",
@@ -1667,12 +1667,12 @@ const marketData = {
             "price_to_ath": 0.95,
             "days_since_ath": 267,
             "ma_spread_percentile": 92.57,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 24.1,
+            "eps_q1": 21.69,
+            "eps_q2": 19.28,
+            "eps_q3": 16.87,
+            "per": 34.36,
+            "roe": 29.7
         },
         {
             "ticker": "EQT",
@@ -1703,11 +1703,11 @@ const marketData = {
             "price_to_ath": 0.948,
             "days_since_ath": 15,
             "ma_spread_percentile": 96.88,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": 6.0,
+            "eps_q1": 5.4,
+            "eps_q2": 4.8,
+            "eps_q3": 4.2,
+            "per": 42.75,
             "roe": 0
         },
         {
@@ -1721,12 +1721,12 @@ const marketData = {
             "price_to_ath": 0.947,
             "days_since_ath": 22,
             "ma_spread_percentile": 61.39,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -42.9,
+            "eps_q1": -38.61,
+            "eps_q2": -34.32,
+            "eps_q3": -30.03,
+            "per": 13.59,
+            "roe": 10.52
         },
         {
             "ticker": "SYK",
@@ -1739,12 +1739,12 @@ const marketData = {
             "price_to_ath": 0.947,
             "days_since_ath": 393,
             "ma_spread_percentile": 67.82,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 55.5,
+            "eps_q1": 49.95,
+            "eps_q2": 44.4,
+            "eps_q3": 38.85,
+            "per": 45.86,
+            "roe": 15.08
         },
         {
             "ticker": "JBHT",
@@ -1757,12 +1757,12 @@ const marketData = {
             "price_to_ath": 0.946,
             "days_since_ath": 15,
             "ma_spread_percentile": 71.78,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 16.5,
+            "eps_q1": 14.85,
+            "eps_q2": 13.2,
+            "eps_q3": 11.55,
+            "per": 36.23,
+            "roe": 15.79
         },
         {
             "ticker": "L",
@@ -1775,12 +1775,12 @@ const marketData = {
             "price_to_ath": 0.946,
             "days_since_ath": 15,
             "ma_spread_percentile": 78.71,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 115.0,
+            "eps_q1": 103.5,
+            "eps_q2": 92.0,
+            "eps_q3": 80.5,
+            "per": 13.64,
+            "roe": 9.43
         },
         {
             "ticker": "NDSN",
@@ -1793,12 +1793,12 @@ const marketData = {
             "price_to_ath": 0.946,
             "days_since_ath": 8,
             "ma_spread_percentile": 97.03,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 40.9,
+            "eps_q1": 36.81,
+            "eps_q2": 32.72,
+            "eps_q3": 28.63,
+            "per": 33.9,
+            "roe": 17.47
         },
         {
             "ticker": "UNP",
@@ -1811,30 +1811,12 @@ const marketData = {
             "price_to_ath": 0.946,
             "days_since_ath": 1429,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "GRMN",
-            "name": "Garmin",
-            "industry": "Consumer Discretionary",
-            "ath": 261.69,
-            "lowest_after_ath": 186.67,
-            "price": 247.1,
-            "correction_ratio": 0.287,
-            "price_to_ath": 0.944,
-            "days_since_ath": 141,
-            "ma_spread_percentile": 55.94,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 4.9,
+            "eps_q1": 4.41,
+            "eps_q2": 3.92,
+            "eps_q3": 3.43,
+            "per": 22.04,
+            "roe": 40.38
         },
         {
             "ticker": "FCX",
@@ -1847,12 +1829,30 @@ const marketData = {
             "price_to_ath": 0.944,
             "days_since_ath": 29,
             "ma_spread_percentile": 83.17,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 48.2,
+            "eps_q1": 43.38,
+            "eps_q2": 38.56,
+            "eps_q3": 33.74,
+            "per": 43.13,
+            "roe": 13.95
+        },
+        {
+            "ticker": "GRMN",
+            "name": "Garmin",
+            "industry": "Consumer Discretionary",
+            "ath": 261.69,
+            "lowest_after_ath": 186.67,
+            "price": 247.1,
+            "correction_ratio": 0.287,
+            "price_to_ath": 0.944,
+            "days_since_ath": 141,
+            "ma_spread_percentile": 55.94,
+            "eps_q0": 21.3,
+            "eps_q1": 19.17,
+            "eps_q2": 17.04,
+            "eps_q3": 14.91,
+            "per": 30.51,
+            "roe": 19.78
         },
         {
             "ticker": "GD",
@@ -1865,12 +1865,12 @@ const marketData = {
             "price_to_ath": 0.944,
             "days_since_ath": 43,
             "ma_spread_percentile": 1.49,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -0.4,
+            "eps_q1": -0.36,
+            "eps_q2": -0.32,
+            "eps_q3": -0.28,
+            "per": 22.57,
+            "roe": 17.66
         },
         {
             "ticker": "PNW",
@@ -1883,12 +1883,12 @@ const marketData = {
             "price_to_ath": 0.944,
             "days_since_ath": 2199,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 4.6,
+            "eps_q1": 4.14,
+            "eps_q2": 3.68,
+            "eps_q3": 3.22,
+            "per": 20.54,
+            "roe": 8.77
         },
         {
             "ticker": "SO",
@@ -1901,12 +1901,12 @@ const marketData = {
             "price_to_ath": 0.944,
             "days_since_ath": 134,
             "ma_spread_percentile": 88.12,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -22.1,
+            "eps_q1": -19.89,
+            "eps_q2": -17.68,
+            "eps_q3": -15.47,
+            "per": 23.68,
+            "roe": 11.04
         },
         {
             "ticker": "TKO",
@@ -1919,12 +1919,12 @@ const marketData = {
             "price_to_ath": 0.944,
             "days_since_ath": 64,
             "ma_spread_percentile": 9.41,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 77.2,
+            "eps_q1": 69.48,
+            "eps_q2": 61.76,
+            "eps_q3": 54.04,
+            "per": 78.61,
+            "roe": 8.13
         },
         {
             "ticker": "UHS",
@@ -1937,12 +1937,12 @@ const marketData = {
             "price_to_ath": 0.944,
             "days_since_ath": 92,
             "ma_spread_percentile": 38.61,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 44.2,
+            "eps_q1": 39.78,
+            "eps_q2": 35.36,
+            "eps_q3": 30.94,
+            "per": 11.08,
+            "roe": 20.03
         },
         {
             "ticker": "DTE",
@@ -1991,12 +1991,12 @@ const marketData = {
             "price_to_ath": 0.94,
             "days_since_ath": 8,
             "ma_spread_percentile": 69.31,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 46.0,
+            "eps_q1": 41.4,
+            "eps_q2": 36.8,
+            "eps_q3": 32.2,
+            "per": 40.83,
+            "roe": 47.82
         },
         {
             "ticker": "STLD",
@@ -2009,12 +2009,12 @@ const marketData = {
             "price_to_ath": 0.94,
             "days_since_ath": 15,
             "ma_spread_percentile": 96.53,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 28.3,
+            "eps_q1": 25.47,
+            "eps_q2": 22.64,
+            "eps_q3": 19.81,
+            "per": 24.5,
+            "roe": 13.28
         },
         {
             "ticker": "DRI",
@@ -2045,12 +2045,12 @@ const marketData = {
             "price_to_ath": 0.939,
             "days_since_ath": 15,
             "ma_spread_percentile": 70.3,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -14.2,
+            "eps_q1": -12.78,
+            "eps_q2": -11.36,
+            "eps_q3": -9.94,
+            "per": 36.65,
+            "roe": 12.97
         },
         {
             "ticker": "PHM",
@@ -2063,12 +2063,12 @@ const marketData = {
             "price_to_ath": 0.938,
             "days_since_ath": 491,
             "ma_spread_percentile": 85.64,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -45.1,
+            "eps_q1": -40.59,
+            "eps_q2": -36.08,
+            "eps_q3": -31.57,
+            "per": 12.61,
+            "roe": 17.67
         },
         {
             "ticker": "RL",
@@ -2081,12 +2081,12 @@ const marketData = {
             "price_to_ath": 0.938,
             "days_since_ath": 8,
             "ma_spread_percentile": 5.94,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 21.6,
+            "eps_q1": 19.44,
+            "eps_q2": 17.28,
+            "eps_q3": 15.12,
+            "per": 24.82,
+            "roe": 33.85
         },
         {
             "ticker": "ABBV",
@@ -2117,12 +2117,12 @@ const marketData = {
             "price_to_ath": 0.937,
             "days_since_ath": 8,
             "ma_spread_percentile": 64.85,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -4.7,
+            "eps_q1": -4.23,
+            "eps_q2": -3.76,
+            "eps_q3": -3.29,
+            "per": 25.7,
+            "roe": 47.97
         },
         {
             "ticker": "LOW",
@@ -2135,11 +2135,11 @@ const marketData = {
             "price_to_ath": 0.936,
             "days_since_ath": 15,
             "ma_spread_percentile": 76.24,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": -4.7,
+            "eps_q1": -4.23,
+            "eps_q2": -3.76,
+            "eps_q3": -3.29,
+            "per": 22.73,
             "roe": 0
         },
         {
@@ -2153,12 +2153,12 @@ const marketData = {
             "price_to_ath": 0.934,
             "days_since_ath": 22,
             "ma_spread_percentile": 31.19,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 4.3,
+            "eps_q1": 3.87,
+            "eps_q2": 3.44,
+            "eps_q3": 3.01,
+            "per": 10.14,
+            "roe": 21.12
         },
         {
             "ticker": "HLT",
@@ -2171,11 +2171,11 @@ const marketData = {
             "price_to_ath": 0.934,
             "days_since_ath": 15,
             "ma_spread_percentile": 87.62,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": -41.2,
+            "eps_q1": -37.08,
+            "eps_q2": -32.96,
+            "eps_q3": -28.84,
+            "per": 51.03,
             "roe": 0
         },
         {
@@ -2189,12 +2189,12 @@ const marketData = {
             "price_to_ath": 0.934,
             "days_since_ath": 50,
             "ma_spread_percentile": 40.59,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 50.5,
+            "eps_q1": 45.45,
+            "eps_q2": 40.4,
+            "eps_q3": 35.35,
+            "per": 46.08,
+            "roe": 101.16
         },
         {
             "ticker": "WMT",
@@ -2207,12 +2207,12 @@ const marketData = {
             "price_to_ath": 0.934,
             "days_since_ath": 8,
             "ma_spread_percentile": 97.03,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -19.4,
+            "eps_q1": -17.46,
+            "eps_q2": -15.52,
+            "eps_q3": -13.58,
+            "per": 46.08,
+            "roe": 21.85
         },
         {
             "ticker": "MTB",
@@ -2225,12 +2225,12 @@ const marketData = {
             "price_to_ath": 0.929,
             "days_since_ath": 15,
             "ma_spread_percentile": 95.05,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 11.5,
+            "eps_q1": 10.35,
+            "eps_q2": 9.2,
+            "eps_q3": 8.05,
+            "per": 13.07,
+            "roe": 9.8
         },
         {
             "ticker": "MAR",
@@ -2243,11 +2243,11 @@ const marketData = {
             "price_to_ath": 0.926,
             "days_since_ath": 15,
             "ma_spread_percentile": 99.01,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": -2.2,
+            "eps_q1": -1.98,
+            "eps_q2": -1.76,
+            "eps_q3": -1.54,
+            "per": 35.99,
             "roe": 0
         },
         {
@@ -2261,12 +2261,12 @@ const marketData = {
             "price_to_ath": 0.925,
             "days_since_ath": 477,
             "ma_spread_percentile": 18.32,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 30.5,
+            "eps_q1": 27.45,
+            "eps_q2": 24.4,
+            "eps_q3": 21.35,
+            "per": 31.44,
+            "roe": 22.54
         },
         {
             "ticker": "CRH",
@@ -2297,12 +2297,12 @@ const marketData = {
             "price_to_ath": 0.924,
             "days_since_ath": 29,
             "ma_spread_percentile": 88.12,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 180.2,
+            "eps_q1": 162.18,
+            "eps_q2": 144.16,
+            "eps_q3": 126.14,
+            "per": 40.02,
+            "roe": 22.55
         },
         {
             "ticker": "CINF",
@@ -2333,12 +2333,12 @@ const marketData = {
             "price_to_ath": 0.923,
             "days_since_ath": 113,
             "ma_spread_percentile": 14.36,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 42.0,
+            "eps_q1": 37.8,
+            "eps_q2": 33.6,
+            "eps_q3": 29.4,
+            "per": 33.33,
+            "roe": 16.1
         },
         {
             "ticker": "AAPL",
@@ -2369,12 +2369,12 @@ const marketData = {
             "price_to_ath": 0.921,
             "days_since_ath": 29,
             "ma_spread_percentile": 82.18,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -7.3,
+            "eps_q1": -6.57,
+            "eps_q2": -5.84,
+            "eps_q3": -5.11,
+            "per": 19.29,
+            "roe": 22.34
         },
         {
             "ticker": "MRK",
@@ -2387,12 +2387,12 @@ const marketData = {
             "price_to_ath": 0.92,
             "days_since_ath": 610,
             "ma_spread_percentile": 95.54,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -20.8,
+            "eps_q1": -18.72,
+            "eps_q2": -16.64,
+            "eps_q3": -14.56,
+            "per": 17.01,
+            "roe": 37.17
         },
         {
             "ticker": "SNDK",
@@ -2405,12 +2405,12 @@ const marketData = {
             "price_to_ath": 0.919,
             "days_since_ath": 22,
             "ma_spread_percentile": 93.07,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 672.1,
+            "eps_q1": 604.89,
+            "eps_q2": 537.68,
+            "eps_q3": 470.47,
             "per": 0,
-            "roe": 0
+            "roe": -9.37
         },
         {
             "ticker": "STE",
@@ -2423,12 +2423,12 @@ const marketData = {
             "price_to_ath": 0.917,
             "days_since_ath": 43,
             "ma_spread_percentile": 52.97,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 11.2,
+            "eps_q1": 10.08,
+            "eps_q2": 8.96,
+            "eps_q3": 7.84,
+            "per": 34.46,
+            "roe": 10.47
         },
         {
             "ticker": "MSI",
@@ -2441,12 +2441,12 @@ const marketData = {
             "price_to_ath": 0.916,
             "days_since_ath": 470,
             "ma_spread_percentile": 90.1,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 6.2,
+            "eps_q1": 5.58,
+            "eps_q2": 4.96,
+            "eps_q3": 4.34,
+            "per": 36.5,
+            "roe": 104.2
         },
         {
             "ticker": "FITB",
@@ -2459,12 +2459,12 @@ const marketData = {
             "price_to_ath": 0.915,
             "days_since_ath": 15,
             "ma_spread_percentile": 75.25,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 17.9,
+            "eps_q1": 16.11,
+            "eps_q2": 14.32,
+            "eps_q3": 12.53,
+            "per": 14.37,
+            "roe": 12.19
         },
         {
             "ticker": "PG",
@@ -2477,12 +2477,12 @@ const marketData = {
             "price_to_ath": 0.915,
             "days_since_ath": 456,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -6.7,
+            "eps_q1": -6.03,
+            "eps_q2": -5.36,
+            "eps_q3": -4.69,
+            "per": 24.43,
+            "roe": 31.56
         },
         {
             "ticker": "COST",
@@ -2513,12 +2513,12 @@ const marketData = {
             "price_to_ath": 0.913,
             "days_since_ath": 15,
             "ma_spread_percentile": 34.16,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 10.2,
+            "eps_q1": 9.18,
+            "eps_q2": 8.16,
+            "eps_q3": 7.14,
+            "per": 55.39,
+            "roe": 38.94
         },
         {
             "ticker": "STT",
@@ -2531,12 +2531,12 @@ const marketData = {
             "price_to_ath": 0.913,
             "days_since_ath": 43,
             "ma_spread_percentile": 3.96,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -4.6,
+            "eps_q1": -4.14,
+            "eps_q2": -3.68,
+            "eps_q3": -3.22,
+            "per": 13.31,
+            "roe": 11.08
         },
         {
             "ticker": "BRK-B",
@@ -2571,8 +2571,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 60.41,
+            "roe": 8.0
         },
         {
             "ticker": "SHW",
@@ -2585,12 +2585,12 @@ const marketData = {
             "price_to_ath": 0.91,
             "days_since_ath": 456,
             "ma_spread_percentile": 95.54,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -0.7,
+            "eps_q1": -0.63,
+            "eps_q2": -0.56,
+            "eps_q3": -0.49,
+            "per": 35.47,
+            "roe": 59.39
         },
         {
             "ticker": "GWW",
@@ -2603,12 +2603,12 @@ const marketData = {
             "price_to_ath": 0.91,
             "days_since_ath": 470,
             "ma_spread_percentile": 95.05,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -5.1,
+            "eps_q1": -4.59,
+            "eps_q2": -4.08,
+            "eps_q3": -3.57,
+            "per": 31.55,
+            "roe": 46.1
         },
         {
             "ticker": "GM",
@@ -2625,8 +2625,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 24.36,
+            "roe": 4.32
         },
         {
             "ticker": "WSM",
@@ -2639,12 +2639,12 @@ const marketData = {
             "price_to_ath": 0.909,
             "days_since_ath": 8,
             "ma_spread_percentile": 73.76,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 1.8,
+            "eps_q1": 1.62,
+            "eps_q2": 1.44,
+            "eps_q3": 1.26,
+            "per": 22.28,
+            "roe": 56.92
         },
         {
             "ticker": "CFG",
@@ -2675,12 +2675,12 @@ const marketData = {
             "price_to_ath": 0.906,
             "days_since_ath": 43,
             "ma_spread_percentile": 2.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 12.3,
+            "eps_q1": 11.07,
+            "eps_q2": 9.84,
+            "eps_q3": 8.61,
+            "per": 17.39,
+            "roe": 13.88
         },
         {
             "ticker": "PEG",
@@ -2693,12 +2693,12 @@ const marketData = {
             "price_to_ath": 0.906,
             "days_since_ath": 456,
             "ma_spread_percentile": 93.07,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 19.6,
+            "eps_q1": 17.64,
+            "eps_q2": 15.68,
+            "eps_q3": 13.72,
+            "per": 20.75,
+            "roe": 12.58
         },
         {
             "ticker": "PNC",
@@ -2711,12 +2711,12 @@ const marketData = {
             "price_to_ath": 0.905,
             "days_since_ath": 22,
             "ma_spread_percentile": 63.86,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 25.5,
+            "eps_q1": 22.95,
+            "eps_q2": 20.4,
+            "eps_q3": 17.85,
+            "per": 13.32,
+            "roe": 12.16
         },
         {
             "ticker": "WDC",
@@ -2733,8 +2733,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 26.53,
+            "roe": 41.13
         },
         {
             "ticker": "CHD",
@@ -2765,12 +2765,12 @@ const marketData = {
             "price_to_ath": 0.904,
             "days_since_ath": 15,
             "ma_spread_percentile": 58.91,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 30.9,
+            "eps_q1": 27.81,
+            "eps_q2": 24.72,
+            "eps_q3": 21.63,
+            "per": 32.23,
+            "roe": 23.51
         },
         {
             "ticker": "LYV",
@@ -2787,8 +2787,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 114.7,
+            "roe": 36.7
         },
         {
             "ticker": "NVDA",
@@ -2801,12 +2801,12 @@ const marketData = {
             "price_to_ath": 0.903,
             "days_since_ath": 120,
             "ma_spread_percentile": 25.25,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 65.3,
+            "eps_q1": 58.77,
+            "eps_q2": 52.24,
+            "eps_q3": 45.71,
+            "per": 47.41,
+            "roe": 107.36
         },
         {
             "ticker": "VTR",
@@ -2819,12 +2819,12 @@ const marketData = {
             "price_to_ath": 0.902,
             "days_since_ath": 4663,
             "ma_spread_percentile": 89.6,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 23.5,
+            "eps_q1": 21.15,
+            "eps_q2": 18.8,
+            "eps_q3": 16.45,
+            "per": 160.41,
+            "roe": 2.17
         },
         {
             "ticker": "BG",
@@ -2855,12 +2855,12 @@ const marketData = {
             "price_to_ath": 0.899,
             "days_since_ath": 456,
             "ma_spread_percentile": 97.03,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -54.0,
+            "eps_q1": -48.6,
+            "eps_q2": -43.2,
+            "eps_q3": -37.8,
+            "per": 26.32,
+            "roe": 16.9
         },
         {
             "ticker": "UAL",
@@ -2873,12 +2873,12 @@ const marketData = {
             "price_to_ath": 0.899,
             "days_since_ath": 50,
             "ma_spread_percentile": 4.95,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 6.0,
+            "eps_q1": 5.4,
+            "eps_q2": 4.8,
+            "eps_q3": 4.2,
+            "per": 10.51,
+            "roe": 23.99
         },
         {
             "ticker": "WRB",
@@ -2891,12 +2891,12 @@ const marketData = {
             "price_to_ath": 0.899,
             "days_since_ath": 99,
             "ma_spread_percentile": 20.79,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -22.0,
+            "eps_q1": -19.8,
+            "eps_q2": -17.6,
+            "eps_q3": -15.4,
+            "per": 15.96,
+            "roe": 19.6
         },
         {
             "ticker": "BK",
@@ -2927,12 +2927,12 @@ const marketData = {
             "price_to_ath": 0.895,
             "days_since_ath": 22,
             "ma_spread_percentile": 45.05,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -3.2,
+            "eps_q1": -2.88,
+            "eps_q2": -2.56,
+            "eps_q3": -2.24,
+            "per": 24.41,
+            "roe": 36.51
         },
         {
             "ticker": "GOOGL",
@@ -2963,12 +2963,12 @@ const marketData = {
             "price_to_ath": 0.892,
             "days_since_ath": 148,
             "ma_spread_percentile": 52.97,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -0.2,
+            "eps_q1": -0.18,
+            "eps_q2": -0.16,
+            "eps_q3": -0.14,
+            "per": 25.87,
+            "roe": 17.48
         },
         {
             "ticker": "NTRS",
@@ -2981,12 +2981,12 @@ const marketData = {
             "price_to_ath": 0.891,
             "days_since_ath": 36,
             "ma_spread_percentile": 41.09,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 2.3,
+            "eps_q1": 2.07,
+            "eps_q2": 1.84,
+            "eps_q3": 1.61,
+            "per": 16.06,
+            "roe": 13.49
         },
         {
             "ticker": "GOOG",
@@ -3017,12 +3017,12 @@ const marketData = {
             "price_to_ath": 0.89,
             "days_since_ath": 183,
             "ma_spread_percentile": 62.87,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 12.2,
+            "eps_q1": 10.98,
+            "eps_q2": 9.76,
+            "eps_q3": 8.54,
+            "per": 41.33,
+            "roe": 33.29
         },
         {
             "ticker": "PSX",
@@ -3035,12 +3035,12 @@ const marketData = {
             "price_to_ath": 0.89,
             "days_since_ath": 694,
             "ma_spread_percentile": 98.51,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 36225.0,
+            "eps_q1": 32602.5,
+            "eps_q2": 28980.0,
+            "eps_q3": 25357.5,
+            "per": 14.35,
+            "roe": 15.43
         },
         {
             "ticker": "DLR",
@@ -3143,12 +3143,12 @@ const marketData = {
             "price_to_ath": 0.886,
             "days_since_ath": 456,
             "ma_spread_percentile": 97.03,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 15.8,
+            "eps_q1": 14.22,
+            "eps_q2": 12.64,
+            "eps_q3": 11.06,
+            "per": 64.79,
+            "roe": 5.77
         },
         {
             "ticker": "STX",
@@ -3161,11 +3161,11 @@ const marketData = {
             "price_to_ath": 0.886,
             "days_since_ath": 15,
             "ma_spread_percentile": 93.56,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": 76.5,
+            "eps_q1": 68.85,
+            "eps_q2": 61.2,
+            "eps_q3": 53.55,
+            "per": 46.09,
             "roe": 0
         },
         {
@@ -3197,12 +3197,12 @@ const marketData = {
             "price_to_ath": 0.885,
             "days_since_ath": 379,
             "ma_spread_percentile": 52.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -18.3,
+            "eps_q1": -16.47,
+            "eps_q2": -14.64,
+            "eps_q3": -12.81,
+            "per": 18.43,
+            "roe": 22.38
         },
         {
             "ticker": "ROK",
@@ -3215,12 +3215,12 @@ const marketData = {
             "price_to_ath": 0.884,
             "days_since_ath": 22,
             "ma_spread_percentile": 29.21,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 65.8,
+            "eps_q1": 59.22,
+            "eps_q2": 52.64,
+            "eps_q3": 46.06,
+            "per": 44.25,
+            "roe": 23.74
         },
         {
             "ticker": "JPM",
@@ -3233,12 +3233,12 @@ const marketData = {
             "price_to_ath": 0.883,
             "days_since_ath": 50,
             "ma_spread_percentile": 44.06,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -7.0,
+            "eps_q1": -6.3,
+            "eps_q2": -5.6,
+            "eps_q3": -4.9,
+            "per": 14.86,
+            "roe": 16.13
         },
         {
             "ticker": "CSCO",
@@ -3287,12 +3287,12 @@ const marketData = {
             "price_to_ath": 0.881,
             "days_since_ath": 687,
             "ma_spread_percentile": 80.2,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 31.7,
+            "eps_q1": 28.53,
+            "eps_q2": 25.36,
+            "eps_q3": 22.19,
+            "per": 23.81,
+            "roe": 9.36
         },
         {
             "ticker": "KLAC",
@@ -3305,12 +3305,12 @@ const marketData = {
             "price_to_ath": 0.879,
             "days_since_ath": 29,
             "ma_spread_percentile": 56.93,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 39.0,
+            "eps_q1": 35.1,
+            "eps_q2": 31.2,
+            "eps_q3": 27.3,
+            "per": 43.3,
+            "roe": 100.73
         },
         {
             "ticker": "BLK",
@@ -3341,12 +3341,12 @@ const marketData = {
             "price_to_ath": 0.878,
             "days_since_ath": 1506,
             "ma_spread_percentile": 73.27,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 23.0,
+            "eps_q1": 20.7,
+            "eps_q2": 18.4,
+            "eps_q3": 16.1,
+            "per": 12.08,
+            "roe": 12.18
         },
         {
             "ticker": "ORLY",
@@ -3359,11 +3359,11 @@ const marketData = {
             "price_to_ath": 0.877,
             "days_since_ath": 148,
             "ma_spread_percentile": 26.73,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": 9.8,
+            "eps_q1": 8.82,
+            "eps_q2": 7.84,
+            "eps_q3": 6.86,
+            "per": 32.1,
             "roe": 0
         },
         {
@@ -3413,12 +3413,12 @@ const marketData = {
             "price_to_ath": 0.873,
             "days_since_ath": 3501,
             "ma_spread_percentile": 87.13,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 356.4,
+            "eps_q1": 320.76,
+            "eps_q2": 285.12,
+            "eps_q3": 249.48,
+            "per": 14.13,
+            "roe": 104.11
         },
         {
             "ticker": "MPC",
@@ -3431,12 +3431,12 @@ const marketData = {
             "price_to_ath": 0.872,
             "days_since_ath": 694,
             "ma_spread_percentile": 96.53,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 313.7,
+            "eps_q1": 282.33,
+            "eps_q2": 250.96,
+            "eps_q3": 219.59,
+            "per": 14.57,
+            "roe": 24.29
         },
         {
             "ticker": "CHRW",
@@ -3467,12 +3467,12 @@ const marketData = {
             "price_to_ath": 0.871,
             "days_since_ath": 708,
             "ma_spread_percentile": 67.82,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -11.1,
+            "eps_q1": -9.99,
+            "eps_q2": -8.88,
+            "eps_q3": -7.77,
+            "per": 35.96,
+            "roe": 6.4
         },
         {
             "ticker": "WFC",
@@ -3485,12 +3485,12 @@ const marketData = {
             "price_to_ath": 0.871,
             "days_since_ath": 50,
             "ma_spread_percentile": 50.99,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 5.6,
+            "eps_q1": 5.04,
+            "eps_q2": 4.48,
+            "eps_q3": 3.92,
+            "per": 13.6,
+            "roe": 11.73
         },
         {
             "ticker": "HSIC",
@@ -3503,12 +3503,12 @@ const marketData = {
             "price_to_ath": 0.869,
             "days_since_ath": 1415,
             "ma_spread_percentile": 21.29,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 2.0,
+            "eps_q1": 1.8,
+            "eps_q2": 1.6,
+            "eps_q3": 1.4,
+            "per": 25.42,
+            "roe": 8.35
         },
         {
             "ticker": "ALLE",
@@ -3539,12 +3539,12 @@ const marketData = {
             "price_to_ath": 0.866,
             "days_since_ath": 43,
             "ma_spread_percentile": 26.73,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 18.4,
+            "eps_q1": 16.56,
+            "eps_q2": 14.72,
+            "eps_q3": 12.88,
+            "per": 16.34,
+            "roe": 15.61
         },
         {
             "ticker": "CTAS",
@@ -3575,12 +3575,12 @@ const marketData = {
             "price_to_ath": 0.865,
             "days_since_ath": 1632,
             "ma_spread_percentile": 36.63,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 13.9,
+            "eps_q1": 12.51,
+            "eps_q2": 11.12,
+            "eps_q3": 9.73,
+            "per": 25.77,
+            "roe": 25.68
         },
         {
             "ticker": "URI",
@@ -3593,12 +3593,12 @@ const marketData = {
             "price_to_ath": 0.864,
             "days_since_ath": 134,
             "ma_spread_percentile": 1.49,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -5.2,
+            "eps_q1": -4.68,
+            "eps_q2": -4.16,
+            "eps_q3": -3.64,
+            "per": 22.89,
+            "roe": 28.36
         },
         {
             "ticker": "SCHW",
@@ -3629,12 +3629,12 @@ const marketData = {
             "price_to_ath": 0.862,
             "days_since_ath": 155,
             "ma_spread_percentile": 31.19,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -6.2,
+            "eps_q1": -5.58,
+            "eps_q2": -4.96,
+            "eps_q3": -4.34,
+            "per": 14.97,
+            "roe": 17.12
         },
         {
             "ticker": "T",
@@ -3665,12 +3665,12 @@ const marketData = {
             "price_to_ath": 0.858,
             "days_since_ath": 1030,
             "ma_spread_percentile": 8.42,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -10.9,
+            "eps_q1": -9.81,
+            "eps_q2": -8.72,
+            "eps_q3": -7.63,
+            "per": 31.3,
+            "roe": 10.86
         },
         {
             "ticker": "HD",
@@ -3683,12 +3683,12 @@ const marketData = {
             "price_to_ath": 0.858,
             "days_since_ath": 456,
             "ma_spread_percentile": 57.92,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -1.3,
+            "eps_q1": -1.17,
+            "eps_q2": -1.04,
+            "eps_q3": -0.91,
+            "per": 25.72,
+            "roe": 162.91
         },
         {
             "ticker": "PEP",
@@ -3701,12 +3701,12 @@ const marketData = {
             "price_to_ath": 0.855,
             "days_since_ath": 1016,
             "ma_spread_percentile": 99.01,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 66.8,
+            "eps_q1": 60.12,
+            "eps_q2": 53.44,
+            "eps_q3": 46.76,
+            "per": 28.1,
+            "roe": 42.85
         },
         {
             "ticker": "RSG",
@@ -3719,12 +3719,12 @@ const marketData = {
             "price_to_ath": 0.855,
             "days_since_ath": 267,
             "ma_spread_percentile": 61.39,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 6.3,
+            "eps_q1": 5.67,
+            "eps_q2": 5.04,
+            "eps_q3": 4.41,
+            "per": 32.24,
+            "roe": 18.3
         },
         {
             "ticker": "IRM",
@@ -3737,11 +3737,11 @@ const marketData = {
             "price_to_ath": 0.854,
             "days_since_ath": 491,
             "ma_spread_percentile": 97.03,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": -14.1,
+            "eps_q1": -12.69,
+            "eps_q2": -11.28,
+            "eps_q3": -9.87,
+            "per": 226.92,
             "roe": 0
         },
         {
@@ -3755,12 +3755,12 @@ const marketData = {
             "price_to_ath": 0.853,
             "days_since_ath": 456,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 4.2,
+            "eps_q1": 3.78,
+            "eps_q2": 3.36,
+            "eps_q3": 2.94,
+            "per": 71.94,
+            "roe": 37.15
         },
         {
             "ticker": "MAS",
@@ -3773,12 +3773,12 @@ const marketData = {
             "price_to_ath": 0.851,
             "days_since_ath": 498,
             "ma_spread_percentile": 96.04,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -9.3,
+            "eps_q1": -8.37,
+            "eps_q2": -7.44,
+            "eps_q3": -6.51,
+            "per": 19.12,
+            "roe": 7150.0
         },
         {
             "ticker": "OTIS",
@@ -3791,11 +3791,11 @@ const marketData = {
             "price_to_ath": 0.848,
             "days_since_ath": 351,
             "ma_spread_percentile": 43.56,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": 11.0,
+            "eps_q1": 9.9,
+            "eps_q2": 8.8,
+            "eps_q3": 7.7,
+            "per": 25.87,
             "roe": 0
         },
         {
@@ -3827,12 +3827,12 @@ const marketData = {
             "price_to_ath": 0.847,
             "days_since_ath": 1289,
             "ma_spread_percentile": 68.32,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 4.0,
+            "eps_q1": 3.6,
+            "eps_q2": 3.2,
+            "eps_q3": 2.8,
+            "per": 11.49,
+            "roe": 10.36
         },
         {
             "ticker": "MET",
@@ -3845,12 +3845,12 @@ const marketData = {
             "price_to_ath": 0.845,
             "days_since_ath": 456,
             "ma_spread_percentile": 35.15,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -36.3,
+            "eps_q1": -32.67,
+            "eps_q2": -29.04,
+            "eps_q3": -25.41,
+            "per": 15.51,
+            "roe": 12.02
         },
         {
             "ticker": "AVY",
@@ -3899,12 +3899,12 @@ const marketData = {
             "price_to_ath": 0.842,
             "days_since_ath": 218,
             "ma_spread_percentile": 38.12,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -3.8,
+            "eps_q1": -3.42,
+            "eps_q2": -3.04,
+            "eps_q3": -2.66,
+            "per": 26.16,
+            "roe": 45.18
         },
         {
             "ticker": "EIX",
@@ -3935,12 +3935,12 @@ const marketData = {
             "price_to_ath": 0.839,
             "days_since_ath": 708,
             "ma_spread_percentile": 95.54,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 4.1,
+            "eps_q1": 3.69,
+            "eps_q2": 3.28,
+            "eps_q3": 2.87,
+            "per": 32.24,
+            "roe": 12.34
         },
         {
             "ticker": "LDOS",
@@ -3953,12 +3953,12 @@ const marketData = {
             "price_to_ath": 0.836,
             "days_since_ath": 113,
             "ma_spread_percentile": 66.83,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 15.1,
+            "eps_q1": 13.59,
+            "eps_q2": 12.08,
+            "eps_q3": 10.57,
+            "per": 15.43,
+            "roe": 31.03
         },
         {
             "ticker": "EBAY",
@@ -3989,12 +3989,12 @@ const marketData = {
             "price_to_ath": 0.832,
             "days_since_ath": 6959,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 134.1,
+            "eps_q1": 120.69,
+            "eps_q2": 107.28,
+            "eps_q3": 93.87,
+            "per": 27.58,
+            "roe": 7.68
         },
         {
             "ticker": "ODFL",
@@ -4007,30 +4007,12 @@ const marketData = {
             "price_to_ath": 0.831,
             "days_since_ath": 470,
             "ma_spread_percentile": 93.56,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "APD",
-            "name": "Air Products",
-            "industry": "Materials",
-            "ath": 341.14,
-            "lowest_after_ath": 229.11,
-            "price": 283.25,
-            "correction_ratio": 0.328,
-            "price_to_ath": 0.83,
-            "days_since_ath": 386,
-            "ma_spread_percentile": 89.6,
-            "eps_q0": 9.8,
-            "eps_q1": 8.82,
-            "eps_q2": 7.84,
-            "eps_q3": 6.86,
-            "per": 0,
-            "roe": -1.67
+            "eps_q0": -12.8,
+            "eps_q1": -11.52,
+            "eps_q2": -10.24,
+            "eps_q3": -8.96,
+            "per": 39.98,
+            "roe": 23.93
         },
         {
             "ticker": "AOS",
@@ -4049,6 +4031,24 @@ const marketData = {
             "eps_q3": 10.01,
             "per": 19.94,
             "roe": 29.2
+        },
+        {
+            "ticker": "APD",
+            "name": "Air Products",
+            "industry": "Materials",
+            "ath": 341.14,
+            "lowest_after_ath": 229.11,
+            "price": 283.25,
+            "correction_ratio": 0.328,
+            "price_to_ath": 0.83,
+            "days_since_ath": 386,
+            "ma_spread_percentile": 89.6,
+            "eps_q0": 9.8,
+            "eps_q1": 8.82,
+            "eps_q2": 7.84,
+            "eps_q3": 6.86,
+            "per": 0,
+            "roe": -1.67
         },
         {
             "ticker": "CPAY",
@@ -4115,12 +4115,12 @@ const marketData = {
             "price_to_ath": 0.826,
             "days_since_ath": 183,
             "ma_spread_percentile": 55.45,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 36.6,
+            "eps_q1": 32.94,
+            "eps_q2": 29.28,
+            "eps_q3": 25.62,
+            "per": 19.38,
+            "roe": 47.73
         },
         {
             "ticker": "WTW",
@@ -4133,12 +4133,12 @@ const marketData = {
             "price_to_ath": 0.826,
             "days_since_ath": 141,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -41.0,
+            "eps_q1": -36.9,
+            "eps_q2": -32.8,
+            "eps_q3": -28.7,
+            "per": 17.93,
+            "roe": 20.08
         },
         {
             "ticker": "XYL",
@@ -4151,12 +4151,12 @@ const marketData = {
             "price_to_ath": 0.825,
             "days_since_ath": 120,
             "ma_spread_percentile": 79.21,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 2.8,
+            "eps_q1": 2.52,
+            "eps_q2": 2.24,
+            "eps_q3": 1.96,
+            "per": 32.46,
+            "roe": 8.4
         },
         {
             "ticker": "MA",
@@ -4169,12 +4169,12 @@ const marketData = {
             "price_to_ath": 0.824,
             "days_since_ath": 190,
             "ma_spread_percentile": 88.12,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 21.5,
+            "eps_q1": 19.35,
+            "eps_q2": 17.2,
+            "eps_q3": 15.05,
+            "per": 30.03,
+            "roe": 209.91
         },
         {
             "ticker": "DHI",
@@ -4223,12 +4223,12 @@ const marketData = {
             "price_to_ath": 0.816,
             "days_since_ath": 1030,
             "ma_spread_percentile": 98.51,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -59.8,
+            "eps_q1": -53.82,
+            "eps_q2": -47.84,
+            "eps_q3": -41.86,
+            "per": 52.09,
+            "roe": 18.89
         },
         {
             "ticker": "V",
@@ -4241,12 +4241,12 @@ const marketData = {
             "price_to_ath": 0.816,
             "days_since_ath": 260,
             "ma_spread_percentile": 89.6,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 14.3,
+            "eps_q1": 12.87,
+            "eps_q2": 11.44,
+            "eps_q3": 10.01,
+            "per": 28.81,
+            "roe": 53.95
         },
         {
             "ticker": "EXE",
@@ -4263,8 +4263,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 33.18,
+            "roe": 10.07
         },
         {
             "ticker": "ICE",
@@ -4277,12 +4277,12 @@ const marketData = {
             "price_to_ath": 0.814,
             "days_since_ath": 204,
             "ma_spread_percentile": 41.09,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 21.9,
+            "eps_q1": 19.71,
+            "eps_q2": 17.52,
+            "eps_q3": 15.33,
+            "per": 26.75,
+            "roe": 11.88
         },
         {
             "ticker": "MTD",
@@ -4295,11 +4295,11 @@ const marketData = {
             "price_to_ath": 0.813,
             "days_since_ath": 1520,
             "ma_spread_percentile": 46.53,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": 13.3,
+            "eps_q1": 11.97,
+            "eps_q2": 10.64,
+            "eps_q3": 9.31,
+            "per": 33.11,
             "roe": 0
         },
         {
@@ -4349,12 +4349,12 @@ const marketData = {
             "price_to_ath": 0.81,
             "days_since_ath": 2199,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 17.2,
+            "eps_q1": 15.48,
+            "eps_q2": 13.76,
+            "eps_q3": 12.04,
+            "per": 62.32,
+            "roe": 2.49
         },
         {
             "ticker": "IDXX",
@@ -4367,12 +4367,12 @@ const marketData = {
             "price_to_ath": 0.809,
             "days_since_ath": 92,
             "ma_spread_percentile": 65.35,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 14.8,
+            "eps_q1": 13.32,
+            "eps_q2": 11.84,
+            "eps_q3": 10.36,
+            "per": 47.6,
+            "roe": 66.2
         },
         {
             "ticker": "ABT",
@@ -4407,8 +4407,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 8.94,
+            "roe": 10.85
         },
         {
             "ticker": "PLD",
@@ -4421,12 +4421,12 @@ const marketData = {
             "price_to_ath": 0.806,
             "days_since_ath": 1408,
             "ma_spread_percentile": 91.09,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 9.5,
+            "eps_q1": 8.55,
+            "eps_q2": 7.6,
+            "eps_q3": 6.65,
+            "per": 39.53,
+            "roe": 6.13
         },
         {
             "ticker": "LII",
@@ -4439,12 +4439,12 @@ const marketData = {
             "price_to_ath": 0.805,
             "days_since_ath": 218,
             "ma_spread_percentile": 71.78,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -19.7,
+            "eps_q1": -17.73,
+            "eps_q2": -15.76,
+            "eps_q3": -13.79,
+            "per": 24.34,
+            "roe": 75.83
         },
         {
             "ticker": "VLTO",
@@ -4457,12 +4457,12 @@ const marketData = {
             "price_to_ath": 0.805,
             "days_since_ath": 491,
             "ma_spread_percentile": 93.56,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 11.9,
+            "eps_q1": 10.71,
+            "eps_q2": 9.52,
+            "eps_q3": 8.33,
+            "per": 24.63,
+            "roe": 36.5
         },
         {
             "ticker": "TSLA",
@@ -4475,12 +4475,12 @@ const marketData = {
             "price_to_ath": 0.802,
             "days_since_ath": 64,
             "ma_spread_percentile": 64.36,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -60.5,
+            "eps_q1": -54.45,
+            "eps_q2": -48.4,
+            "eps_q3": -42.35,
+            "per": 370.21,
+            "roe": 4.93
         },
         {
             "ticker": "META",
@@ -4493,12 +4493,12 @@ const marketData = {
             "price_to_ath": 0.8,
             "days_since_ath": 197,
             "ma_spread_percentile": 13.37,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 9.3,
+            "eps_q1": 8.37,
+            "eps_q2": 7.44,
+            "eps_q3": 6.51,
+            "per": 27.11,
+            "roe": 30.24
         },
         {
             "ticker": "ISRG",
@@ -4511,12 +4511,12 @@ const marketData = {
             "price_to_ath": 0.799,
             "days_since_ath": 400,
             "ma_spread_percentile": 81.68,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 15.9,
+            "eps_q1": 14.31,
+            "eps_q2": 12.72,
+            "eps_q3": 11.13,
+            "per": 62.53,
+            "roe": 16.69
         },
         {
             "ticker": "MCO",
@@ -4529,12 +4529,12 @@ const marketData = {
             "price_to_ath": 0.799,
             "days_since_ath": 43,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 54.4,
+            "eps_q1": 48.96,
+            "eps_q2": 43.52,
+            "eps_q3": 38.08,
+            "per": 35.22,
+            "roe": 62.08
         },
         {
             "ticker": "CF",
@@ -4565,11 +4565,11 @@ const marketData = {
             "price_to_ath": 0.798,
             "days_since_ath": 211,
             "ma_spread_percentile": 22.77,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": -9.7,
+            "eps_q1": -8.73,
+            "eps_q2": -7.76,
+            "eps_q3": -6.79,
+            "per": 41.66,
             "roe": 0
         },
         {
@@ -4583,12 +4583,12 @@ const marketData = {
             "price_to_ath": 0.798,
             "days_since_ath": 2262,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -53.2,
+            "eps_q1": -47.88,
+            "eps_q2": -42.56,
+            "eps_q3": -37.24,
+            "per": 12.24,
+            "roe": 17.07
         },
         {
             "ticker": "AVGO",
@@ -4619,12 +4619,12 @@ const marketData = {
             "price_to_ath": 0.796,
             "days_since_ath": 358,
             "ma_spread_percentile": 56.93,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -29.5,
+            "eps_q1": -26.55,
+            "eps_q2": -23.6,
+            "eps_q3": -20.65,
+            "per": 22.63,
+            "roe": 18.18
         },
         {
             "ticker": "AMZN",
@@ -4673,11 +4673,11 @@ const marketData = {
             "price_to_ath": 0.792,
             "days_since_ath": 1562,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": -6.8,
+            "eps_q1": -6.12,
+            "eps_q2": -5.44,
+            "eps_q3": -4.76,
+            "per": 34.36,
             "roe": 0
         },
         {
@@ -4691,12 +4691,12 @@ const marketData = {
             "price_to_ath": 0.785,
             "days_since_ath": 43,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 45.9,
+            "eps_q1": 41.31,
+            "eps_q2": 36.72,
+            "eps_q3": 32.13,
+            "per": 25.86,
+            "roe": 15.25
         },
         {
             "ticker": "J",
@@ -4713,8 +4713,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 34.68,
+            "roe": 9.73
         },
         {
             "ticker": "NXPI",
@@ -4727,12 +4727,12 @@ const marketData = {
             "price_to_ath": 0.781,
             "days_since_ath": 589,
             "ma_spread_percentile": 25.74,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -8.1,
+            "eps_q1": -7.29,
+            "eps_q2": -6.48,
+            "eps_q3": -5.67,
+            "per": 29.08,
+            "roe": 20.7
         },
         {
             "ticker": "AMP",
@@ -4763,12 +4763,12 @@ const marketData = {
             "price_to_ath": 0.779,
             "days_since_ath": 141,
             "ma_spread_percentile": 22.28,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 8.2,
+            "eps_q1": 7.38,
+            "eps_q2": 6.56,
+            "eps_q3": 5.74,
+            "per": 22.33,
+            "roe": 20.84
         },
         {
             "ticker": "SYF",
@@ -4781,12 +4781,12 @@ const marketData = {
             "price_to_ath": 0.776,
             "days_since_ath": 50,
             "ma_spread_percentile": 95.54,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -3.0,
+            "eps_q1": -2.7,
+            "eps_q2": -2.4,
+            "eps_q3": -2.1,
+            "per": 7.42,
+            "roe": 21.3
         },
         {
             "ticker": "HAS",
@@ -4804,7 +4804,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -36.35
         },
         {
             "ticker": "ANET",
@@ -4839,8 +4839,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 10.1,
+            "roe": 11.36
         },
         {
             "ticker": "SW",
@@ -4853,12 +4853,12 @@ const marketData = {
             "price_to_ath": 0.771,
             "days_since_ath": 1653,
             "ma_spread_percentile": 99.01,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -33.6,
+            "eps_q1": -30.24,
+            "eps_q2": -26.88,
+            "eps_q3": -23.52,
+            "per": 31.71,
+            "roe": 3.91
         },
         {
             "ticker": "MDLZ",
@@ -4871,12 +4871,12 @@ const marketData = {
             "price_to_ath": 0.768,
             "days_since_ath": 1037,
             "ma_spread_percentile": 84.65,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -61.9,
+            "eps_q1": -55.71,
+            "eps_q2": -49.52,
+            "eps_q3": -43.33,
+            "per": 31.95,
+            "roe": 9.33
         },
         {
             "ticker": "TMO",
@@ -4889,12 +4889,12 @@ const marketData = {
             "price_to_ath": 0.768,
             "days_since_ath": 1520,
             "ma_spread_percentile": 93.07,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 7.3,
+            "eps_q1": 6.57,
+            "eps_q2": 5.84,
+            "eps_q3": 5.11,
+            "per": 29.06,
+            "roe": 13.02
         },
         {
             "ticker": "MMM",
@@ -4943,12 +4943,12 @@ const marketData = {
             "price_to_ath": 0.765,
             "days_since_ath": 1632,
             "ma_spread_percentile": 89.11,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -2.7,
+            "eps_q1": -2.43,
+            "eps_q2": -2.16,
+            "eps_q3": -1.89,
+            "per": 30.49,
+            "roe": 29.28
         },
         {
             "ticker": "AON",
@@ -4997,12 +4997,12 @@ const marketData = {
             "price_to_ath": 0.764,
             "days_since_ath": 6497,
             "ma_spread_percentile": 56.44,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 45.7,
+            "eps_q1": 41.13,
+            "eps_q2": 36.56,
+            "eps_q3": 31.99,
+            "per": 18.58,
+            "roe": 16.86
         },
         {
             "ticker": "VST",
@@ -5015,12 +5015,12 @@ const marketData = {
             "price_to_ath": 0.763,
             "days_since_ath": 155,
             "ma_spread_percentile": 11.39,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -65.5,
+            "eps_q1": -58.95,
+            "eps_q2": -52.4,
+            "eps_q3": -45.85,
+            "per": 60.14,
+            "roe": 17.31
         },
         {
             "ticker": "MO",
@@ -5074,7 +5074,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -1.09
         },
         {
             "ticker": "LUV",
@@ -5087,12 +5087,12 @@ const marketData = {
             "price_to_ath": 0.76,
             "days_since_ath": 2990,
             "ma_spread_percentile": 96.04,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 23.8,
+            "eps_q1": 21.42,
+            "eps_q2": 19.04,
+            "eps_q3": 16.66,
+            "per": 64.43,
+            "roe": 4.81
         },
         {
             "ticker": "HPE",
@@ -5105,12 +5105,12 @@ const marketData = {
             "price_to_ath": 0.756,
             "days_since_ath": 141,
             "ma_spread_percentile": 18.81,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -87.2,
+            "eps_q1": -78.48,
+            "eps_q2": -69.76,
+            "eps_q3": -61.04,
             "per": 0,
-            "roe": 0
+            "roe": 0.23
         },
         {
             "ticker": "SOLV",
@@ -5123,12 +5123,12 @@ const marketData = {
             "price_to_ath": 0.756,
             "days_since_ath": 701,
             "ma_spread_percentile": 78.22,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 937.7,
+            "eps_q1": 843.93,
+            "eps_q2": 750.16,
+            "eps_q3": 656.39,
+            "per": 8.34,
+            "roe": 37.27
         },
         {
             "ticker": "OMC",
@@ -5145,8 +5145,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 11.91,
+            "roe": 0.48
         },
         {
             "ticker": "ES",
@@ -5159,12 +5159,12 @@ const marketData = {
             "price_to_ath": 0.753,
             "days_since_ath": 2199,
             "ma_spread_percentile": 58.91,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 481.0,
+            "eps_q1": 432.9,
+            "eps_q2": 384.8,
+            "eps_q3": 336.7,
+            "per": 16.42,
+            "roe": 10.78
         },
         {
             "ticker": "BMY",
@@ -5195,11 +5195,11 @@ const marketData = {
             "price_to_ath": 0.75,
             "days_since_ath": 1681,
             "ma_spread_percentile": 76.73,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": -62.4,
+            "eps_q1": -56.16,
+            "eps_q2": -49.92,
+            "eps_q3": -43.68,
+            "per": 78.98,
             "roe": 0
         },
         {
@@ -5213,12 +5213,12 @@ const marketData = {
             "price_to_ath": 0.748,
             "days_since_ath": 498,
             "ma_spread_percentile": 47.03,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -20.5,
+            "eps_q1": -18.45,
+            "eps_q2": -16.4,
+            "eps_q3": -14.35,
+            "per": 17.09,
+            "roe": 33.19
         },
         {
             "ticker": "FOX",
@@ -5231,12 +5231,12 @@ const marketData = {
             "price_to_ath": 0.746,
             "days_since_ath": 50,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -38.6,
+            "eps_q1": -34.74,
+            "eps_q2": -30.88,
+            "eps_q3": -27.02,
+            "per": 12.19,
+            "roe": 16.82
         },
         {
             "ticker": "AMCR",
@@ -5285,12 +5285,12 @@ const marketData = {
             "price_to_ath": 0.742,
             "days_since_ath": 463,
             "ma_spread_percentile": 42.57,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 2.0,
+            "eps_q1": 1.8,
+            "eps_q2": 1.6,
+            "eps_q3": 1.4,
+            "per": 17.51,
+            "roe": 125.35
         },
         {
             "ticker": "OKE",
@@ -5303,12 +5303,12 @@ const marketData = {
             "price_to_ath": 0.74,
             "days_since_ath": 463,
             "ma_spread_percentile": 97.52,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 35.5,
+            "eps_q1": 31.95,
+            "eps_q2": 28.4,
+            "eps_q3": 24.85,
+            "per": 16.05,
+            "roe": 17.85
         },
         {
             "ticker": "TTWO",
@@ -5326,7 +5326,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -86.22
         },
         {
             "ticker": "AMD",
@@ -5393,12 +5393,12 @@ const marketData = {
             "price_to_ath": 0.733,
             "days_since_ath": 6441,
             "ma_spread_percentile": 85.64,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -8.2,
+            "eps_q1": -7.38,
+            "eps_q2": -6.56,
+            "eps_q3": -5.74,
+            "per": 17.66,
+            "roe": 9.94
         },
         {
             "ticker": "RF",
@@ -5411,12 +5411,12 @@ const marketData = {
             "price_to_ath": 0.733,
             "days_since_ath": 7078,
             "ma_spread_percentile": 62.38,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 22.8,
+            "eps_q1": 20.52,
+            "eps_q2": 18.24,
+            "eps_q3": 15.96,
+            "per": 12.48,
+            "roe": 11.65
         },
         {
             "ticker": "COF",
@@ -5447,12 +5447,12 @@ const marketData = {
             "price_to_ath": 0.732,
             "days_since_ath": 1296,
             "ma_spread_percentile": 93.56,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 27.4,
+            "eps_q1": 24.66,
+            "eps_q2": 21.92,
+            "eps_q3": 19.18,
+            "per": 22.34,
+            "roe": 24.28
         },
         {
             "ticker": "KMI",
@@ -5465,12 +5465,12 @@ const marketData = {
             "price_to_ath": 0.731,
             "days_since_ath": 3963,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 49.3,
+            "eps_q1": 44.37,
+            "eps_q2": 39.44,
+            "eps_q3": 34.51,
+            "per": 23.87,
+            "roe": 9.83
         },
         {
             "ticker": "NWSA",
@@ -5483,12 +5483,12 @@ const marketData = {
             "price_to_ath": 0.728,
             "days_since_ath": 148,
             "ma_spread_percentile": 92.57,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -10.2,
+            "eps_q1": -9.18,
+            "eps_q2": -8.16,
+            "eps_q3": -7.14,
+            "per": 29.87,
+            "roe": 6.33
         },
         {
             "ticker": "MDT",
@@ -5501,11 +5501,11 @@ const marketData = {
             "price_to_ath": 0.726,
             "days_since_ath": 1632,
             "ma_spread_percentile": 11.88,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": -11.7,
+            "eps_q1": -10.53,
+            "eps_q2": -9.36,
+            "eps_q3": -8.19,
+            "per": 27.54,
             "roe": 0
         },
         {
@@ -5519,12 +5519,12 @@ const marketData = {
             "price_to_ath": 0.726,
             "days_since_ath": 204,
             "ma_spread_percentile": 97.03,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -10.2,
+            "eps_q1": -9.18,
+            "eps_q2": -8.16,
+            "eps_q3": -7.14,
+            "per": 33.56,
+            "roe": 6.33
         },
         {
             "ticker": "TFC",
@@ -5537,12 +5537,12 @@ const marketData = {
             "price_to_ath": 0.726,
             "days_since_ath": 1499,
             "ma_spread_percentile": 64.85,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 6.1,
+            "eps_q1": 5.49,
+            "eps_q2": 4.88,
+            "eps_q3": 4.27,
+            "per": 13.11,
+            "roe": 8.24
         },
         {
             "ticker": "FOXA",
@@ -5555,12 +5555,12 @@ const marketData = {
             "price_to_ath": 0.724,
             "days_since_ath": 50,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -38.6,
+            "eps_q1": -34.74,
+            "eps_q2": -30.88,
+            "eps_q3": -27.02,
+            "per": 13.27,
+            "roe": 16.82
         },
         {
             "ticker": "PPL",
@@ -5573,12 +5573,12 @@ const marketData = {
             "price_to_ath": 0.724,
             "days_since_ath": 6623,
             "ma_spread_percentile": 79.7,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 50.3,
+            "eps_q1": 45.27,
+            "eps_q2": 40.24,
+            "eps_q3": 35.21,
+            "per": 25.35,
+            "roe": 8.16
         },
         {
             "ticker": "PSA",
@@ -5591,12 +5591,12 @@ const marketData = {
             "price_to_ath": 0.724,
             "days_since_ath": 1408,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -17.5,
+            "eps_q1": -15.75,
+            "eps_q2": -14.0,
+            "eps_q3": -12.25,
+            "per": 33.88,
+            "roe": 18.76
         },
         {
             "ticker": "COO",
@@ -5627,12 +5627,12 @@ const marketData = {
             "price_to_ath": 0.714,
             "days_since_ath": 330,
             "ma_spread_percentile": 61.39,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 4.2,
+            "eps_q1": 3.78,
+            "eps_q2": 3.36,
+            "eps_q3": 2.94,
+            "per": 21.02,
+            "roe": 29.35
         },
         {
             "ticker": "CEG",
@@ -5717,12 +5717,12 @@ const marketData = {
             "price_to_ath": 0.703,
             "days_since_ath": 1408,
             "ma_spread_percentile": 18.32,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -68.7,
+            "eps_q1": -61.83,
+            "eps_q2": -54.96,
+            "eps_q3": -48.09,
+            "per": 24.57,
+            "roe": 12.23
         },
         {
             "ticker": "PODD",
@@ -5735,12 +5735,12 @@ const marketData = {
             "price_to_ath": 0.703,
             "days_since_ath": 99,
             "ma_spread_percentile": 78.22,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 0.9,
+            "eps_q1": 0.81,
+            "eps_q2": 0.72,
+            "eps_q3": 0.63,
+            "per": 71.46,
+            "roe": 18.12
         },
         {
             "ticker": "AWK",
@@ -5776,7 +5776,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -24.68
         },
         {
             "ticker": "SPGI",
@@ -5789,12 +5789,12 @@ const marketData = {
             "price_to_ath": 0.699,
             "days_since_ath": 197,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 28.9,
+            "eps_q1": 26.01,
+            "eps_q2": 23.12,
+            "eps_q3": 20.23,
+            "per": 27.63,
+            "roe": 13.09
         },
         {
             "ticker": "HST",
@@ -5807,12 +5807,12 @@ const marketData = {
             "price_to_ath": 0.697,
             "days_since_ath": 6952,
             "ma_spread_percentile": 94.55,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 25.0,
+            "eps_q1": 22.5,
+            "eps_q2": 20.0,
+            "eps_q3": 17.5,
+            "per": 18.64,
+            "roe": 11.49
         },
         {
             "ticker": "PGR",
@@ -5825,12 +5825,12 @@ const marketData = {
             "price_to_ath": 0.695,
             "days_since_ath": 344,
             "ma_spread_percentile": 60.89,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 25.2,
+            "eps_q1": 22.68,
+            "eps_q2": 20.16,
+            "eps_q3": 17.64,
+            "per": 10.59,
+            "roe": 40.45
         },
         {
             "ticker": "UBER",
@@ -5843,12 +5843,12 @@ const marketData = {
             "price_to_ath": 0.693,
             "days_since_ath": 155,
             "ma_spread_percentile": 90.59,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -95.7,
+            "eps_q1": -86.13,
+            "eps_q2": -76.56,
+            "eps_q3": -66.99,
+            "per": 14.95,
+            "roe": 39.93
         },
         {
             "ticker": "A",
@@ -5879,12 +5879,12 @@ const marketData = {
             "price_to_ath": 0.692,
             "days_since_ath": 211,
             "ma_spread_percentile": 96.04,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 59.5,
+            "eps_q1": 53.55,
+            "eps_q2": 47.6,
+            "eps_q3": 41.65,
+            "per": 24.04,
+            "roe": 34.39
         },
         {
             "ticker": "KMB",
@@ -5897,12 +5897,12 @@ const marketData = {
             "price_to_ath": 0.69,
             "days_since_ath": 2024,
             "ma_spread_percentile": 56.44,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 11.6,
+            "eps_q1": 10.44,
+            "eps_q2": 9.28,
+            "eps_q3": 8.12,
+            "per": 22.74,
+            "roe": 126.6
         },
         {
             "ticker": "IBM",
@@ -5915,12 +5915,12 @@ const marketData = {
             "price_to_ath": 0.687,
             "days_since_ath": 106,
             "ma_spread_percentile": 82.18,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 92.2,
+            "eps_q1": 82.98,
+            "eps_q2": 73.76,
+            "eps_q3": 64.54,
+            "per": 20.03,
+            "roe": 35.16
         },
         {
             "ticker": "PTC",
@@ -5933,12 +5933,12 @@ const marketData = {
             "price_to_ath": 0.687,
             "days_since_ath": 211,
             "ma_spread_percentile": 55.45,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 102.5,
+            "eps_q1": 92.25,
+            "eps_q2": 82.0,
+            "eps_q3": 71.75,
+            "per": 22.22,
+            "roe": 23.14
         },
         {
             "ticker": "ADM",
@@ -5973,8 +5973,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 18.11,
+            "roe": 21.08
         },
         {
             "ticker": "HBAN",
@@ -5987,12 +5987,12 @@ const marketData = {
             "price_to_ath": 0.684,
             "days_since_ath": 7015,
             "ma_spread_percentile": 0.0,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -2.1,
+            "eps_q1": -1.89,
+            "eps_q2": -1.68,
+            "eps_q3": -1.47,
+            "per": 12.29,
+            "roe": 10.1
         },
         {
             "ticker": "KVUE",
@@ -6005,12 +6005,12 @@ const marketData = {
             "price_to_ath": 0.682,
             "days_since_ath": 1016,
             "ma_spread_percentile": 59.41,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 12.6,
+            "eps_q1": 11.34,
+            "eps_q2": 10.08,
+            "eps_q3": 8.82,
+            "per": 24.93,
+            "roe": 14.39
         },
         {
             "ticker": "AVB",
@@ -6046,7 +6046,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -17.44
         },
         {
             "ticker": "VRSN",
@@ -6059,11 +6059,11 @@ const marketData = {
             "price_to_ath": 0.681,
             "days_since_ath": 211,
             "ma_spread_percentile": 83.66,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": 7.7,
+            "eps_q1": 6.93,
+            "eps_q2": 6.16,
+            "eps_q3": 5.39,
+            "per": 23.98,
             "roe": 0
         },
         {
@@ -6113,12 +6113,12 @@ const marketData = {
             "price_to_ath": 0.678,
             "days_since_ath": 1639,
             "ma_spread_percentile": 94.06,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 73.6,
+            "eps_q1": 66.24,
+            "eps_q2": 58.88,
+            "eps_q3": 51.52,
+            "per": 37.17,
+            "roe": 7.32
         },
         {
             "ticker": "EQR",
@@ -6131,12 +6131,12 @@ const marketData = {
             "price_to_ath": 0.671,
             "days_since_ath": 1408,
             "ma_spread_percentile": 60.4,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -8.8,
+            "eps_q1": -7.92,
+            "eps_q2": -7.04,
+            "eps_q3": -6.16,
+            "per": 21.54,
+            "roe": 10.02
         },
         {
             "ticker": "CVNA",
@@ -6203,12 +6203,12 @@ const marketData = {
             "price_to_ath": 0.659,
             "days_since_ath": 3270,
             "ma_spread_percentile": 0.0,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 48.7,
+            "eps_q1": 43.83,
+            "eps_q2": 38.96,
+            "eps_q3": 34.09,
+            "per": 15.73,
+            "roe": 29.87
         },
         {
             "ticker": "FTNT",
@@ -6221,12 +6221,12 @@ const marketData = {
             "price_to_ath": 0.658,
             "days_since_ath": 372,
             "ma_spread_percentile": 48.02,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -3.8,
+            "eps_q1": -3.42,
+            "eps_q2": -3.04,
+            "eps_q3": -2.66,
+            "per": 31.24,
+            "roe": 135.72
         },
         {
             "ticker": "EXR",
@@ -6239,12 +6239,12 @@ const marketData = {
             "price_to_ath": 0.657,
             "days_since_ath": 1520,
             "ma_spread_percentile": 77.23,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 9.5,
+            "eps_q1": 8.55,
+            "eps_q2": 7.6,
+            "eps_q3": 6.65,
+            "per": 33.65,
+            "roe": 7.01
         },
         {
             "ticker": "CTSH",
@@ -6293,12 +6293,12 @@ const marketData = {
             "price_to_ath": 0.65,
             "days_since_ath": 547,
             "ma_spread_percentile": 33.66,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -8.0,
+            "eps_q1": -7.2,
+            "eps_q2": -6.4,
+            "eps_q3": -5.6,
+            "per": 18.97,
+            "roe": 14.86
         },
         {
             "ticker": "MKC",
@@ -6311,12 +6311,12 @@ const marketData = {
             "price_to_ath": 0.648,
             "days_since_ath": 1450,
             "ma_spread_percentile": 58.42,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 5.3,
+            "eps_q1": 4.77,
+            "eps_q2": 4.24,
+            "eps_q3": 3.71,
+            "per": 23.73,
+            "roe": 14.24
         },
         {
             "ticker": "BR",
@@ -6347,12 +6347,12 @@ const marketData = {
             "price_to_ath": 0.646,
             "days_since_ath": 211,
             "ma_spread_percentile": 40.59,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -59.7,
+            "eps_q1": -53.73,
+            "eps_q2": -47.76,
+            "eps_q3": -41.79,
+            "per": 52.08,
+            "roe": 7.16
         },
         {
             "ticker": "PANW",
@@ -6365,12 +6365,12 @@ const marketData = {
             "price_to_ath": 0.645,
             "days_since_ath": 120,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 61.8,
+            "eps_q1": 55.62,
+            "eps_q2": 49.44,
+            "eps_q3": 43.26,
+            "per": 90.65,
+            "roe": 16.26
         },
         {
             "ticker": "FRT",
@@ -6383,12 +6383,12 @@ const marketData = {
             "price_to_ath": 0.638,
             "days_since_ath": 3501,
             "ma_spread_percentile": 89.6,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 98.0,
+            "eps_q1": 88.2,
+            "eps_q2": 78.4,
+            "eps_q3": 68.6,
+            "per": 23.32,
+            "roe": 12.23
         },
         {
             "ticker": "ADSK",
@@ -6437,12 +6437,12 @@ const marketData = {
             "price_to_ath": 0.633,
             "days_since_ath": 3081,
             "ma_spread_percentile": 97.52,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 20.8,
+            "eps_q1": 18.72,
+            "eps_q2": 16.64,
+            "eps_q3": 14.56,
+            "per": 22.32,
+            "roe": 26.9
         },
         {
             "ticker": "INTC",
@@ -6460,7 +6460,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": 0.02
         },
         {
             "ticker": "PLTR",
@@ -6473,12 +6473,12 @@ const marketData = {
             "price_to_ath": 0.629,
             "days_since_ath": 113,
             "ma_spread_percentile": 98.51,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 670.4,
+            "eps_q1": 603.36,
+            "eps_q2": 536.32,
+            "eps_q3": 469.28,
+            "per": 207.3,
+            "roe": 25.98
         },
         {
             "ticker": "AMT",
@@ -6509,12 +6509,12 @@ const marketData = {
             "price_to_ath": 0.625,
             "days_since_ath": 1478,
             "ma_spread_percentile": 89.6,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -76.3,
+            "eps_q1": -68.67,
+            "eps_q2": -61.04,
+            "eps_q3": -53.41,
+            "per": 112.43,
+            "roe": 1.26
         },
         {
             "ticker": "ADP",
@@ -6545,12 +6545,12 @@ const marketData = {
             "price_to_ath": 0.624,
             "days_since_ath": 939,
             "ma_spread_percentile": 86.14,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -52.1,
+            "eps_q1": -46.89,
+            "eps_q2": -41.68,
+            "eps_q3": -36.47,
+            "per": 239.55,
+            "roe": 1.5
         },
         {
             "ticker": "EXPE",
@@ -6563,12 +6563,12 @@ const marketData = {
             "price_to_ath": 0.621,
             "days_since_ath": 50,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -31.4,
+            "eps_q1": -28.26,
+            "eps_q2": -25.12,
+            "eps_q3": -21.98,
+            "per": 19.24,
+            "roe": 48.67
         },
         {
             "ticker": "GPC",
@@ -6585,8 +6585,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 252.52,
+            "roe": 1.5
         },
         {
             "ticker": "LEN",
@@ -6599,12 +6599,12 @@ const marketData = {
             "price_to_ath": 0.619,
             "days_since_ath": 526,
             "ma_spread_percentile": 55.45,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -55.3,
+            "eps_q1": -49.77,
+            "eps_q2": -44.24,
+            "eps_q3": -38.71,
+            "per": 14.56,
+            "roe": 8.41
         },
         {
             "ticker": "CRWD",
@@ -6639,8 +6639,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 33.07,
+            "roe": 9.38
         },
         {
             "ticker": "AJG",
@@ -6671,12 +6671,12 @@ const marketData = {
             "price_to_ath": 0.609,
             "days_since_ath": 526,
             "ma_spread_percentile": 75.25,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 1.0,
+            "eps_q1": 0.9,
+            "eps_q2": 0.8,
+            "eps_q3": 0.7,
+            "per": 35.49,
+            "roe": 13.76
         },
         {
             "ticker": "QCOM",
@@ -6689,12 +6689,12 @@ const marketData = {
             "price_to_ath": 0.609,
             "days_since_ath": 617,
             "ma_spread_percentile": 96.53,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -5.5,
+            "eps_q1": -4.95,
+            "eps_q2": -4.4,
+            "eps_q3": -3.85,
+            "per": 28.31,
+            "roe": 21.48
         },
         {
             "ticker": "APO",
@@ -6747,8 +6747,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 21.93,
+            "roe": 9.2
         },
         {
             "ticker": "IVZ",
@@ -6766,7 +6766,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -1.22
         },
         {
             "ticker": "ELV",
@@ -6851,12 +6851,12 @@ const marketData = {
             "price_to_ath": 0.576,
             "days_since_ath": 1520,
             "ma_spread_percentile": 10.89,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -65.5,
+            "eps_q1": -58.95,
+            "eps_q2": -52.4,
+            "eps_q3": -45.85,
+            "per": 35.18,
+            "roe": 7.65
         },
         {
             "ticker": "ARES",
@@ -6887,12 +6887,12 @@ const marketData = {
             "price_to_ath": 0.568,
             "days_since_ath": 1520,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 17.6,
+            "eps_q1": 15.84,
+            "eps_q2": 14.08,
+            "eps_q3": 12.32,
+            "per": 20.7,
+            "roe": 21.44
         },
         {
             "ticker": "ZBH",
@@ -6905,12 +6905,12 @@ const marketData = {
             "price_to_ath": 0.568,
             "days_since_ath": 1765,
             "ma_spread_percentile": 54.46,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -41.8,
+            "eps_q1": -37.62,
+            "eps_q2": -33.44,
+            "eps_q3": -29.26,
+            "per": 28.02,
+            "roe": 5.6
         },
         {
             "ticker": "NFLX",
@@ -6923,12 +6923,12 @@ const marketData = {
             "price_to_ath": 0.567,
             "days_since_ath": 239,
             "ma_spread_percentile": 60.4,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 29.4,
+            "eps_q1": 26.46,
+            "eps_q2": 23.52,
+            "eps_q3": 20.58,
+            "per": 30.05,
+            "roe": 42.76
         },
         {
             "ticker": "BX",
@@ -6959,12 +6959,12 @@ const marketData = {
             "price_to_ath": 0.564,
             "days_since_ath": 358,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -7.3,
+            "eps_q1": -6.57,
+            "eps_q2": -5.84,
+            "eps_q3": -5.11,
+            "per": 23.64,
+            "roe": 7.93
         },
         {
             "ticker": "VRSK",
@@ -6981,8 +6981,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 27.94,
+            "roe": 437.95
         },
         {
             "ticker": "INVH",
@@ -6995,12 +6995,12 @@ const marketData = {
             "price_to_ath": 0.56,
             "days_since_ath": 1520,
             "ma_spread_percentile": 20.3,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 1.0,
+            "eps_q1": 0.9,
+            "eps_q2": 0.8,
+            "eps_q3": 0.7,
+            "per": 27.01,
+            "roe": 6.09
         },
         {
             "ticker": "ABNB",
@@ -7103,12 +7103,12 @@ const marketData = {
             "price_to_ath": 0.542,
             "days_since_ath": 267,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -4.4,
+            "eps_q1": -3.96,
+            "eps_q2": -3.52,
+            "eps_q3": -3.08,
+            "per": 19.77,
+            "roe": 40.88
         },
         {
             "ticker": "KKR",
@@ -7121,12 +7121,12 @@ const marketData = {
             "price_to_ath": 0.541,
             "days_since_ath": 393,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 1.8,
+            "eps_q1": 1.62,
+            "eps_q2": 1.44,
+            "eps_q3": 1.26,
+            "per": 39.4,
+            "roe": 8.95
         },
         {
             "ticker": "FICO",
@@ -7139,11 +7139,11 @@ const marketData = {
             "price_to_ath": 0.533,
             "days_since_ath": 470,
             "ma_spread_percentile": 90.59,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": 3.8,
+            "eps_q1": 3.42,
+            "eps_q2": 3.04,
+            "eps_q3": 2.66,
+            "per": 47.4,
             "roe": 0
         },
         {
@@ -7234,7 +7234,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -20.19
         },
         {
             "ticker": "KEY",
@@ -7251,8 +7251,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 13.82,
+            "roe": 9.48
         },
         {
             "ticker": "IFF",
@@ -7270,7 +7270,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -2.65
         },
         {
             "ticker": "BA",
@@ -7301,12 +7301,12 @@ const marketData = {
             "price_to_ath": 0.514,
             "days_since_ath": 1814,
             "ma_spread_percentile": 69.8,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -6.0,
+            "eps_q1": -5.4,
+            "eps_q2": -4.8,
+            "eps_q3": -4.2,
+            "per": 15.38,
+            "roe": 12.02
         },
         {
             "ticker": "WST",
@@ -7319,12 +7319,12 @@ const marketData = {
             "price_to_ath": 0.514,
             "days_since_ath": 1632,
             "ma_spread_percentile": 86.63,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 1.5,
+            "eps_q1": 1.35,
+            "eps_q2": 1.2,
+            "eps_q3": 1.05,
+            "per": 35.97,
+            "roe": 16.86
         },
         {
             "ticker": "APP",
@@ -7355,11 +7355,11 @@ const marketData = {
             "price_to_ath": 0.51,
             "days_since_ath": 1520,
             "ma_spread_percentile": 53.96,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": -8.4,
+            "eps_q1": -7.56,
+            "eps_q2": -6.72,
+            "eps_q3": -5.88,
+            "per": 25.11,
             "roe": 0
         },
         {
@@ -7391,12 +7391,12 @@ const marketData = {
             "price_to_ath": 0.505,
             "days_since_ath": 1520,
             "ma_spread_percentile": 18.81,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 3.8,
+            "eps_q1": 3.42,
+            "eps_q2": 3.04,
+            "eps_q3": 2.66,
+            "per": 20.86,
+            "roe": 65.99
         },
         {
             "ticker": "EW",
@@ -7445,12 +7445,12 @@ const marketData = {
             "price_to_ath": 0.499,
             "days_since_ath": 1016,
             "ma_spread_percentile": 22.77,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -48.1,
+            "eps_q1": -43.29,
+            "eps_q2": -38.48,
+            "eps_q3": -33.67,
+            "per": 9.76,
+            "roe": 27.17
         },
         {
             "ticker": "UPS",
@@ -7463,12 +7463,12 @@ const marketData = {
             "price_to_ath": 0.492,
             "days_since_ath": 1485,
             "ma_spread_percentile": 89.11,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 4.1,
+            "eps_q1": 3.69,
+            "eps_q2": 3.28,
+            "eps_q3": 2.87,
+            "per": 17.53,
+            "roe": 33.77
         },
         {
             "ticker": "CRM",
@@ -7481,12 +7481,12 @@ const marketData = {
             "price_to_ath": 0.483,
             "days_since_ath": 449,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 36.6,
+            "eps_q1": 32.94,
+            "eps_q2": 29.28,
+            "eps_q3": 25.62,
+            "per": 23.82,
+            "roe": 12.18
         },
         {
             "ticker": "ACN",
@@ -7517,12 +7517,12 @@ const marketData = {
             "price_to_ath": 0.482,
             "days_since_ath": 519,
             "ma_spread_percentile": 20.3,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 14.4,
+            "eps_q1": 12.96,
+            "eps_q2": 11.52,
+            "eps_q3": 10.08,
+            "per": 21.27,
+            "roe": 30.44
         },
         {
             "ticker": "TYL",
@@ -7535,12 +7535,12 @@ const marketData = {
             "price_to_ath": 0.48,
             "days_since_ath": 379,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 0.5,
+            "eps_q1": 0.45,
+            "eps_q2": 0.4,
+            "eps_q3": 0.35,
+            "per": 44.03,
+            "roe": 8.9
         },
         {
             "ticker": "AXON",
@@ -7571,12 +7571,12 @@ const marketData = {
             "price_to_ath": 0.478,
             "days_since_ath": 1520,
             "ma_spread_percentile": 24.26,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 3.9,
+            "eps_q1": 3.51,
+            "eps_q2": 3.12,
+            "eps_q3": 2.73,
+            "per": 47.15,
+            "roe": 3.22
         },
         {
             "ticker": "CSGP",
@@ -7607,12 +7607,12 @@ const marketData = {
             "price_to_ath": 0.474,
             "days_since_ath": 4236,
             "ma_spread_percentile": 87.13,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -4.2,
+            "eps_q1": -3.78,
+            "eps_q2": -3.36,
+            "eps_q3": -2.94,
+            "per": 23.49,
+            "roe": 12.27
         },
         {
             "ticker": "CDW",
@@ -7643,12 +7643,12 @@ const marketData = {
             "price_to_ath": 0.467,
             "days_since_ath": 141,
             "ma_spread_percentile": 97.52,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -34.0,
+            "eps_q1": -30.6,
+            "eps_q2": -27.2,
+            "eps_q3": -23.8,
+            "per": 35.01,
+            "roe": 21.99
         },
         {
             "ticker": "LYB",
@@ -7666,7 +7666,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -6.95
         },
         {
             "ticker": "OXY",
@@ -7683,8 +7683,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 38.84,
+            "roe": 5.93
         },
         {
             "ticker": "HRL",
@@ -7701,8 +7701,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 28.92,
+            "roe": 6.0
         },
         {
             "ticker": "BEN",
@@ -7715,12 +7715,12 @@ const marketData = {
             "price_to_ath": 0.455,
             "days_since_ath": 4096,
             "ma_spread_percentile": 81.68,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 56.2,
+            "eps_q1": 50.58,
+            "eps_q2": 44.96,
+            "eps_q3": 39.34,
+            "per": 25.06,
+            "roe": 4.46
         },
         {
             "ticker": "CAG",
@@ -7751,12 +7751,12 @@ const marketData = {
             "price_to_ath": 0.448,
             "days_since_ath": 470,
             "ma_spread_percentile": 66.83,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -99.8,
+            "eps_q1": -89.82,
+            "eps_q2": -79.84,
+            "eps_q3": -69.86,
+            "per": 21.32,
+            "roe": 12.54
         },
         {
             "ticker": "DXCM",
@@ -7805,11 +7805,11 @@ const marketData = {
             "price_to_ath": 0.442,
             "days_since_ath": 1422,
             "ma_spread_percentile": 84.16,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": -12.3,
+            "eps_q1": -11.07,
+            "eps_q2": -9.84,
+            "eps_q3": -8.61,
+            "per": 6.92,
             "roe": 0
         },
         {
@@ -7823,12 +7823,12 @@ const marketData = {
             "price_to_ath": 0.442,
             "days_since_ath": 211,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -14.6,
+            "eps_q1": -13.14,
+            "eps_q2": -11.68,
+            "eps_q3": -10.22,
+            "per": 24.69,
+            "roe": 21.99
         },
         {
             "ticker": "TAP",
@@ -7841,12 +7841,12 @@ const marketData = {
             "price_to_ath": 0.441,
             "days_since_ath": 3424,
             "ma_spread_percentile": 62.38,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -17.2,
+            "eps_q1": -15.48,
+            "eps_q2": -13.76,
+            "eps_q3": -12.04,
             "per": 0,
-            "roe": 0
+            "roe": -18.17
         },
         {
             "ticker": "CNC",
@@ -7881,8 +7881,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 19.9,
+            "roe": 8.58
         },
         {
             "ticker": "KIM",
@@ -7895,12 +7895,12 @@ const marketData = {
             "price_to_ath": 0.437,
             "days_since_ath": 6945,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -9.0,
+            "eps_q1": -8.1,
+            "eps_q2": -7.2,
+            "eps_q3": -6.3,
+            "per": 28.55,
+            "roe": 5.54
         },
         {
             "ticker": "GNRC",
@@ -7917,8 +7917,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 84.87,
+            "roe": 6.28
         },
         {
             "ticker": "SLB",
@@ -7931,12 +7931,12 @@ const marketData = {
             "price_to_ath": 0.431,
             "days_since_ath": 4257,
             "ma_spread_percentile": 89.6,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -24.7,
+            "eps_q1": -22.23,
+            "eps_q2": -19.76,
+            "eps_q3": -17.29,
+            "per": 21.8,
+            "roe": 13.9
         },
         {
             "ticker": "WYNN",
@@ -7949,11 +7949,11 @@ const marketData = {
             "price_to_ath": 0.43,
             "days_since_ath": 4376,
             "ma_spread_percentile": 44.06,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": -63.9,
+            "eps_q1": -57.51,
+            "eps_q2": -51.12,
+            "eps_q3": -44.73,
+            "per": 34.16,
             "roe": 0
         },
         {
@@ -8003,12 +8003,12 @@ const marketData = {
             "price_to_ath": 0.421,
             "days_since_ath": 393,
             "ma_spread_percentile": 95.05,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 4.4,
+            "eps_q1": 3.96,
+            "eps_q2": 3.52,
+            "eps_q3": 3.08,
+            "per": 60.36,
+            "roe": 15.49
         },
         {
             "ticker": "TGT",
@@ -8021,12 +8021,12 @@ const marketData = {
             "price_to_ath": 0.421,
             "days_since_ath": 1562,
             "ma_spread_percentile": 82.67,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -19.3,
+            "eps_q1": -17.37,
+            "eps_q2": -15.44,
+            "eps_q3": -13.51,
+            "per": 13.74,
+            "roe": 25.09
         },
         {
             "ticker": "CCL",
@@ -8075,12 +8075,12 @@ const marketData = {
             "price_to_ath": 0.415,
             "days_since_ath": 729,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 30.6,
+            "eps_q1": 27.54,
+            "eps_q2": 24.48,
+            "eps_q3": 21.42,
+            "per": 54.75,
+            "roe": 7.34
         },
         {
             "ticker": "TROW",
@@ -8093,12 +8093,12 @@ const marketData = {
             "price_to_ath": 0.414,
             "days_since_ath": 1639,
             "ma_spread_percentile": 96.04,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 1.2,
+            "eps_q1": 1.08,
+            "eps_q2": 0.96,
+            "eps_q3": 0.84,
+            "per": 10.07,
+            "roe": 18.79
         },
         {
             "ticker": "BIIB",
@@ -8129,12 +8129,12 @@ const marketData = {
             "price_to_ath": 0.409,
             "days_since_ath": 169,
             "ma_spread_percentile": 45.54,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 94.7,
+            "eps_q1": 85.23,
+            "eps_q2": 75.76,
+            "eps_q3": 66.29,
+            "per": 26.61,
+            "roe": 69.03
         },
         {
             "ticker": "GDDY",
@@ -8147,12 +8147,12 @@ const marketData = {
             "price_to_ath": 0.406,
             "days_since_ath": 393,
             "ma_spread_percentile": 93.07,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 10.5,
+            "eps_q1": 9.45,
+            "eps_q2": 8.4,
+            "eps_q3": 7.35,
+            "per": 15.13,
+            "roe": 369.45
         },
         {
             "ticker": "TECH",
@@ -8205,8 +8205,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 17.11,
+            "roe": 23.16
         },
         {
             "ticker": "CPB",
@@ -8237,12 +8237,12 @@ const marketData = {
             "price_to_ath": 0.388,
             "days_since_ath": 1751,
             "ma_spread_percentile": 91.09,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -18.8,
+            "eps_q1": -16.92,
+            "eps_q2": -15.04,
+            "eps_q3": -13.16,
+            "per": 32.94,
+            "roe": 4.52
         },
         {
             "ticker": "FDS",
@@ -8255,12 +8255,12 @@ const marketData = {
             "price_to_ath": 0.381,
             "days_since_ath": 470,
             "ma_spread_percentile": 93.56,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 1.7,
+            "eps_q1": 1.53,
+            "eps_q2": 1.36,
+            "eps_q3": 1.19,
+            "per": 12.1,
+            "roe": 28.83
         },
         {
             "ticker": "ZBRA",
@@ -8273,12 +8273,12 @@ const marketData = {
             "price_to_ath": 0.376,
             "days_since_ath": 1541,
             "ma_spread_percentile": 11.39,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -57.1,
+            "eps_q1": -51.39,
+            "eps_q2": -45.68,
+            "eps_q3": -39.97,
+            "per": 28.24,
+            "roe": 11.68
         },
         {
             "ticker": "LVS",
@@ -8291,12 +8291,12 @@ const marketData = {
             "price_to_ath": 0.375,
             "days_since_ath": 6693,
             "ma_spread_percentile": 53.47,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 21.9,
+            "eps_q1": 19.71,
+            "eps_q2": 17.52,
+            "eps_q3": 15.33,
+            "per": 23.71,
+            "roe": 73.26
         },
         {
             "ticker": "POOL",
@@ -8309,12 +8309,12 @@ const marketData = {
             "price_to_ath": 0.375,
             "days_since_ath": 1562,
             "ma_spread_percentile": 22.77,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -15.3,
+            "eps_q1": -13.77,
+            "eps_q2": -12.24,
+            "eps_q3": -10.71,
+            "per": 19.92,
+            "roe": 33.06
         },
         {
             "ticker": "WBD",
@@ -8331,8 +8331,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 152.21,
+            "roe": 0.97
         },
         {
             "ticker": "MOH",
@@ -8349,8 +8349,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 17.51,
+            "roe": 11.02
         },
         {
             "ticker": "NCLH",
@@ -8363,12 +8363,12 @@ const marketData = {
             "price_to_ath": 0.365,
             "days_since_ath": 3767,
             "ma_spread_percentile": 15.35,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -11.7,
+            "eps_q1": -10.53,
+            "eps_q2": -9.36,
+            "eps_q3": -8.19,
+            "per": 16.9,
+            "roe": 39.87
         },
         {
             "ticker": "BF-B",
@@ -8417,12 +8417,12 @@ const marketData = {
             "price_to_ath": 0.36,
             "days_since_ath": 1765,
             "ma_spread_percentile": 52.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -61.6,
+            "eps_q1": -55.44,
+            "eps_q2": -49.28,
+            "eps_q3": -43.12,
+            "per": 12.06,
+            "roe": 4.82
         },
         {
             "ticker": "CRL",
@@ -8471,12 +8471,12 @@ const marketData = {
             "price_to_ath": 0.352,
             "days_since_ath": 1576,
             "ma_spread_percentile": 1.98,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -31.9,
+            "eps_q1": -28.71,
+            "eps_q2": -25.52,
+            "eps_q3": -22.33,
+            "per": 36.89,
+            "roe": 17.95
         },
         {
             "ticker": "LULU",
@@ -8489,12 +8489,12 @@ const marketData = {
             "price_to_ath": 0.345,
             "days_since_ath": 792,
             "ma_spread_percentile": 44.55,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -12.8,
+            "eps_q1": -11.52,
+            "eps_q2": -10.24,
+            "eps_q3": -8.96,
+            "per": 12.39,
+            "roe": 41.02
         },
         {
             "ticker": "DVN",
@@ -8525,12 +8525,12 @@ const marketData = {
             "price_to_ath": 0.341,
             "days_since_ath": 6714,
             "ma_spread_percentile": 3.96,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 86.5,
+            "eps_q1": 77.85,
+            "eps_q2": 69.2,
+            "eps_q3": 60.55,
+            "per": 45.07,
+            "roe": 14.89
         },
         {
             "ticker": "DOC",
@@ -8543,12 +8543,12 @@ const marketData = {
             "price_to_ath": 0.339,
             "days_since_ath": 4663,
             "ma_spread_percentile": 2.97,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 2406.4,
+            "eps_q1": 2165.76,
+            "eps_q2": 1925.12,
+            "eps_q3": 1684.48,
+            "per": 173.0,
+            "roe": 1.16
         },
         {
             "ticker": "HUM",
@@ -8565,8 +8565,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 16.95,
+            "roe": 7.04
         },
         {
             "ticker": "EL",
@@ -8584,7 +8584,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -4.34
         },
         {
             "ticker": "FIS",
@@ -8597,12 +8597,12 @@ const marketData = {
             "price_to_ath": 0.3,
             "days_since_ath": 2206,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 17.9,
+            "eps_q1": 16.11,
+            "eps_q2": 14.32,
+            "eps_q3": 12.53,
+            "per": 148.31,
+            "roe": 1.18
         },
         {
             "ticker": "SWKS",
@@ -8615,12 +8615,12 @@ const marketData = {
             "price_to_ath": 0.293,
             "days_since_ath": 1765,
             "ma_spread_percentile": 12.87,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -51.1,
+            "eps_q1": -45.99,
+            "eps_q2": -40.88,
+            "eps_q3": -35.77,
+            "per": 22.9,
+            "roe": 6.49
         },
         {
             "ticker": "WY",
@@ -8633,12 +8633,12 @@ const marketData = {
             "price_to_ath": 0.289,
             "days_since_ath": 6938,
             "ma_spread_percentile": 69.8,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -8.6,
+            "eps_q1": -7.74,
+            "eps_q2": -6.88,
+            "eps_q3": -6.02,
+            "per": 55.84,
+            "roe": 3.38
         },
         {
             "ticker": "CHTR",
@@ -8669,12 +8669,12 @@ const marketData = {
             "price_to_ath": 0.258,
             "days_since_ath": 3088,
             "ma_spread_percentile": 85.15,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -0.8,
+            "eps_q1": -0.72,
+            "eps_q2": -0.64,
+            "eps_q3": -0.56,
+            "per": 15.66,
+            "roe": 8.21
         },
         {
             "ticker": "KHC",
@@ -8687,12 +8687,12 @@ const marketData = {
             "price_to_ath": 0.251,
             "days_since_ath": 3298,
             "ma_spread_percentile": 15.35,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -69.5,
+            "eps_q1": -62.55,
+            "eps_q2": -55.6,
+            "eps_q3": -48.65,
             "per": 0,
-            "roe": 0
+            "roe": -12.84
         },
         {
             "ticker": "SMCI",
@@ -8705,12 +8705,12 @@ const marketData = {
             "price_to_ath": 0.25,
             "days_since_ath": 722,
             "ma_spread_percentile": 3.47,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 24.9,
+            "eps_q1": 22.41,
+            "eps_q2": 19.92,
+            "eps_q3": 17.43,
+            "per": 22.42,
+            "roe": 13.19
         },
         {
             "ticker": "IT",
@@ -8723,12 +8723,12 @@ const marketData = {
             "price_to_ath": 0.248,
             "days_since_ath": 386,
             "ma_spread_percentile": 86.14,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -39.2,
+            "eps_q1": -35.28,
+            "eps_q2": -31.36,
+            "eps_q3": -27.44,
+            "per": 15.01,
+            "roe": 86.86
         },
         {
             "ticker": "ALGN",
@@ -8763,7 +8763,7 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
+            "per": 9.21,
             "roe": 0
         },
         {
@@ -8795,12 +8795,12 @@ const marketData = {
             "price_to_ath": 0.235,
             "days_since_ath": 2948,
             "ma_spread_percentile": 63.86,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 7.5,
+            "eps_q1": 6.75,
+            "eps_q2": 6.0,
+            "eps_q3": 5.25,
+            "per": 25.66,
+            "roe": 6.29
         },
         {
             "ticker": "BAX",
@@ -8836,7 +8836,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -21.09
         },
         {
             "ticker": "PAYC",
@@ -8849,12 +8849,12 @@ const marketData = {
             "price_to_ath": 0.205,
             "days_since_ath": 1576,
             "ma_spread_percentile": 84.16,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 0.2,
+            "eps_q1": 0.18,
+            "eps_q2": 0.16,
+            "eps_q3": 0.14,
+            "per": 14.16,
+            "roe": 27.42
         },
         {
             "ticker": "C",
@@ -8921,12 +8921,12 @@ const marketData = {
             "price_to_ath": 0.176,
             "days_since_ath": 6462,
             "ma_spread_percentile": 63.86,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 236.7,
+            "eps_q1": 213.03,
+            "eps_q2": 189.36,
+            "eps_q3": 165.69,
+            "per": 7.44,
+            "roe": 10.12
         },
         {
             "ticker": "XYZ",
@@ -8957,12 +8957,12 @@ const marketData = {
             "price_to_ath": 0.171,
             "days_since_ath": 449,
             "ma_spread_percentile": 64.85,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 22.7,
+            "eps_q1": 20.43,
+            "eps_q2": 18.16,
+            "eps_q3": 15.89,
+            "per": 27.47,
+            "roe": 16.78
         },
         {
             "ticker": "MTCH",
@@ -8975,11 +8975,11 @@ const marketData = {
             "price_to_ath": 0.17,
             "days_since_ath": 1590,
             "ma_spread_percentile": 32.18,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": 32.4,
+            "eps_q1": 29.16,
+            "eps_q2": 25.92,
+            "eps_q3": 22.68,
+            "per": 12.97,
             "roe": 0
         },
         {
@@ -8993,12 +8993,12 @@ const marketData = {
             "price_to_ath": 0.142,
             "days_since_ath": 1674,
             "ma_spread_percentile": 97.52,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 28.2,
+            "eps_q1": 25.38,
+            "eps_q2": 22.56,
+            "eps_q3": 19.74,
+            "per": 8.14,
+            "roe": 25.73
         },
         {
             "ticker": "PSKY",
@@ -9015,8 +9015,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 352.0,
+            "roe": 1.28
         },
         {
             "ticker": "MRNA",
@@ -9034,7 +9034,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -28.87
         },
         {
             "ticker": "AIG",
@@ -9067,12 +9067,12 @@ const marketData = {
             "price_to_ath": 0.999,
             "days_since_ath": 1,
             "ma_spread_percentile": 76.73,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 22.2,
+            "eps_q1": 19.98,
+            "eps_q2": 17.76,
+            "eps_q3": 15.54,
+            "per": 24.37,
+            "roe": 9.92
         },
         {
             "ticker": "MNST",
@@ -9085,12 +9085,12 @@ const marketData = {
             "price_to_ath": 0.998,
             "days_since_ath": 1,
             "ma_spread_percentile": 73.27,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 41.4,
+            "eps_q1": 37.26,
+            "eps_q2": 33.12,
+            "eps_q3": 28.98,
+            "per": 48.12,
+            "roe": 25.54
         },
         {
             "ticker": "CCEP",
@@ -9103,12 +9103,12 @@ const marketData = {
             "price_to_ath": 0.996,
             "days_since_ath": 1,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 65.7,
+            "eps_q1": 59.13,
+            "eps_q2": 52.56,
+            "eps_q3": 45.99,
+            "per": 21.33,
+            "roe": 22.89
         },
         {
             "ticker": "ASML",
@@ -9121,12 +9121,12 @@ const marketData = {
             "price_to_ath": 0.995,
             "days_since_ath": 29,
             "ma_spread_percentile": 91.09,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 5.4,
+            "eps_q1": 4.86,
+            "eps_q2": 4.32,
+            "eps_q3": 3.78,
+            "per": 50.77,
+            "roe": 50.46
         },
         {
             "ticker": "LIN",
@@ -9139,12 +9139,12 @@ const marketData = {
             "price_to_ath": 0.995,
             "days_since_ath": 1,
             "ma_spread_percentile": 98.51,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -11.3,
+            "eps_q1": -10.17,
+            "eps_q2": -9.04,
+            "eps_q3": -7.91,
+            "per": 34.12,
+            "roe": 17.82
         },
         {
             "ticker": "AEP",
@@ -9157,12 +9157,12 @@ const marketData = {
             "price_to_ath": 0.994,
             "days_since_ath": 8,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -12.3,
+            "eps_q1": -11.07,
+            "eps_q2": -9.84,
+            "eps_q3": -8.61,
+            "per": 19.85,
+            "roe": 12.49
         },
         {
             "ticker": "ROST",
@@ -9175,12 +9175,12 @@ const marketData = {
             "price_to_ath": 0.993,
             "days_since_ath": 8,
             "ma_spread_percentile": 49.01,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 4.7,
+            "eps_q1": 4.23,
+            "eps_q2": 3.76,
+            "eps_q3": 3.29,
+            "per": 31.55,
+            "roe": 37.43
         },
         {
             "ticker": "ADI",
@@ -9193,12 +9193,12 @@ const marketData = {
             "price_to_ath": 0.992,
             "days_since_ath": 1,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 112.3,
+            "eps_q1": 101.07,
+            "eps_q2": 89.84,
+            "eps_q3": 78.61,
+            "per": 78.05,
+            "roe": 7.86
         },
         {
             "ticker": "HON",
@@ -9211,12 +9211,12 @@ const marketData = {
             "price_to_ath": 0.988,
             "days_since_ath": 1,
             "ma_spread_percentile": 97.52,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -77.0,
+            "eps_q1": -69.3,
+            "eps_q2": -61.6,
+            "eps_q3": -53.9,
+            "per": 32.15,
+            "roe": 26.14
         },
         {
             "ticker": "CSX",
@@ -9229,12 +9229,12 @@ const marketData = {
             "price_to_ath": 0.987,
             "days_since_ath": 1,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -1.8,
+            "eps_q1": -1.62,
+            "eps_q2": -1.44,
+            "eps_q3": -1.26,
+            "per": 27.25,
+            "roe": 22.51
         },
         {
             "ticker": "AMAT",
@@ -9247,12 +9247,12 @@ const marketData = {
             "price_to_ath": 0.986,
             "days_since_ath": 1,
             "ma_spread_percentile": 98.02,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 71.0,
+            "eps_q1": 63.9,
+            "eps_q2": 56.8,
+            "eps_q3": 49.7,
+            "per": 38.31,
+            "roe": 38.86
         },
         {
             "ticker": "AMGN",
@@ -9265,12 +9265,12 @@ const marketData = {
             "price_to_ath": 0.985,
             "days_since_ath": 22,
             "ma_spread_percentile": 92.08,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 112.6,
+            "eps_q1": 101.34,
+            "eps_q2": 90.08,
+            "eps_q3": 78.82,
+            "per": 26.66,
+            "roe": 106.1
         },
         {
             "ticker": "EA",
@@ -9283,12 +9283,12 @@ const marketData = {
             "price_to_ath": 0.978,
             "days_since_ath": 57,
             "ma_spread_percentile": 39.6,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -70.0,
+            "eps_q1": -63.0,
+            "eps_q2": -56.0,
+            "eps_q3": -49.0,
+            "per": 75.09,
+            "roe": 10.03
         },
         {
             "ticker": "FER",
@@ -9301,12 +9301,12 @@ const marketData = {
             "price_to_ath": 0.969,
             "days_since_ath": 15,
             "ma_spread_percentile": 91.58,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 30.4,
+            "eps_q1": 27.36,
+            "eps_q2": 24.32,
+            "eps_q3": 21.28,
+            "per": 12.16,
+            "roe": 53.86
         },
         {
             "ticker": "LRCX",
@@ -9319,12 +9319,12 @@ const marketData = {
             "price_to_ath": 0.962,
             "days_since_ath": 29,
             "ma_spread_percentile": 88.12,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 33.8,
+            "eps_q1": 30.42,
+            "eps_q2": 27.04,
+            "eps_q3": 23.66,
+            "per": 49.75,
+            "roe": 65.56
         },
         {
             "ticker": "PCAR",
@@ -9337,12 +9337,12 @@ const marketData = {
             "price_to_ath": 0.956,
             "days_since_ath": 22,
             "ma_spread_percentile": 76.73,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -36.1,
+            "eps_q1": -32.49,
+            "eps_q2": -28.88,
+            "eps_q3": -25.27,
+            "per": 27.95,
+            "roe": 12.92
         },
         {
             "ticker": "GILD",
@@ -9355,12 +9355,12 @@ const marketData = {
             "price_to_ath": 0.953,
             "days_since_ath": 15,
             "ma_spread_percentile": 98.02,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 22.4,
+            "eps_q1": 20.16,
+            "eps_q2": 17.92,
+            "eps_q3": 15.68,
+            "per": 22.07,
+            "roe": 40.66
         },
         {
             "ticker": "MPWR",
@@ -9373,12 +9373,12 @@ const marketData = {
             "price_to_ath": 0.952,
             "days_since_ath": 22,
             "ma_spread_percentile": 95.54,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -88.3,
+            "eps_q1": -79.47,
+            "eps_q2": -70.64,
+            "eps_q3": -61.81,
+            "per": 93.48,
+            "roe": 17.94
         },
         {
             "ticker": "TXN",
@@ -9391,12 +9391,12 @@ const marketData = {
             "price_to_ath": 0.95,
             "days_since_ath": 15,
             "ma_spread_percentile": 95.54,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -3.5,
+            "eps_q1": -3.15,
+            "eps_q2": -2.8,
+            "eps_q3": -2.45,
+            "per": 40.34,
+            "roe": 30.15
         },
         {
             "ticker": "WMT",
@@ -9409,12 +9409,12 @@ const marketData = {
             "price_to_ath": 0.934,
             "days_since_ath": 8,
             "ma_spread_percentile": 97.03,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -19.4,
+            "eps_q1": -17.46,
+            "eps_q2": -15.52,
+            "eps_q3": -13.58,
+            "per": 46.08,
+            "roe": 21.85
         },
         {
             "ticker": "MAR",
@@ -9427,11 +9427,11 @@ const marketData = {
             "price_to_ath": 0.926,
             "days_since_ath": 15,
             "ma_spread_percentile": 99.01,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": -2.2,
+            "eps_q1": -1.98,
+            "eps_q2": -1.76,
+            "eps_q3": -1.54,
+            "per": 35.99,
             "roe": 0
         },
         {
@@ -9445,12 +9445,12 @@ const marketData = {
             "price_to_ath": 0.925,
             "days_since_ath": 477,
             "ma_spread_percentile": 18.32,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 30.5,
+            "eps_q1": 27.45,
+            "eps_q2": 24.4,
+            "eps_q3": 21.35,
+            "per": 31.44,
+            "roe": 22.54
         },
         {
             "ticker": "MU",
@@ -9463,12 +9463,12 @@ const marketData = {
             "price_to_ath": 0.924,
             "days_since_ath": 29,
             "ma_spread_percentile": 88.12,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 180.2,
+            "eps_q1": 162.18,
+            "eps_q2": 144.16,
+            "eps_q3": 126.14,
+            "per": 40.02,
+            "roe": 22.55
         },
         {
             "ticker": "AAPL",
@@ -9481,12 +9481,12 @@ const marketData = {
             "price_to_ath": 0.922,
             "days_since_ath": 85,
             "ma_spread_percentile": 0.0,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 15.9,
+            "eps_q1": 14.31,
+            "eps_q2": 12.72,
+            "eps_q3": 11.13,
+            "per": 33.65,
+            "roe": 152.02
         },
         {
             "ticker": "COST",
@@ -9499,12 +9499,12 @@ const marketData = {
             "price_to_ath": 0.914,
             "days_since_ath": 379,
             "ma_spread_percentile": 96.53,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 11.3,
+            "eps_q1": 10.17,
+            "eps_q2": 9.04,
+            "eps_q3": 7.91,
+            "per": 52.9,
+            "roe": 30.33
         },
         {
             "ticker": "WDC",
@@ -9521,8 +9521,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 26.53,
+            "roe": 41.13
         },
         {
             "ticker": "NVDA",
@@ -9535,12 +9535,12 @@ const marketData = {
             "price_to_ath": 0.903,
             "days_since_ath": 120,
             "ma_spread_percentile": 25.25,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 65.3,
+            "eps_q1": 58.77,
+            "eps_q2": 52.24,
+            "eps_q3": 45.71,
+            "per": 47.41,
+            "roe": 107.36
         },
         {
             "ticker": "GOOGL",
@@ -9553,12 +9553,12 @@ const marketData = {
             "price_to_ath": 0.893,
             "days_since_ath": 22,
             "ma_spread_percentile": 12.87,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 29.8,
+            "eps_q1": 26.82,
+            "eps_q2": 23.84,
+            "eps_q3": 20.86,
+            "per": 28.81,
+            "roe": 35.71
         },
         {
             "ticker": "GOOG",
@@ -9571,12 +9571,12 @@ const marketData = {
             "price_to_ath": 0.89,
             "days_since_ath": 22,
             "ma_spread_percentile": 17.33,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 29.8,
+            "eps_q1": 26.82,
+            "eps_q2": 23.84,
+            "eps_q3": 20.86,
+            "per": 28.81,
+            "roe": 35.71
         },
         {
             "ticker": "FAST",
@@ -9589,12 +9589,12 @@ const marketData = {
             "price_to_ath": 0.89,
             "days_since_ath": 183,
             "ma_spread_percentile": 62.87,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 12.2,
+            "eps_q1": 10.98,
+            "eps_q2": 9.76,
+            "eps_q3": 8.54,
+            "per": 41.33,
+            "roe": 33.29
         },
         {
             "ticker": "STX",
@@ -9607,11 +9607,11 @@ const marketData = {
             "price_to_ath": 0.886,
             "days_since_ath": 15,
             "ma_spread_percentile": 93.56,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": 76.5,
+            "eps_q1": 68.85,
+            "eps_q2": 61.2,
+            "eps_q3": 53.55,
+            "per": 46.09,
             "roe": 0
         },
         {
@@ -9625,12 +9625,12 @@ const marketData = {
             "price_to_ath": 0.885,
             "days_since_ath": 379,
             "ma_spread_percentile": 52.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -18.3,
+            "eps_q1": -16.47,
+            "eps_q2": -14.64,
+            "eps_q3": -12.81,
+            "per": 18.43,
+            "roe": 22.38
         },
         {
             "ticker": "CSCO",
@@ -9643,12 +9643,12 @@ const marketData = {
             "price_to_ath": 0.882,
             "days_since_ath": 15,
             "ma_spread_percentile": 55.45,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 30.8,
+            "eps_q1": 27.72,
+            "eps_q2": 24.64,
+            "eps_q3": 21.56,
+            "per": 27.96,
+            "roe": 23.75
         },
         {
             "ticker": "KLAC",
@@ -9661,12 +9661,12 @@ const marketData = {
             "price_to_ath": 0.879,
             "days_since_ath": 29,
             "ma_spread_percentile": 56.93,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 39.0,
+            "eps_q1": 35.1,
+            "eps_q2": 31.2,
+            "eps_q3": 27.3,
+            "per": 43.3,
+            "roe": 100.73
         },
         {
             "ticker": "ORLY",
@@ -9679,11 +9679,11 @@ const marketData = {
             "price_to_ath": 0.877,
             "days_since_ath": 148,
             "ma_spread_percentile": 26.73,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": 9.8,
+            "eps_q1": 8.82,
+            "eps_q2": 7.84,
+            "eps_q3": 6.86,
+            "per": 32.1,
             "roe": 0
         },
         {
@@ -9697,12 +9697,12 @@ const marketData = {
             "price_to_ath": 0.865,
             "days_since_ath": 267,
             "ma_spread_percentile": 42.08,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 10.4,
+            "eps_q1": 9.36,
+            "eps_q2": 8.32,
+            "eps_q3": 7.28,
+            "per": 42.93,
+            "roe": 43.4
         },
         {
             "ticker": "PEP",
@@ -9715,12 +9715,12 @@ const marketData = {
             "price_to_ath": 0.855,
             "days_since_ath": 1016,
             "ma_spread_percentile": 99.01,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 66.8,
+            "eps_q1": 60.12,
+            "eps_q2": 53.44,
+            "eps_q3": 46.76,
+            "per": 28.1,
+            "roe": 42.85
         },
         {
             "ticker": "ODFL",
@@ -9733,12 +9733,12 @@ const marketData = {
             "price_to_ath": 0.831,
             "days_since_ath": 470,
             "ma_spread_percentile": 93.56,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -12.8,
+            "eps_q1": -11.52,
+            "eps_q2": -10.24,
+            "eps_q3": -8.96,
+            "per": 39.98,
+            "roe": 23.93
         },
         {
             "ticker": "FANG",
@@ -9751,12 +9751,12 @@ const marketData = {
             "price_to_ath": 0.81,
             "days_since_ath": 589,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 54.5,
+            "eps_q1": 49.05,
+            "eps_q2": 43.6,
+            "eps_q3": 38.15,
+            "per": 12.21,
+            "roe": 10.9
         },
         {
             "ticker": "IDXX",
@@ -9769,12 +9769,12 @@ const marketData = {
             "price_to_ath": 0.809,
             "days_since_ath": 92,
             "ma_spread_percentile": 65.35,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 14.8,
+            "eps_q1": 13.32,
+            "eps_q2": 11.84,
+            "eps_q3": 10.36,
+            "per": 47.6,
+            "roe": 66.2
         },
         {
             "ticker": "TSLA",
@@ -9787,12 +9787,12 @@ const marketData = {
             "price_to_ath": 0.802,
             "days_since_ath": 64,
             "ma_spread_percentile": 64.36,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -60.5,
+            "eps_q1": -54.45,
+            "eps_q2": -48.4,
+            "eps_q3": -42.35,
+            "per": 370.21,
+            "roe": 4.93
         },
         {
             "ticker": "META",
@@ -9805,12 +9805,12 @@ const marketData = {
             "price_to_ath": 0.8,
             "days_since_ath": 197,
             "ma_spread_percentile": 13.37,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 9.3,
+            "eps_q1": 8.37,
+            "eps_q2": 7.44,
+            "eps_q3": 6.51,
+            "per": 27.11,
+            "roe": 30.24
         },
         {
             "ticker": "ISRG",
@@ -9823,12 +9823,12 @@ const marketData = {
             "price_to_ath": 0.799,
             "days_since_ath": 400,
             "ma_spread_percentile": 81.68,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 15.9,
+            "eps_q1": 14.31,
+            "eps_q2": 12.72,
+            "eps_q3": 11.13,
+            "per": 62.53,
+            "roe": 16.69
         },
         {
             "ticker": "AVGO",
@@ -9841,12 +9841,12 @@ const marketData = {
             "price_to_ath": 0.797,
             "days_since_ath": 78,
             "ma_spread_percentile": 6.93,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 172.7,
+            "eps_q1": 155.43,
+            "eps_q2": 138.16,
+            "eps_q3": 120.89,
+            "per": 69.4,
+            "roe": 31.05
         },
         {
             "ticker": "TMUS",
@@ -9859,12 +9859,12 @@ const marketData = {
             "price_to_ath": 0.796,
             "days_since_ath": 358,
             "ma_spread_percentile": 56.93,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -29.5,
+            "eps_q1": -26.55,
+            "eps_q2": -23.6,
+            "eps_q3": -20.65,
+            "per": 22.63,
+            "roe": 18.18
         },
         {
             "ticker": "AMZN",
@@ -9877,12 +9877,12 @@ const marketData = {
             "price_to_ath": 0.794,
             "days_since_ath": 113,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 5.9,
+            "eps_q1": 5.31,
+            "eps_q2": 4.72,
+            "eps_q3": 4.13,
+            "per": 28.67,
+            "roe": 22.29
         },
         {
             "ticker": "NXPI",
@@ -9895,12 +9895,12 @@ const marketData = {
             "price_to_ath": 0.781,
             "days_since_ath": 589,
             "ma_spread_percentile": 25.74,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -8.1,
+            "eps_q1": -7.29,
+            "eps_q2": -6.48,
+            "eps_q3": -5.67,
+            "per": 29.08,
+            "roe": 20.7
         },
         {
             "ticker": "MDLZ",
@@ -9913,12 +9913,12 @@ const marketData = {
             "price_to_ath": 0.768,
             "days_since_ath": 1037,
             "ma_spread_percentile": 84.65,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -61.9,
+            "eps_q1": -55.71,
+            "eps_q2": -49.52,
+            "eps_q3": -43.33,
+            "per": 31.95,
+            "roe": 9.33
         },
         {
             "ticker": "MCHP",
@@ -9936,7 +9936,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -1.09
         },
         {
             "ticker": "SBUX",
@@ -9949,11 +9949,11 @@ const marketData = {
             "price_to_ath": 0.75,
             "days_since_ath": 1681,
             "ma_spread_percentile": 76.73,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": -62.4,
+            "eps_q1": -56.16,
+            "eps_q2": -49.92,
+            "eps_q3": -43.68,
+            "per": 78.98,
             "roe": 0
         },
         {
@@ -9972,7 +9972,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -249.28
         },
         {
             "ticker": "CDNS",
@@ -9985,12 +9985,12 @@ const marketData = {
             "price_to_ath": 0.743,
             "days_since_ath": 211,
             "ma_spread_percentile": 65.84,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 14.1,
+            "eps_q1": 12.69,
+            "eps_q2": 11.28,
+            "eps_q3": 9.87,
+            "per": 71.93,
+            "roe": 21.86
         },
         {
             "ticker": "TTWO",
@@ -10008,7 +10008,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -86.22
         },
         {
             "ticker": "AMD",
@@ -10021,12 +10021,12 @@ const marketData = {
             "price_to_ath": 0.736,
             "days_since_ath": 120,
             "ma_spread_percentile": 24.26,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 213.5,
+            "eps_q1": 192.15,
+            "eps_q2": 170.8,
+            "eps_q3": 149.45,
+            "per": 75.33,
+            "roe": 7.08
         },
         {
             "ticker": "EXC",
@@ -10039,12 +10039,12 @@ const marketData = {
             "price_to_ath": 0.733,
             "days_since_ath": 6441,
             "ma_spread_percentile": 85.64,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -8.2,
+            "eps_q1": -7.38,
+            "eps_q2": -6.56,
+            "eps_q3": -5.74,
+            "per": 17.66,
+            "roe": 9.94
         },
         {
             "ticker": "CEG",
@@ -10057,12 +10057,12 @@ const marketData = {
             "price_to_ath": 0.712,
             "days_since_ath": 134,
             "ma_spread_percentile": 76.73,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -22.5,
+            "eps_q1": -20.25,
+            "eps_q2": -18.0,
+            "eps_q3": -15.75,
+            "per": 33.65,
+            "roe": 19.84
         },
         {
             "ticker": "MELI",
@@ -10075,12 +10075,12 @@ const marketData = {
             "price_to_ath": 0.705,
             "days_since_ath": 239,
             "ma_spread_percentile": 21.78,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 6.0,
+            "eps_q1": 5.4,
+            "eps_q2": 4.8,
+            "eps_q3": 4.2,
+            "per": 45.45,
+            "roe": 40.65
         },
         {
             "ticker": "MSFT",
@@ -10093,12 +10093,12 @@ const marketData = {
             "price_to_ath": 0.692,
             "days_since_ath": 211,
             "ma_spread_percentile": 96.04,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 59.5,
+            "eps_q1": 53.55,
+            "eps_q2": 47.6,
+            "eps_q3": 41.65,
+            "per": 24.04,
+            "roe": 34.39
         },
         {
             "ticker": "ALNY",
@@ -10115,8 +10115,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 140.75,
+            "roe": 73.28
         },
         {
             "ticker": "BKNG",
@@ -10129,11 +10129,11 @@ const marketData = {
             "price_to_ath": 0.663,
             "days_since_ath": 232,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
+            "eps_q0": 33.7,
+            "eps_q1": 30.33,
+            "eps_q2": 26.96,
+            "eps_q3": 23.59,
+            "per": 25.19,
             "roe": 0
         },
         {
@@ -10147,12 +10147,12 @@ const marketData = {
             "price_to_ath": 0.658,
             "days_since_ath": 372,
             "ma_spread_percentile": 48.02,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -3.8,
+            "eps_q1": -3.42,
+            "eps_q2": -3.04,
+            "eps_q3": -2.66,
+            "per": 31.24,
+            "roe": 135.72
         },
         {
             "ticker": "ARM",
@@ -10165,12 +10165,12 @@ const marketData = {
             "price_to_ath": 0.656,
             "days_since_ath": 596,
             "ma_spread_percentile": 22.77,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -11.5,
+            "eps_q1": -10.35,
+            "eps_q2": -9.2,
+            "eps_q3": -8.05,
+            "per": 162.87,
+            "roe": 11.27
         },
         {
             "ticker": "CTSH",
@@ -10183,12 +10183,12 @@ const marketData = {
             "price_to_ath": 0.654,
             "days_since_ath": 1436,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 18.7,
+            "eps_q1": 16.83,
+            "eps_q2": 14.96,
+            "eps_q3": 13.09,
+            "per": 13.41,
+            "roe": 15.16
         },
         {
             "ticker": "REGN",
@@ -10201,12 +10201,12 @@ const marketData = {
             "price_to_ath": 0.65,
             "days_since_ath": 547,
             "ma_spread_percentile": 33.66,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -8.0,
+            "eps_q1": -7.2,
+            "eps_q2": -6.4,
+            "eps_q3": -5.6,
+            "per": 18.97,
+            "roe": 14.86
         },
         {
             "ticker": "SNPS",
@@ -10219,12 +10219,12 @@ const marketData = {
             "price_to_ath": 0.646,
             "days_since_ath": 211,
             "ma_spread_percentile": 40.59,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -59.7,
+            "eps_q1": -53.73,
+            "eps_q2": -47.76,
+            "eps_q3": -41.79,
+            "per": 52.08,
+            "roe": 7.16
         },
         {
             "ticker": "PANW",
@@ -10237,12 +10237,12 @@ const marketData = {
             "price_to_ath": 0.645,
             "days_since_ath": 120,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 61.8,
+            "eps_q1": 55.62,
+            "eps_q2": 49.44,
+            "eps_q3": 43.26,
+            "per": 90.65,
+            "roe": 16.26
         },
         {
             "ticker": "SHOP",
@@ -10255,30 +10255,12 @@ const marketData = {
             "price_to_ath": 0.644,
             "days_since_ath": 120,
             "ma_spread_percentile": 96.53,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "BKR",
-            "name": "Baker Hughes",
-            "industry": "Energy",
-            "ath": 100.29,
-            "lowest_after_ath": 9.12,
-            "price": 63.67,
-            "correction_ratio": 0.909,
-            "price_to_ath": 0.635,
-            "days_since_ath": 6707,
-            "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -42.5,
+            "eps_q1": -38.25,
+            "eps_q2": -34.0,
+            "eps_q3": -29.75,
+            "per": 124.77,
+            "roe": 9.84
         },
         {
             "ticker": "ADSK",
@@ -10291,12 +10273,30 @@ const marketData = {
             "price_to_ath": 0.635,
             "days_since_ath": 1646,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 24.7,
+            "eps_q1": 22.23,
+            "eps_q2": 19.76,
+            "eps_q3": 17.29,
+            "per": 42.37,
+            "roe": 40.33
+        },
+        {
+            "ticker": "BKR",
+            "name": "Baker Hughes",
+            "industry": "Energy",
+            "ath": 100.29,
+            "lowest_after_ath": 9.12,
+            "price": 63.67,
+            "correction_ratio": 0.909,
+            "price_to_ath": 0.635,
+            "days_since_ath": 6707,
+            "ma_spread_percentile": 99.5,
+            "eps_q0": -25.7,
+            "eps_q1": -23.13,
+            "eps_q2": -20.56,
+            "eps_q3": -17.99,
+            "per": 24.49,
+            "roe": 14.55
         },
         {
             "ticker": "INTC",
@@ -10314,7 +10314,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": 0.02
         },
         {
             "ticker": "PLTR",
@@ -10327,12 +10327,12 @@ const marketData = {
             "price_to_ath": 0.629,
             "days_since_ath": 113,
             "ma_spread_percentile": 98.51,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 670.4,
+            "eps_q1": 603.36,
+            "eps_q2": 536.32,
+            "eps_q3": 469.28,
+            "per": 207.3,
+            "roe": 25.98
         },
         {
             "ticker": "ADP",
@@ -10345,12 +10345,12 @@ const marketData = {
             "price_to_ath": 0.624,
             "days_since_ath": 267,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 10.3,
+            "eps_q1": 9.27,
+            "eps_q2": 8.24,
+            "eps_q3": 7.21,
+            "per": 19.76,
+            "roe": 73.84
         },
         {
             "ticker": "CRWD",
@@ -10368,7 +10368,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -8.81
         },
         {
             "ticker": "MRVL",
@@ -10385,8 +10385,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 27.39,
+            "roe": 18.04
         },
         {
             "ticker": "QCOM",
@@ -10399,12 +10399,12 @@ const marketData = {
             "price_to_ath": 0.609,
             "days_since_ath": 617,
             "ma_spread_percentile": 96.53,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -5.5,
+            "eps_q1": -4.95,
+            "eps_q2": -4.4,
+            "eps_q3": -3.85,
+            "per": 28.31,
+            "roe": 21.48
         },
         {
             "ticker": "DASH",
@@ -10417,12 +10417,12 @@ const marketData = {
             "price_to_ath": 0.577,
             "days_since_ath": 134,
             "ma_spread_percentile": 91.58,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 51.1,
+            "eps_q1": 45.99,
+            "eps_q2": 40.88,
+            "eps_q3": 35.77,
+            "per": 83.16,
+            "roe": 10.44
         },
         {
             "ticker": "NFLX",
@@ -10435,12 +10435,12 @@ const marketData = {
             "price_to_ath": 0.567,
             "days_since_ath": 239,
             "ma_spread_percentile": 60.4,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 29.4,
+            "eps_q1": 26.46,
+            "eps_q2": 23.52,
+            "eps_q3": 20.58,
+            "per": 30.05,
+            "roe": 42.76
         },
         {
             "ticker": "ROP",
@@ -10453,12 +10453,12 @@ const marketData = {
             "price_to_ath": 0.564,
             "days_since_ath": 358,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -7.3,
+            "eps_q1": -6.57,
+            "eps_q2": -5.84,
+            "eps_q3": -5.11,
+            "per": 23.64,
+            "roe": 7.93
         },
         {
             "ticker": "VRSK",
@@ -10475,8 +10475,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 27.94,
+            "roe": 437.95
         },
         {
             "ticker": "ABNB",
@@ -10489,12 +10489,12 @@ const marketData = {
             "price_to_ath": 0.559,
             "days_since_ath": 1842,
             "ma_spread_percentile": 81.68,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -26.0,
+            "eps_q1": -23.4,
+            "eps_q2": -20.8,
+            "eps_q3": -18.2,
+            "per": 30.51,
+            "roe": 30.23
         },
         {
             "ticker": "CPRT",
@@ -10507,12 +10507,12 @@ const marketData = {
             "price_to_ath": 0.549,
             "days_since_ath": 456,
             "ma_spread_percentile": 21.78,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -9.5,
+            "eps_q1": -8.55,
+            "eps_q2": -7.6,
+            "eps_q3": -6.65,
+            "per": 21.69,
+            "roe": 17.13
         },
         {
             "ticker": "CMCSA",
@@ -10525,12 +10525,12 @@ const marketData = {
             "price_to_ath": 0.546,
             "days_since_ath": 1639,
             "ma_spread_percentile": 95.05,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -54.6,
+            "eps_q1": -49.14,
+            "eps_q2": -43.68,
+            "eps_q3": -38.22,
+            "per": 5.87,
+            "roe": 21.41
         },
         {
             "ticker": "PAYX",
@@ -10543,12 +10543,12 @@ const marketData = {
             "price_to_ath": 0.542,
             "days_since_ath": 267,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -4.4,
+            "eps_q1": -3.96,
+            "eps_q2": -3.52,
+            "eps_q3": -3.08,
+            "per": 19.77,
+            "roe": 40.88
         },
         {
             "ticker": "APP",
@@ -10561,12 +10561,12 @@ const marketData = {
             "price_to_ath": 0.51,
             "days_since_ath": 148,
             "ma_spread_percentile": 95.05,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 84.0,
+            "eps_q1": 75.6,
+            "eps_q2": 67.2,
+            "eps_q3": 58.8,
+            "per": 37.87,
+            "roe": 212.94
         },
         {
             "ticker": "DDOG",
@@ -10579,12 +10579,12 @@ const marketData = {
             "price_to_ath": 0.509,
             "days_since_ath": 106,
             "ma_spread_percentile": 32.18,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 2.1,
+            "eps_q1": 1.89,
+            "eps_q2": 1.68,
+            "eps_q3": 1.47,
+            "per": 331.02,
+            "roe": 3.34
         },
         {
             "ticker": "PDD",
@@ -10597,12 +10597,12 @@ const marketData = {
             "price_to_ath": 0.497,
             "days_since_ath": 1835,
             "ma_spread_percentile": 49.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 17.4,
+            "eps_q1": 15.66,
+            "eps_q2": 13.92,
+            "eps_q3": 12.18,
+            "per": 10.61,
+            "roe": 30.53
         },
         {
             "ticker": "AXON",
@@ -10619,8 +10619,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 133.16,
+            "roe": 10.03
         },
         {
             "ticker": "CSGP",
@@ -10637,8 +10637,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 797.83,
+            "roe": 0.25
         },
         {
             "ticker": "DXCM",
@@ -10651,12 +10651,12 @@ const marketData = {
             "price_to_ath": 0.444,
             "days_since_ath": 1562,
             "ma_spread_percentile": 13.37,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 76.2,
+            "eps_q1": 68.58,
+            "eps_q2": 60.96,
+            "eps_q3": 53.34,
+            "per": 35.05,
+            "roe": 34.5
         },
         {
             "ticker": "INTU",
@@ -10669,12 +10669,12 @@ const marketData = {
             "price_to_ath": 0.442,
             "days_since_ath": 211,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -14.6,
+            "eps_q1": -13.14,
+            "eps_q2": -11.68,
+            "eps_q3": -10.22,
+            "per": 24.69,
+            "roe": 21.99
         },
         {
             "ticker": "WDAY",
@@ -10687,12 +10687,12 @@ const marketData = {
             "price_to_ath": 0.415,
             "days_since_ath": 729,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 30.6,
+            "eps_q1": 27.54,
+            "eps_q2": 24.48,
+            "eps_q3": 21.42,
+            "per": 54.75,
+            "roe": 7.34
         },
         {
             "ticker": "ZS",
@@ -10710,7 +10710,25 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -2.41
+        },
+        {
+            "ticker": "TRI",
+            "name": "Thomson Reuters",
+            "industry": "Technology",
+            "ath": 218.42,
+            "lowest_after_ath": 79.71,
+            "price": 80.86,
+            "correction_ratio": 0.635,
+            "price_to_ath": 0.37,
+            "days_since_ath": 225,
+            "ma_spread_percentile": 99.5,
+            "eps_q0": -43.4,
+            "eps_q1": -39.06,
+            "eps_q2": -34.72,
+            "eps_q3": -30.38,
+            "per": 24.58,
+            "roe": 12.4
         },
         {
             "ticker": "WBD",
@@ -10727,26 +10745,8 @@ const marketData = {
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "TRI",
-            "name": "Thomson Reuters",
-            "industry": "Technology",
-            "ath": 218.42,
-            "lowest_after_ath": 79.71,
-            "price": 80.86,
-            "correction_ratio": 0.635,
-            "price_to_ath": 0.37,
-            "days_since_ath": 225,
-            "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "per": 152.21,
+            "roe": 0.97
         },
         {
             "ticker": "ADBE",
@@ -10759,12 +10759,12 @@ const marketData = {
             "price_to_ath": 0.353,
             "days_since_ath": 1555,
             "ma_spread_percentile": 99.5,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 10.3,
+            "eps_q1": 9.27,
+            "eps_q2": 8.24,
+            "eps_q3": 7.21,
+            "per": 14.77,
+            "roe": 55.43
         },
         {
             "ticker": "CHTR",
@@ -10777,12 +10777,12 @@ const marketData = {
             "price_to_ath": 0.276,
             "days_since_ath": 1639,
             "ma_spread_percentile": 53.47,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": -9.1,
+            "eps_q1": -8.19,
+            "eps_q2": -7.28,
+            "eps_q3": -6.37,
+            "per": 6.28,
+            "roe": 28.67
         },
         {
             "ticker": "KHC",
@@ -10795,12 +10795,12 @@ const marketData = {
             "price_to_ath": 0.251,
             "days_since_ath": 3298,
             "ma_spread_percentile": 15.35,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -69.5,
+            "eps_q1": -62.55,
+            "eps_q2": -55.6,
+            "eps_q3": -48.65,
             "per": 0,
-            "roe": 0
+            "roe": -12.84
         },
         {
             "ticker": "KDP",
@@ -10813,12 +10813,12 @@ const marketData = {
             "price_to_ath": 0.235,
             "days_since_ath": 2948,
             "ma_spread_percentile": 63.86,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 7.5,
+            "eps_q1": 6.75,
+            "eps_q2": 6.0,
+            "eps_q3": 5.25,
+            "per": 25.66,
+            "roe": 6.29
         },
         {
             "ticker": "MSTR",
@@ -10836,7 +10836,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -11.11
         },
         {
             "ticker": "TEAM",
@@ -10854,7 +10854,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -13.47
         },
         {
             "ticker": "PYPL",
@@ -10867,86 +10867,86 @@ const marketData = {
             "price_to_ath": 0.142,
             "days_since_ath": 1674,
             "ma_spread_percentile": 97.52,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "eps_q0": 28.2,
+            "eps_q1": 25.38,
+            "eps_q2": 22.56,
+            "eps_q3": 19.74,
+            "per": 8.14,
+            "roe": 25.73
         }
     ],
     "KOSPI": [
         {
-            "ticker": "005935.KS",
-            "name": "\uc0bc\uc131\uc804\uc790\uc6b0",
-            "industry": "",
-            "ath": 139800.0,
-            "lowest_after_ath": 133700.0,
-            "price": 139600.0,
-            "correction_ratio": 0.044,
-            "price_to_ath": 0.999,
-            "days_since_ath": 1,
-            "ma_spread_percentile": 96.39,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
             "ticker": "005930.KS",
             "name": "\uc0bc\uc131\uc804\uc790",
             "industry": "",
-            "ath": 199700.0,
+            "ath": 200000.0,
             "lowest_after_ath": 192000.0,
-            "price": 199600.0,
-            "correction_ratio": 0.039,
-            "price_to_ath": 0.999,
+            "price": 200000.0,
+            "correction_ratio": 0.04,
+            "price_to_ath": 1.0,
             "days_since_ath": 0,
             "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 155.4,
+            "eps_q1": 139.86,
+            "eps_q2": 124.32,
+            "eps_q3": 108.78,
             "per": 0,
-            "roe": 0
+            "roe": 10.78
+        },
+        {
+            "ticker": "005935.KS",
+            "name": "\uc0bc\uc131\uc804\uc790\uc6b0",
+            "industry": "",
+            "ath": 140600.0,
+            "lowest_after_ath": 134200.0,
+            "price": 140600.0,
+            "correction_ratio": 0.046,
+            "price_to_ath": 1.0,
+            "days_since_ath": 0,
+            "ma_spread_percentile": 96.39,
+            "eps_q0": 155.4,
+            "eps_q1": 139.86,
+            "eps_q2": 124.32,
+            "eps_q3": 108.78,
+            "per": 0,
+            "roe": 10.78
         },
         {
             "ticker": "000660.KS",
             "name": "SK\ud558\uc774\ub2c9\uc2a4",
             "industry": "",
-            "ath": 1001000.0,
+            "ath": 1003000.0,
             "lowest_after_ath": 946000.0,
-            "price": 999000.0,
-            "correction_ratio": 0.055,
+            "price": 1001000.0,
+            "correction_ratio": 0.057,
             "price_to_ath": 0.998,
             "days_since_ath": 0,
             "ma_spread_percentile": 91.24,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 90.4,
+            "eps_q1": 81.36,
+            "eps_q2": 72.32,
+            "eps_q3": 63.28,
             "per": 0,
-            "roe": 0
+            "roe": 49.39
         },
         {
             "ticker": "402340.KS",
             "name": "SK\uc2a4\ud018\uc5b4",
             "industry": "",
-            "ath": 627000.0,
+            "ath": 629000.0,
             "lowest_after_ath": 572000.0,
-            "price": 622000.0,
-            "correction_ratio": 0.088,
-            "price_to_ath": 0.992,
+            "price": 628000.0,
+            "correction_ratio": 0.091,
+            "price_to_ath": 0.998,
             "days_since_ath": 0,
             "ma_spread_percentile": 98.97,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 118.7,
+            "eps_q1": 106.83,
+            "eps_q2": 94.96,
+            "eps_q3": 83.09,
             "per": 0,
-            "roe": 0
+            "roe": 32.67
         },
         {
             "ticker": "034730.KS",
@@ -10954,71 +10954,17 @@ const marketData = {
             "industry": "",
             "ath": 398500.0,
             "lowest_after_ath": 375500.0,
-            "price": 394000.0,
+            "price": 395000.0,
             "correction_ratio": 0.058,
-            "price_to_ath": 0.989,
+            "price_to_ath": 0.991,
             "days_since_ath": 0,
             "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 85.9,
+            "eps_q1": 77.31,
+            "eps_q2": 68.72,
+            "eps_q3": 60.13,
             "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "006260.KS",
-            "name": "LS",
-            "industry": "",
-            "ath": 282000.0,
-            "lowest_after_ath": 268000.0,
-            "price": 279000.0,
-            "correction_ratio": 0.05,
-            "price_to_ath": 0.989,
-            "days_since_ath": 0,
-            "ma_spread_percentile": 88.14,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "267250.KS",
-            "name": "HD\ud604\ub300",
-            "industry": "",
-            "ath": 302000.0,
-            "lowest_after_ath": 286000.0,
-            "price": 298500.0,
-            "correction_ratio": 0.053,
-            "price_to_ath": 0.988,
-            "days_since_ath": 0,
-            "ma_spread_percentile": 91.75,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "009150.KS",
-            "name": "\uc0bc\uc131\uc804\uae30",
-            "industry": "",
-            "ath": 437500.0,
-            "lowest_after_ath": 410000.0,
-            "price": 431500.0,
-            "correction_ratio": 0.063,
-            "price_to_ath": 0.986,
-            "days_since_ath": 0,
-            "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "roe": 4.45
         },
         {
             "ticker": "267260.KS",
@@ -11026,17 +10972,35 @@ const marketData = {
             "industry": "",
             "ath": 1080000.0,
             "lowest_after_ath": 1020000.0,
-            "price": 1060000.0,
+            "price": 1069000.0,
             "correction_ratio": 0.056,
-            "price_to_ath": 0.981,
+            "price_to_ath": 0.99,
             "days_since_ath": 1,
-            "ma_spread_percentile": 77.32,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "ma_spread_percentile": 77.84,
+            "eps_q0": 94.4,
+            "eps_q1": 84.96,
+            "eps_q2": 75.52,
+            "eps_q3": 66.08,
             "per": 0,
-            "roe": 0
+            "roe": 38.58
+        },
+        {
+            "ticker": "009150.KS",
+            "name": "\uc0bc\uc131\uc804\uae30",
+            "industry": "",
+            "ath": 437500.0,
+            "lowest_after_ath": 410000.0,
+            "price": 433000.0,
+            "correction_ratio": 0.063,
+            "price_to_ath": 0.99,
+            "days_since_ath": 0,
+            "ma_spread_percentile": 99.48,
+            "eps_q0": 90.8,
+            "eps_q1": 81.72,
+            "eps_q2": 72.64,
+            "eps_q3": 63.56,
+            "per": 0,
+            "roe": 7.43
         },
         {
             "ticker": "298040.KS",
@@ -11044,17 +11008,35 @@ const marketData = {
             "industry": "",
             "ath": 2826000.0,
             "lowest_after_ath": 2665000.0,
-            "price": 2772000.0,
+            "price": 2780000.0,
             "correction_ratio": 0.057,
-            "price_to_ath": 0.981,
+            "price_to_ath": 0.984,
             "days_since_ath": 1,
             "ma_spread_percentile": 86.6,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 103.2,
+            "eps_q1": 92.88,
+            "eps_q2": 82.56,
+            "eps_q3": 72.24,
             "per": 0,
-            "roe": 0
+            "roe": 24.01
+        },
+        {
+            "ticker": "006260.KS",
+            "name": "LS",
+            "industry": "",
+            "ath": 282000.0,
+            "lowest_after_ath": 268000.0,
+            "price": 277500.0,
+            "correction_ratio": 0.05,
+            "price_to_ath": 0.984,
+            "days_since_ath": 0,
+            "ma_spread_percentile": 88.14,
+            "eps_q0": 45.8,
+            "eps_q1": 41.22,
+            "eps_q2": 36.64,
+            "eps_q3": 32.06,
+            "per": 0,
+            "roe": 5.62
         },
         {
             "ticker": "000270.KS",
@@ -11062,17 +11044,17 @@ const marketData = {
             "industry": "",
             "ath": 177000.0,
             "lowest_after_ath": 145900.0,
-            "price": 173100.0,
+            "price": 173800.0,
             "correction_ratio": 0.176,
-            "price_to_ath": 0.978,
+            "price_to_ath": 0.982,
             "days_since_ath": 36,
-            "ma_spread_percentile": 90.21,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "ma_spread_percentile": 91.24,
+            "eps_q0": -37.2,
+            "eps_q1": -33.48,
+            "eps_q2": -29.76,
+            "eps_q3": -26.04,
             "per": 0,
-            "roe": 0
+            "roe": 14.09
         },
         {
             "ticker": "028260.KS",
@@ -11080,17 +11062,35 @@ const marketData = {
             "industry": "",
             "ath": 344500.0,
             "lowest_after_ath": 327000.0,
-            "price": 336500.0,
+            "price": 337500.0,
             "correction_ratio": 0.051,
-            "price_to_ath": 0.977,
+            "price_to_ath": 0.98,
             "days_since_ath": 1,
             "ma_spread_percentile": 98.97,
+            "eps_q0": 26.4,
+            "eps_q1": 23.76,
+            "eps_q2": 21.12,
+            "eps_q3": 18.48,
+            "per": 0,
+            "roe": 6.93
+        },
+        {
+            "ticker": "267250.KS",
+            "name": "HD\ud604\ub300",
+            "industry": "",
+            "ath": 302000.0,
+            "lowest_after_ath": 286000.0,
+            "price": 296000.0,
+            "correction_ratio": 0.053,
+            "price_to_ath": 0.98,
+            "days_since_ath": 0,
+            "ma_spread_percentile": 91.75,
             "eps_q0": 0,
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": 11.13
         },
         {
             "ticker": "180640.KS",
@@ -11098,17 +11098,17 @@ const marketData = {
             "industry": "",
             "ath": 165000.0,
             "lowest_after_ath": 93100.0,
-            "price": 160500.0,
+            "price": 161500.0,
             "correction_ratio": 0.436,
-            "price_to_ath": 0.973,
+            "price_to_ath": 0.979,
             "days_since_ath": 274,
-            "ma_spread_percentile": 56.19,
+            "ma_spread_percentile": 56.7,
             "eps_q0": 0,
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": 5.39
         },
         {
             "ticker": "010120.KS",
@@ -11116,53 +11116,17 @@ const marketData = {
             "industry": "",
             "ath": 774000.0,
             "lowest_after_ath": 719000.0,
-            "price": 750000.0,
+            "price": 752000.0,
             "correction_ratio": 0.071,
-            "price_to_ath": 0.969,
+            "price_to_ath": 0.972,
             "days_since_ath": 0,
             "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 97.7,
+            "eps_q1": 87.93,
+            "eps_q2": 78.16,
+            "eps_q3": 68.39,
             "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "033780.KS",
-            "name": "KT&G",
-            "industry": "",
-            "ath": 180800.0,
-            "lowest_after_ath": 173000.0,
-            "price": 175000.0,
-            "correction_ratio": 0.043,
-            "price_to_ath": 0.968,
-            "days_since_ath": 8,
-            "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "105560.KS",
-            "name": "KB\uae08\uc735",
-            "industry": "",
-            "ath": 172500.0,
-            "lowest_after_ath": 162000.0,
-            "price": 166100.0,
-            "correction_ratio": 0.061,
-            "price_to_ath": 0.963,
-            "days_since_ath": 1,
-            "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "roe": 13.54
         },
         {
             "ticker": "000720.KS",
@@ -11170,35 +11134,53 @@ const marketData = {
             "industry": "",
             "ath": 143000.0,
             "lowest_after_ath": 130100.0,
-            "price": 137600.0,
+            "price": 138700.0,
             "correction_ratio": 0.09,
-            "price_to_ath": 0.962,
+            "price_to_ath": 0.97,
             "days_since_ath": 1,
             "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -13.7,
+            "eps_q1": -12.33,
+            "eps_q2": -10.96,
+            "eps_q3": -9.59,
             "per": 0,
-            "roe": 0
+            "roe": -7.43
         },
         {
-            "ticker": "030200.KS",
-            "name": "KT",
+            "ticker": "033780.KS",
+            "name": "KT&G",
             "industry": "",
-            "ath": 69400.0,
-            "lowest_after_ath": 64900.0,
-            "price": 66400.0,
-            "correction_ratio": 0.065,
-            "price_to_ath": 0.957,
+            "ath": 180800.0,
+            "lowest_after_ath": 173000.0,
+            "price": 174900.0,
+            "correction_ratio": 0.043,
+            "price_to_ath": 0.967,
+            "days_since_ath": 8,
+            "ma_spread_percentile": 99.48,
+            "eps_q0": 73.8,
+            "eps_q1": 66.42,
+            "eps_q2": 59.04,
+            "eps_q3": 51.66,
+            "per": 0,
+            "roe": 12.48
+        },
+        {
+            "ticker": "105560.KS",
+            "name": "KB\uae08\uc735",
+            "industry": "",
+            "ath": 172500.0,
+            "lowest_after_ath": 162000.0,
+            "price": 166500.0,
+            "correction_ratio": 0.061,
+            "price_to_ath": 0.965,
             "days_since_ath": 1,
             "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 5.6,
+            "eps_q1": 5.04,
+            "eps_q2": 4.48,
+            "eps_q3": 3.92,
             "per": 0,
-            "roe": 0
+            "roe": 9.65
         },
         {
             "ticker": "278470.KS",
@@ -11206,17 +11188,17 @@ const marketData = {
             "industry": "",
             "ath": 306500.0,
             "lowest_after_ath": 250500.0,
-            "price": 293000.0,
+            "price": 295000.0,
             "correction_ratio": 0.183,
-            "price_to_ath": 0.956,
+            "price_to_ath": 0.962,
             "days_since_ath": 22,
             "ma_spread_percentile": 58.76,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 366.3,
+            "eps_q1": 329.67,
+            "eps_q2": 293.04,
+            "eps_q3": 256.41,
             "per": 0,
-            "roe": 0
+            "roe": 74.34
         },
         {
             "ticker": "161390.KS",
@@ -11224,89 +11206,35 @@ const marketData = {
             "industry": "",
             "ath": 78400.0,
             "lowest_after_ath": 72900.0,
-            "price": 74900.0,
+            "price": 75300.0,
             "correction_ratio": 0.07,
-            "price_to_ath": 0.955,
+            "price_to_ath": 0.96,
             "days_since_ath": 1,
             "ma_spread_percentile": 87.11,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 2.0,
+            "eps_q1": 1.8,
+            "eps_q2": 1.6,
+            "eps_q3": 1.4,
             "per": 0,
-            "roe": 0
+            "roe": 7.88
         },
         {
-            "ticker": "267270.KS",
-            "name": "HD\uac74\uc124\uae30\uacc4",
+            "ticker": "030200.KS",
+            "name": "KT",
             "industry": "",
-            "ath": 148200.0,
-            "lowest_after_ath": 118000.0,
-            "price": 141250.0,
-            "correction_ratio": 0.204,
-            "price_to_ath": 0.953,
-            "days_since_ath": 15,
-            "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "000150.KS",
-            "name": "\ub450\uc0b0",
-            "industry": "",
-            "ath": 1148000.0,
-            "lowest_after_ath": 1045000.0,
-            "price": 1088000.0,
-            "correction_ratio": 0.09,
-            "price_to_ath": 0.948,
+            "ath": 69400.0,
+            "lowest_after_ath": 64900.0,
+            "price": 66300.0,
+            "correction_ratio": 0.065,
+            "price_to_ath": 0.955,
             "days_since_ath": 1,
-            "ma_spread_percentile": 71.13,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "316140.KS",
-            "name": "\uc6b0\ub9ac\uae08\uc735\uc9c0\uc8fc",
-            "industry": "",
-            "ath": 41500.0,
-            "lowest_after_ath": 33350.0,
-            "price": 39250.0,
-            "correction_ratio": 0.196,
-            "price_to_ath": 0.946,
-            "days_since_ath": 15,
             "ma_spread_percentile": 99.48,
             "eps_q0": 0,
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "352820.KS",
-            "name": "\ud558\uc774\ube0c",
-            "industry": "",
-            "ath": 421500.0,
-            "lowest_after_ath": 107000.0,
-            "price": 398500.0,
-            "correction_ratio": 0.746,
-            "price_to_ath": 0.945,
-            "days_since_ath": 1562,
-            "ma_spread_percentile": 94.85,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "roe": 9.81
         },
         {
             "ticker": "138930.KS",
@@ -11314,17 +11242,89 @@ const marketData = {
             "industry": "",
             "ath": 23050.0,
             "lowest_after_ath": 21450.0,
-            "price": 21700.0,
+            "price": 21950.0,
             "correction_ratio": 0.069,
-            "price_to_ath": 0.941,
+            "price_to_ath": 0.952,
             "days_since_ath": 8,
             "ma_spread_percentile": 99.48,
+            "eps_q0": -53.9,
+            "eps_q1": -48.51,
+            "eps_q2": -43.12,
+            "eps_q3": -37.73,
+            "per": 0,
+            "roe": 7.48
+        },
+        {
+            "ticker": "267270.KS",
+            "name": "HD\uac74\uc124\uae30\uacc4",
+            "industry": "",
+            "ath": 148200.0,
+            "lowest_after_ath": 118000.0,
+            "price": 141000.0,
+            "correction_ratio": 0.204,
+            "price_to_ath": 0.951,
+            "days_since_ath": 15,
+            "ma_spread_percentile": 99.48,
+            "eps_q0": 297.9,
+            "eps_q1": 268.11,
+            "eps_q2": 238.32,
+            "eps_q3": 208.53,
+            "per": 0,
+            "roe": 3.58
+        },
+        {
+            "ticker": "000150.KS",
+            "name": "\ub450\uc0b0",
+            "industry": "",
+            "ath": 1148000.0,
+            "lowest_after_ath": 1045000.0,
+            "price": 1091000.0,
+            "correction_ratio": 0.09,
+            "price_to_ath": 0.95,
+            "days_since_ath": 1,
+            "ma_spread_percentile": 71.13,
             "eps_q0": 0,
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": 2.61
+        },
+        {
+            "ticker": "316140.KS",
+            "name": "\uc6b0\ub9ac\uae08\uc735\uc9c0\uc8fc",
+            "industry": "",
+            "ath": 41500.0,
+            "lowest_after_ath": 33350.0,
+            "price": 39400.0,
+            "correction_ratio": 0.196,
+            "price_to_ath": 0.949,
+            "days_since_ath": 15,
+            "ma_spread_percentile": 99.48,
+            "eps_q0": -19.0,
+            "eps_q1": -17.1,
+            "eps_q2": -15.2,
+            "eps_q3": -13.3,
+            "per": 0,
+            "roe": 8.8
+        },
+        {
+            "ticker": "352820.KS",
+            "name": "\ud558\uc774\ube0c",
+            "industry": "",
+            "ath": 421500.0,
+            "lowest_after_ath": 107000.0,
+            "price": 398000.0,
+            "correction_ratio": 0.746,
+            "price_to_ath": 0.944,
+            "days_since_ath": 1562,
+            "ma_spread_percentile": 94.85,
+            "eps_q0": 0,
+            "eps_q1": 0.0,
+            "eps_q2": 0.0,
+            "eps_q3": 0.0,
+            "per": 0,
+            "roe": -0.25
         },
         {
             "ticker": "086790.KS",
@@ -11332,17 +11332,53 @@ const marketData = {
             "industry": "",
             "ath": 133700.0,
             "lowest_after_ath": 123000.0,
-            "price": 125700.0,
+            "price": 126100.0,
             "correction_ratio": 0.08,
-            "price_to_ath": 0.94,
+            "price_to_ath": 0.943,
             "days_since_ath": 1,
             "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 10.9,
+            "eps_q1": 9.81,
+            "eps_q2": 8.72,
+            "eps_q3": 7.63,
             "per": 0,
-            "roe": 0
+            "roe": 9.05
+        },
+        {
+            "ticker": "042700.KS",
+            "name": "\ud55c\ubbf8\ubc18\ub3c4\uccb4",
+            "industry": "",
+            "ath": 224500.0,
+            "lowest_after_ath": 187500.0,
+            "price": 211500.0,
+            "correction_ratio": 0.165,
+            "price_to_ath": 0.942,
+            "days_since_ath": 15,
+            "ma_spread_percentile": 86.6,
+            "eps_q0": 71.2,
+            "eps_q1": 64.08,
+            "eps_q2": 56.96,
+            "eps_q3": 49.84,
+            "per": 0,
+            "roe": 40.01
+        },
+        {
+            "ticker": "055550.KS",
+            "name": "\uc2e0\ud55c\uc9c0\uc8fc",
+            "industry": "",
+            "ath": 107200.0,
+            "lowest_after_ath": 93000.0,
+            "price": 100400.0,
+            "correction_ratio": 0.132,
+            "price_to_ath": 0.937,
+            "days_since_ath": 15,
+            "ma_spread_percentile": 99.48,
+            "eps_q0": 25.7,
+            "eps_q1": 23.13,
+            "eps_q2": 20.56,
+            "eps_q3": 17.99,
+            "per": 0,
+            "roe": 8.53
         },
         {
             "ticker": "000880.KS",
@@ -11350,17 +11386,35 @@ const marketData = {
             "industry": "",
             "ath": 138900.0,
             "lowest_after_ath": 93500.0,
-            "price": 130600.0,
+            "price": 129900.0,
             "correction_ratio": 0.327,
-            "price_to_ath": 0.94,
+            "price_to_ath": 0.935,
             "days_since_ath": 43,
             "ma_spread_percentile": 75.77,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 31.5,
+            "eps_q1": 28.35,
+            "eps_q2": 25.2,
+            "eps_q3": 22.05,
             "per": 0,
-            "roe": 0
+            "roe": 8.91
+        },
+        {
+            "ticker": "047810.KS",
+            "name": "\ud55c\uad6d\ud56d\uacf5\uc6b0\uc8fc",
+            "industry": "",
+            "ath": 188500.0,
+            "lowest_after_ath": 159400.0,
+            "price": 175900.0,
+            "correction_ratio": 0.154,
+            "price_to_ath": 0.933,
+            "days_since_ath": 15,
+            "ma_spread_percentile": 87.11,
+            "eps_q0": -43.2,
+            "eps_q1": -38.88,
+            "eps_q2": -34.56,
+            "eps_q3": -30.24,
+            "per": 0,
+            "roe": 7.7
         },
         {
             "ticker": "029780.KS",
@@ -11373,66 +11427,12 @@ const marketData = {
             "price_to_ath": 0.931,
             "days_since_ath": 1,
             "ma_spread_percentile": 91.75,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -4.2,
+            "eps_q1": -3.78,
+            "eps_q2": -3.36,
+            "eps_q3": -2.94,
             "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "055550.KS",
-            "name": "\uc2e0\ud55c\uc9c0\uc8fc",
-            "industry": "",
-            "ath": 107200.0,
-            "lowest_after_ath": 93000.0,
-            "price": 99700.0,
-            "correction_ratio": 0.132,
-            "price_to_ath": 0.93,
-            "days_since_ath": 15,
-            "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "047810.KS",
-            "name": "\ud55c\uad6d\ud56d\uacf5\uc6b0\uc8fc",
-            "industry": "",
-            "ath": 188500.0,
-            "lowest_after_ath": 159400.0,
-            "price": 174600.0,
-            "correction_ratio": 0.154,
-            "price_to_ath": 0.926,
-            "days_since_ath": 15,
-            "ma_spread_percentile": 87.11,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "009540.KS",
-            "name": "HD\ud55c\uad6d\uc870\uc120\ud574\uc591",
-            "industry": "",
-            "ath": 494500.0,
-            "lowest_after_ath": 375000.0,
-            "price": 455500.0,
-            "correction_ratio": 0.242,
-            "price_to_ath": 0.921,
-            "days_since_ath": 113,
-            "ma_spread_percentile": 31.96,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "roe": 7.38
         },
         {
             "ticker": "005830.KS",
@@ -11440,17 +11440,35 @@ const marketData = {
             "industry": "",
             "ath": 214000.0,
             "lowest_after_ath": 191000.0,
-            "price": 196200.0,
+            "price": 198000.0,
             "correction_ratio": 0.107,
-            "price_to_ath": 0.917,
+            "price_to_ath": 0.925,
             "days_since_ath": 1,
             "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -30.9,
+            "eps_q1": -27.81,
+            "eps_q2": -24.72,
+            "eps_q3": -21.63,
             "per": 0,
-            "roe": 0
+            "roe": 16.0
+        },
+        {
+            "ticker": "009540.KS",
+            "name": "HD\ud55c\uad6d\uc870\uc120\ud574\uc591",
+            "industry": "",
+            "ath": 494500.0,
+            "lowest_after_ath": 375000.0,
+            "price": 455000.0,
+            "correction_ratio": 0.242,
+            "price_to_ath": 0.92,
+            "days_since_ath": 113,
+            "ma_spread_percentile": 31.96,
+            "eps_q0": 319.3,
+            "eps_q1": 287.37,
+            "eps_q2": 255.44,
+            "eps_q3": 223.51,
+            "per": 0,
+            "roe": 18.04
         },
         {
             "ticker": "017670.KS",
@@ -11458,35 +11476,17 @@ const marketData = {
             "industry": "",
             "ath": 88600.0,
             "lowest_after_ath": 72000.0,
-            "price": 80750.0,
+            "price": 81100.0,
             "correction_ratio": 0.187,
-            "price_to_ath": 0.911,
+            "price_to_ath": 0.915,
             "days_since_ath": 15,
             "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -61.3,
+            "eps_q1": -55.17,
+            "eps_q2": -49.04,
+            "eps_q3": -42.91,
             "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "042700.KS",
-            "name": "\ud55c\ubbf8\ubc18\ub3c4\uccb4",
-            "industry": "",
-            "ath": 224500.0,
-            "lowest_after_ath": 187500.0,
-            "price": 204500.0,
-            "correction_ratio": 0.165,
-            "price_to_ath": 0.911,
-            "days_since_ath": 15,
-            "ma_spread_percentile": 83.51,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "roe": 5.52
         },
         {
             "ticker": "329180.KS",
@@ -11494,161 +11494,17 @@ const marketData = {
             "industry": "",
             "ath": 652000.0,
             "lowest_after_ath": 513000.0,
-            "price": 592000.0,
+            "price": 593000.0,
             "correction_ratio": 0.213,
-            "price_to_ath": 0.908,
+            "price_to_ath": 0.91,
             "days_since_ath": 36,
             "ma_spread_percentile": 2.58,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 496.7,
+            "eps_q1": 447.03,
+            "eps_q2": 397.36,
+            "eps_q3": 347.69,
             "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "138040.KS",
-            "name": "\uba54\ub9ac\uce20\uae08\uc735\uc9c0\uc8fc",
-            "industry": "",
-            "ath": 149800.0,
-            "lowest_after_ath": 133400.0,
-            "price": 135900.0,
-            "correction_ratio": 0.109,
-            "price_to_ath": 0.907,
-            "days_since_ath": 8,
-            "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "086280.KS",
-            "name": "\ud604\ub300\uae00\ub85c\ube44\uc2a4",
-            "industry": "",
-            "ath": 296000.0,
-            "lowest_after_ath": 227000.0,
-            "price": 268000.0,
-            "correction_ratio": 0.233,
-            "price_to_ath": 0.905,
-            "days_since_ath": 36,
-            "ma_spread_percentile": 86.6,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "012330.KS",
-            "name": "\ud604\ub300\ubaa8\ube44\uc2a4",
-            "industry": "",
-            "ath": 499500.0,
-            "lowest_after_ath": 406000.0,
-            "price": 451000.0,
-            "correction_ratio": 0.187,
-            "price_to_ath": 0.903,
-            "days_since_ath": 36,
-            "ma_spread_percentile": 76.8,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "015760.KS",
-            "name": "\ud55c\uad6d\uc804\ub825",
-            "industry": "",
-            "ath": 69500.0,
-            "lowest_after_ath": 54000.0,
-            "price": 62350.0,
-            "correction_ratio": 0.223,
-            "price_to_ath": 0.897,
-            "days_since_ath": 36,
-            "ma_spread_percentile": 84.02,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "024110.KS",
-            "name": "\uae30\uc5c5\uc740\ud589",
-            "industry": "",
-            "ath": 29550.0,
-            "lowest_after_ath": 25650.0,
-            "price": 26400.0,
-            "correction_ratio": 0.132,
-            "price_to_ath": 0.893,
-            "days_since_ath": 1,
-            "ma_spread_percentile": 98.97,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "016360.KS",
-            "name": "\uc0bc\uc131\uc99d\uad8c",
-            "industry": "",
-            "ath": 119400.0,
-            "lowest_after_ath": 101000.0,
-            "price": 106600.0,
-            "correction_ratio": 0.154,
-            "price_to_ath": 0.893,
-            "days_since_ath": 8,
-            "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "241560.KS",
-            "name": "\ub450\uc0b0\ubc25\ucea3",
-            "industry": "",
-            "ath": 73900.0,
-            "lowest_after_ath": 51900.0,
-            "price": 65900.0,
-            "correction_ratio": 0.298,
-            "price_to_ath": 0.892,
-            "days_since_ath": 246,
-            "ma_spread_percentile": 76.29,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "032830.KS",
-            "name": "\uc0bc\uc131\uc0dd\uba85",
-            "industry": "",
-            "ath": 252000.0,
-            "lowest_after_ath": 220000.0,
-            "price": 224500.0,
-            "correction_ratio": 0.127,
-            "price_to_ath": 0.891,
-            "days_since_ath": 1,
-            "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "roe": 21.68
         },
         {
             "ticker": "006800.KS",
@@ -11656,17 +11512,89 @@ const marketData = {
             "industry": "",
             "ath": 74400.0,
             "lowest_after_ath": 61600.0,
-            "price": 66300.0,
+            "price": 67600.0,
             "correction_ratio": 0.172,
-            "price_to_ath": 0.891,
+            "price_to_ath": 0.909,
             "days_since_ath": 8,
             "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 116.2,
+            "eps_q1": 104.58,
+            "eps_q2": 92.96,
+            "eps_q3": 81.34,
             "per": 0,
-            "roe": 0
+            "roe": 10.47
+        },
+        {
+            "ticker": "138040.KS",
+            "name": "\uba54\ub9ac\uce20\uae08\uc735\uc9c0\uc8fc",
+            "industry": "",
+            "ath": 149800.0,
+            "lowest_after_ath": 133400.0,
+            "price": 136100.0,
+            "correction_ratio": 0.109,
+            "price_to_ath": 0.909,
+            "days_since_ath": 8,
+            "ma_spread_percentile": 99.48,
+            "eps_q0": 0.7,
+            "eps_q1": 0.63,
+            "eps_q2": 0.56,
+            "eps_q3": 0.49,
+            "per": 0,
+            "roe": 21.48
+        },
+        {
+            "ticker": "086280.KS",
+            "name": "\ud604\ub300\uae00\ub85c\ube44\uc2a4",
+            "industry": "",
+            "ath": 296000.0,
+            "lowest_after_ath": 227000.0,
+            "price": 269000.0,
+            "correction_ratio": 0.233,
+            "price_to_ath": 0.909,
+            "days_since_ath": 36,
+            "ma_spread_percentile": 86.6,
+            "eps_q0": 2.5,
+            "eps_q1": 2.25,
+            "eps_q2": 2.0,
+            "eps_q3": 1.75,
+            "per": 0,
+            "roe": 15.11
+        },
+        {
+            "ticker": "012330.KS",
+            "name": "\ud604\ub300\ubaa8\ube44\uc2a4",
+            "industry": "",
+            "ath": 499500.0,
+            "lowest_after_ath": 406000.0,
+            "price": 452000.0,
+            "correction_ratio": 0.187,
+            "price_to_ath": 0.905,
+            "days_since_ath": 36,
+            "ma_spread_percentile": 76.8,
+            "eps_q0": 1.1,
+            "eps_q1": 0.99,
+            "eps_q2": 0.88,
+            "eps_q3": 0.77,
+            "per": 0,
+            "roe": 9.16
+        },
+        {
+            "ticker": "016360.KS",
+            "name": "\uc0bc\uc131\uc99d\uad8c",
+            "industry": "",
+            "ath": 119400.0,
+            "lowest_after_ath": 101000.0,
+            "price": 107400.0,
+            "correction_ratio": 0.154,
+            "price_to_ath": 0.899,
+            "days_since_ath": 8,
+            "ma_spread_percentile": 99.48,
+            "eps_q0": 46.4,
+            "eps_q1": 41.76,
+            "eps_q2": 37.12,
+            "eps_q3": 32.48,
+            "per": 0,
+            "roe": 13.1
         },
         {
             "ticker": "175330.KS",
@@ -11674,17 +11602,53 @@ const marketData = {
             "industry": "",
             "ath": 38500.0,
             "lowest_after_ath": 33600.0,
-            "price": 34250.0,
+            "price": 34625.0,
             "correction_ratio": 0.127,
-            "price_to_ath": 0.89,
+            "price_to_ath": 0.899,
             "days_since_ath": 8,
             "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 7.9,
+            "eps_q1": 7.11,
+            "eps_q2": 6.32,
+            "eps_q3": 5.53,
             "per": 0,
-            "roe": 0
+            "roe": 12.39
+        },
+        {
+            "ticker": "015760.KS",
+            "name": "\ud55c\uad6d\uc804\ub825",
+            "industry": "",
+            "ath": 69500.0,
+            "lowest_after_ath": 54000.0,
+            "price": 62300.0,
+            "correction_ratio": 0.223,
+            "price_to_ath": 0.896,
+            "days_since_ath": 36,
+            "ma_spread_percentile": 84.02,
+            "eps_q0": 103.1,
+            "eps_q1": 92.79,
+            "eps_q2": 82.48,
+            "eps_q3": 72.17,
+            "per": 0,
+            "roe": 19.12
+        },
+        {
+            "ticker": "024110.KS",
+            "name": "\uae30\uc5c5\uc740\ud589",
+            "industry": "",
+            "ath": 29550.0,
+            "lowest_after_ath": 25650.0,
+            "price": 26450.0,
+            "correction_ratio": 0.132,
+            "price_to_ath": 0.895,
+            "days_since_ath": 1,
+            "ma_spread_percentile": 98.97,
+            "eps_q0": -2.4,
+            "eps_q1": -2.16,
+            "eps_q2": -1.92,
+            "eps_q3": -1.68,
+            "per": 0,
+            "roe": 7.65
         },
         {
             "ticker": "071050.KS",
@@ -11692,53 +11656,35 @@ const marketData = {
             "industry": "",
             "ath": 300500.0,
             "lowest_after_ath": 258000.0,
-            "price": 267250.0,
+            "price": 269000.0,
             "correction_ratio": 0.141,
-            "price_to_ath": 0.889,
+            "price_to_ath": 0.895,
             "days_since_ath": 1,
             "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 229.0,
+            "eps_q1": 206.1,
+            "eps_q2": 183.2,
+            "eps_q3": 160.3,
             "per": 0,
-            "roe": 0
+            "roe": 18.55
         },
         {
-            "ticker": "005385.KS",
-            "name": "\ud604\ub300\ucc28\uc6b0",
+            "ticker": "032830.KS",
+            "name": "\uc0bc\uc131\uc0dd\uba85",
             "industry": "",
-            "ath": 318500.0,
-            "lowest_after_ath": 235000.0,
-            "price": 282000.0,
-            "correction_ratio": 0.262,
-            "price_to_ath": 0.885,
-            "days_since_ath": 36,
-            "ma_spread_percentile": 87.63,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "ath": 252000.0,
+            "lowest_after_ath": 220000.0,
+            "price": 225000.0,
+            "correction_ratio": 0.127,
+            "price_to_ath": 0.893,
+            "days_since_ath": 1,
+            "ma_spread_percentile": 99.48,
+            "eps_q0": 7.3,
+            "eps_q1": 6.57,
+            "eps_q2": 5.84,
+            "eps_q3": 5.11,
             "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "012450.KS",
-            "name": "\ud55c\ud654\uc5d0\uc5b4\ub85c\uc2a4\ud398\uc774\uc2a4",
-            "industry": "",
-            "ath": 1398000.0,
-            "lowest_after_ath": 1097000.0,
-            "price": 1231000.0,
-            "correction_ratio": 0.215,
-            "price_to_ath": 0.881,
-            "days_since_ath": 36,
-            "ma_spread_percentile": 78.35,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "roe": 6.11
         },
         {
             "ticker": "039490.KS",
@@ -11746,17 +11692,53 @@ const marketData = {
             "industry": "",
             "ath": 517000.0,
             "lowest_after_ath": 439500.0,
-            "price": 454500.0,
+            "price": 461000.0,
             "correction_ratio": 0.15,
-            "price_to_ath": 0.879,
+            "price_to_ath": 0.892,
             "days_since_ath": 8,
             "ma_spread_percentile": 99.48,
+            "eps_q0": 52.0,
+            "eps_q1": 46.8,
+            "eps_q2": 41.6,
+            "eps_q3": 36.4,
+            "per": 0,
+            "roe": 17.03
+        },
+        {
+            "ticker": "005385.KS",
+            "name": "\ud604\ub300\ucc28\uc6b0",
+            "industry": "",
+            "ath": 318500.0,
+            "lowest_after_ath": 235000.0,
+            "price": 283500.0,
+            "correction_ratio": 0.262,
+            "price_to_ath": 0.89,
+            "days_since_ath": 36,
+            "ma_spread_percentile": 87.63,
             "eps_q0": 0,
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": 8.36
+        },
+        {
+            "ticker": "012450.KS",
+            "name": "\ud55c\ud654\uc5d0\uc5b4\ub85c\uc2a4\ud398\uc774\uc2a4",
+            "industry": "",
+            "ath": 1398000.0,
+            "lowest_after_ath": 1097000.0,
+            "price": 1240000.0,
+            "correction_ratio": 0.215,
+            "price_to_ath": 0.887,
+            "days_since_ath": 36,
+            "ma_spread_percentile": 78.87,
+            "eps_q0": 52.8,
+            "eps_q1": 47.52,
+            "eps_q2": 42.24,
+            "eps_q3": 36.96,
+            "per": 0,
+            "roe": 33.08
         },
         {
             "ticker": "005380.KS",
@@ -11764,9 +11746,9 @@ const marketData = {
             "industry": "",
             "ath": 590000.0,
             "lowest_after_ath": 419500.0,
-            "price": 518000.0,
+            "price": 521000.0,
             "correction_ratio": 0.289,
-            "price_to_ath": 0.878,
+            "price_to_ath": 0.883,
             "days_since_ath": 36,
             "ma_spread_percentile": 89.69,
             "eps_q0": 0,
@@ -11774,7 +11756,25 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": 8.36
+        },
+        {
+            "ticker": "241560.KS",
+            "name": "\ub450\uc0b0\ubc25\ucea3",
+            "industry": "",
+            "ath": 73900.0,
+            "lowest_after_ath": 51900.0,
+            "price": 65200.0,
+            "correction_ratio": 0.298,
+            "price_to_ath": 0.882,
+            "days_since_ath": 246,
+            "ma_spread_percentile": 75.77,
+            "eps_q0": -33.7,
+            "eps_q1": -30.33,
+            "eps_q2": -26.96,
+            "eps_q3": -23.59,
+            "per": 0,
+            "roe": 5.83
         },
         {
             "ticker": "064350.KS",
@@ -11782,17 +11782,17 @@ const marketData = {
             "industry": "",
             "ath": 249500.0,
             "lowest_after_ath": 165300.0,
-            "price": 219000.0,
+            "price": 219500.0,
             "correction_ratio": 0.337,
-            "price_to_ath": 0.878,
+            "price_to_ath": 0.88,
             "days_since_ath": 127,
             "ma_spread_percentile": 18.04,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 53.2,
+            "eps_q1": 47.88,
+            "eps_q2": 42.56,
+            "eps_q3": 37.24,
             "per": 0,
-            "roe": 0
+            "roe": 30.51
         },
         {
             "ticker": "272210.KS",
@@ -11800,17 +11800,17 @@ const marketData = {
             "industry": "",
             "ath": 125000.0,
             "lowest_after_ath": 91100.0,
-            "price": 109150.0,
+            "price": 109400.0,
             "correction_ratio": 0.271,
-            "price_to_ath": 0.873,
+            "price_to_ath": 0.875,
             "days_since_ath": 22,
             "ma_spread_percentile": 93.3,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 1513.2,
+            "eps_q1": 1361.88,
+            "eps_q2": 1210.56,
+            "eps_q3": 1059.24,
             "per": 0,
-            "roe": 0
+            "roe": 17.15
         },
         {
             "ticker": "128940.KS",
@@ -11818,17 +11818,17 @@ const marketData = {
             "industry": "",
             "ath": 699543.06,
             "lowest_after_ath": 197241.0,
-            "price": 611000.0,
+            "price": 610000.0,
             "correction_ratio": 0.718,
-            "price_to_ath": 0.873,
+            "price_to_ath": 0.872,
             "days_since_ath": 3760,
             "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 29.5,
+            "eps_q1": 26.55,
+            "eps_q2": 23.6,
+            "eps_q3": 20.65,
             "per": 0,
-            "roe": 0
+            "roe": 9.9
         },
         {
             "ticker": "0126Z0.KS",
@@ -11854,7 +11854,7 @@ const marketData = {
             "industry": "",
             "ath": 1987000.0,
             "lowest_after_ath": 1637000.0,
-            "price": 1722000.0,
+            "price": 1723000.0,
             "correction_ratio": 0.176,
             "price_to_ath": 0.867,
             "days_since_ath": 43,
@@ -11872,9 +11872,9 @@ const marketData = {
             "industry": "",
             "ath": 332000.0,
             "lowest_after_ath": 238500.0,
-            "price": 284000.0,
+            "price": 283500.0,
             "correction_ratio": 0.282,
-            "price_to_ath": 0.855,
+            "price_to_ath": 0.854,
             "days_since_ath": 36,
             "ma_spread_percentile": 87.11,
             "eps_q0": 0,
@@ -11882,7 +11882,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": 8.36
         },
         {
             "ticker": "000810.KS",
@@ -11890,17 +11890,17 @@ const marketData = {
             "industry": "",
             "ath": 646000.0,
             "lowest_after_ath": 545000.0,
-            "price": 549000.0,
+            "price": 550000.0,
             "correction_ratio": 0.156,
-            "price_to_ath": 0.85,
+            "price_to_ath": 0.851,
             "days_since_ath": 1,
             "ma_spread_percentile": 87.11,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -2.9,
+            "eps_q1": -2.61,
+            "eps_q2": -2.32,
+            "eps_q3": -2.03,
             "per": 0,
-            "roe": 0
+            "roe": 11.42
         },
         {
             "ticker": "005940.KS",
@@ -11908,17 +11908,17 @@ const marketData = {
             "industry": "",
             "ath": 42600.0,
             "lowest_after_ath": 30900.0,
-            "price": 35950.0,
+            "price": 36150.0,
             "correction_ratio": 0.275,
-            "price_to_ath": 0.844,
+            "price_to_ath": 0.849,
             "days_since_ath": 8,
             "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 83.9,
+            "eps_q1": 75.51,
+            "eps_q2": 67.12,
+            "eps_q3": 58.73,
             "per": 0,
-            "roe": 0
+            "roe": 10.08
         },
         {
             "ticker": "307950.KS",
@@ -11926,17 +11926,17 @@ const marketData = {
             "industry": "",
             "ath": 534000.0,
             "lowest_after_ath": 382000.0,
-            "price": 428500.0,
+            "price": 430000.0,
             "correction_ratio": 0.285,
-            "price_to_ath": 0.802,
+            "price_to_ath": 0.805,
             "days_since_ath": 43,
             "ma_spread_percentile": 74.23,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 18.5,
+            "eps_q1": 16.65,
+            "eps_q2": 14.8,
+            "eps_q3": 12.95,
             "per": 0,
-            "roe": 0
+            "roe": 10.53
         },
         {
             "ticker": "454910.KS",
@@ -11944,9 +11944,9 @@ const marketData = {
             "industry": "",
             "ath": 130600.0,
             "lowest_after_ath": 98000.0,
-            "price": 104100.0,
+            "price": 104400.0,
             "correction_ratio": 0.25,
-            "price_to_ath": 0.797,
+            "price_to_ath": 0.799,
             "days_since_ath": 29,
             "ma_spread_percentile": 89.18,
             "eps_q0": 0,
@@ -11954,7 +11954,25 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -15.68
+        },
+        {
+            "ticker": "009830.KS",
+            "name": "\ud55c\ud654\uc194\ub8e8\uc158",
+            "industry": "",
+            "ath": 65036.1,
+            "lowest_after_ath": 14860.0,
+            "price": 51300.0,
+            "correction_ratio": 0.772,
+            "price_to_ath": 0.789,
+            "days_since_ath": 1870,
+            "ma_spread_percentile": 99.48,
+            "eps_q0": 0,
+            "eps_q1": 0.0,
+            "eps_q2": 0.0,
+            "eps_q3": 0.0,
+            "per": 0,
+            "roe": -6.67
         },
         {
             "ticker": "079550.KS",
@@ -11962,17 +11980,17 @@ const marketData = {
             "industry": "",
             "ath": 650000.0,
             "lowest_after_ath": 360000.0,
-            "price": 512000.0,
+            "price": 510000.0,
             "correction_ratio": 0.446,
-            "price_to_ath": 0.788,
+            "price_to_ath": 0.785,
             "days_since_ath": 246,
             "ma_spread_percentile": 0.52,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 38.0,
+            "eps_q1": 34.2,
+            "eps_q2": 30.4,
+            "eps_q3": 26.6,
             "per": 0,
-            "roe": 0
+            "roe": 23.37
         },
         {
             "ticker": "010130.KS",
@@ -11980,7 +11998,7 @@ const marketData = {
             "industry": "",
             "ath": 2407000.0,
             "lowest_after_ath": 643000.0,
-            "price": 1880000.0,
+            "price": 1879000.0,
             "correction_ratio": 0.733,
             "price_to_ath": 0.781,
             "days_since_ath": 449,
@@ -11990,25 +12008,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "009830.KS",
-            "name": "\ud55c\ud654\uc194\ub8e8\uc158",
-            "industry": "",
-            "ath": 65036.1,
-            "lowest_after_ath": 14860.0,
-            "price": 50500.0,
-            "correction_ratio": 0.772,
-            "price_to_ath": 0.776,
-            "days_since_ath": 1870,
-            "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "roe": 8.25
         },
         {
             "ticker": "001040.KS",
@@ -12016,9 +12016,9 @@ const marketData = {
             "industry": "",
             "ath": 285652.19,
             "lowest_after_ath": 52300.0,
-            "price": 221500.0,
+            "price": 222000.0,
             "correction_ratio": 0.817,
-            "price_to_ath": 0.775,
+            "price_to_ath": 0.777,
             "days_since_ath": 3851,
             "ma_spread_percentile": 99.48,
             "eps_q0": 0,
@@ -12026,7 +12026,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": 4.58
         },
         {
             "ticker": "047050.KS",
@@ -12034,17 +12034,17 @@ const marketData = {
             "industry": "",
             "ath": 96700.0,
             "lowest_after_ath": 37400.0,
-            "price": 73100.0,
+            "price": 73200.0,
             "correction_ratio": 0.613,
-            "price_to_ath": 0.756,
+            "price_to_ath": 0.757,
             "days_since_ath": 946,
             "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -14.7,
+            "eps_q1": -13.23,
+            "eps_q2": -11.76,
+            "eps_q3": -10.29,
             "per": 0,
-            "roe": 0
+            "roe": 5.41
         },
         {
             "ticker": "021240.KS",
@@ -12052,17 +12052,17 @@ const marketData = {
             "industry": "",
             "ath": 114700.0,
             "lowest_after_ath": 74700.0,
-            "price": 86700.0,
+            "price": 86600.0,
             "correction_ratio": 0.349,
-            "price_to_ath": 0.756,
+            "price_to_ath": 0.755,
             "days_since_ath": 225,
             "ma_spread_percentile": 5.67,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -2.0,
+            "eps_q1": -1.8,
+            "eps_q2": -1.6,
+            "eps_q3": -1.4,
             "per": 0,
-            "roe": 0
+            "roe": 17.68
         },
         {
             "ticker": "003230.KS",
@@ -12070,17 +12070,17 @@ const marketData = {
             "industry": "",
             "ath": 1665000.0,
             "lowest_after_ath": 1009000.0,
-            "price": 1223000.0,
+            "price": 1229000.0,
             "correction_ratio": 0.394,
-            "price_to_ath": 0.735,
+            "price_to_ath": 0.738,
             "days_since_ath": 169,
             "ma_spread_percentile": 18.56,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 87.2,
+            "eps_q1": 78.48,
+            "eps_q2": 69.76,
+            "eps_q3": 61.04,
             "per": 0,
-            "roe": 0
+            "roe": 39.84
         },
         {
             "ticker": "068270.KS",
@@ -12088,17 +12088,17 @@ const marketData = {
             "industry": "",
             "ath": 341497.25,
             "lowest_after_ath": 119963.37,
-            "price": 248000.0,
+            "price": 248500.0,
             "correction_ratio": 0.649,
-            "price_to_ath": 0.726,
+            "price_to_ath": 0.728,
             "days_since_ath": 1905,
             "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 287.1,
+            "eps_q1": 258.39,
+            "eps_q2": 229.68,
+            "eps_q3": 200.97,
             "per": 0,
-            "roe": 0
+            "roe": 4.36
         },
         {
             "ticker": "003550.KS",
@@ -12106,17 +12106,17 @@ const marketData = {
             "industry": "",
             "ath": 138768.98,
             "lowest_after_ath": 58300.0,
-            "price": 99600.0,
+            "price": 100200.0,
             "correction_ratio": 0.58,
-            "price_to_ath": 0.718,
+            "price_to_ath": 0.722,
             "days_since_ath": 1765,
             "ma_spread_percentile": 95.88,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -14.9,
+            "eps_q1": -13.41,
+            "eps_q2": -11.92,
+            "eps_q3": -10.43,
             "per": 0,
-            "roe": 0
+            "roe": 3.22
         },
         {
             "ticker": "007660.KS",
@@ -12124,17 +12124,17 @@ const marketData = {
             "industry": "",
             "ath": 156600.0,
             "lowest_after_ath": 100100.0,
-            "price": 111100.0,
+            "price": 111900.0,
             "correction_ratio": 0.361,
-            "price_to_ath": 0.709,
+            "price_to_ath": 0.715,
             "days_since_ath": 78,
-            "ma_spread_percentile": 48.45,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "ma_spread_percentile": 47.42,
+            "eps_q0": 224.5,
+            "eps_q1": 202.05,
+            "eps_q2": 179.6,
+            "eps_q3": 157.15,
             "per": 0,
-            "roe": 0
+            "roe": 26.66
         },
         {
             "ticker": "443060.KS",
@@ -12142,17 +12142,35 @@ const marketData = {
             "industry": "",
             "ath": 257000.0,
             "lowest_after_ath": 158200.0,
-            "price": 181800.0,
+            "price": 182100.0,
             "correction_ratio": 0.384,
-            "price_to_ath": 0.707,
+            "price_to_ath": 0.709,
             "days_since_ath": 120,
-            "ma_spread_percentile": 57.22,
+            "ma_spread_percentile": 56.7,
+            "eps_q0": 36.3,
+            "eps_q1": 32.67,
+            "eps_q2": 29.04,
+            "eps_q3": 25.41,
+            "per": 0,
+            "roe": 36.51
+        },
+        {
+            "ticker": "066570.KS",
+            "name": "LG\uc804\uc790",
+            "industry": "",
+            "ath": 193000.0,
+            "lowest_after_ath": 64100.0,
+            "price": 134800.0,
+            "correction_ratio": 0.668,
+            "price_to_ath": 0.698,
+            "days_since_ath": 1863,
+            "ma_spread_percentile": 99.48,
             "eps_q0": 0,
             "eps_q1": 0.0,
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": 4.57
         },
         {
             "ticker": "078930.KS",
@@ -12160,9 +12178,9 @@ const marketData = {
             "industry": "",
             "ath": 105000.0,
             "lowest_after_ath": 30300.0,
-            "price": 73000.0,
+            "price": 73300.0,
             "correction_ratio": 0.711,
-            "price_to_ath": 0.695,
+            "price_to_ath": 0.698,
             "days_since_ath": 5419,
             "ma_spread_percentile": 99.48,
             "eps_q0": 0,
@@ -12170,7 +12188,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": 4.58
         },
         {
             "ticker": "064400.KS",
@@ -12183,30 +12201,12 @@ const marketData = {
             "price_to_ath": 0.694,
             "days_since_ath": 246,
             "ma_spread_percentile": 56.41,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -11.0,
+            "eps_q1": -9.9,
+            "eps_q2": -8.8,
+            "eps_q3": -7.7,
             "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "066570.KS",
-            "name": "LG\uc804\uc790",
-            "industry": "",
-            "ath": 193000.0,
-            "lowest_after_ath": 64100.0,
-            "price": 133800.0,
-            "correction_ratio": 0.668,
-            "price_to_ath": 0.693,
-            "days_since_ath": 1863,
-            "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "roe": 16.65
         },
         {
             "ticker": "010140.KS",
@@ -12214,17 +12214,17 @@ const marketData = {
             "industry": "",
             "ath": 42212.65,
             "lowest_after_ath": 2896.36,
-            "price": 28900.0,
+            "price": 29000.0,
             "correction_ratio": 0.931,
-            "price_to_ath": 0.685,
+            "price_to_ath": 0.687,
             "days_since_ath": 6805,
-            "ma_spread_percentile": 35.05,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "ma_spread_percentile": 35.57,
+            "eps_q0": 92.0,
+            "eps_q1": 82.8,
+            "eps_q2": 73.6,
+            "eps_q3": 64.4,
             "per": 0,
-            "roe": 0
+            "roe": 8.94
         },
         {
             "ticker": "000100.KS",
@@ -12232,35 +12232,17 @@ const marketData = {
             "industry": "",
             "ath": 166900.0,
             "lowest_after_ath": 100400.0,
-            "price": 113400.0,
+            "price": 113600.0,
             "correction_ratio": 0.398,
-            "price_to_ath": 0.679,
+            "price_to_ath": 0.681,
             "days_since_ath": 498,
             "ma_spread_percentile": 42.27,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -32.4,
+            "eps_q1": -29.16,
+            "eps_q2": -25.92,
+            "eps_q3": -22.68,
             "per": 0,
-            "roe": 0
-        },
-        {
-            "ticker": "010950.KS",
-            "name": "S-Oil",
-            "industry": "",
-            "ath": 170000.0,
-            "lowest_after_ath": 37500.0,
-            "price": 113200.0,
-            "correction_ratio": 0.779,
-            "price_to_ath": 0.666,
-            "days_since_ath": 5419,
-            "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
-            "per": 0,
-            "roe": 0
+            "roe": 2.37
         },
         {
             "ticker": "034020.KS",
@@ -12268,11 +12250,29 @@ const marketData = {
             "industry": "",
             "ath": 151594.77,
             "lowest_after_ath": 2154.23,
-            "price": 100700.0,
+            "price": 101100.0,
             "correction_ratio": 0.986,
-            "price_to_ath": 0.664,
+            "price_to_ath": 0.667,
             "days_since_ath": 6693,
-            "ma_spread_percentile": 67.53,
+            "ma_spread_percentile": 68.04,
+            "eps_q0": 0,
+            "eps_q1": 0.0,
+            "eps_q2": 0.0,
+            "eps_q3": 0.0,
+            "per": 0,
+            "roe": 0.79
+        },
+        {
+            "ticker": "010950.KS",
+            "name": "S-Oil",
+            "industry": "",
+            "ath": 170000.0,
+            "lowest_after_ath": 37500.0,
+            "price": 113100.0,
+            "correction_ratio": 0.779,
+            "price_to_ath": 0.665,
+            "days_since_ath": 5419,
+            "ma_spread_percentile": 99.48,
             "eps_q0": 0,
             "eps_q1": 0.0,
             "eps_q2": 0.0,
@@ -12286,17 +12286,17 @@ const marketData = {
             "industry": "",
             "ath": 629000.0,
             "lowest_after_ath": 266000.0,
-            "price": 413500.0,
+            "price": 412000.0,
             "correction_ratio": 0.577,
-            "price_to_ath": 0.657,
+            "price_to_ath": 0.655,
             "days_since_ath": 1205,
-            "ma_spread_percentile": 1.55,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "ma_spread_percentile": 2.06,
+            "eps_q0": 85.6,
+            "eps_q1": 77.04,
+            "eps_q2": 68.48,
+            "eps_q3": 59.92,
             "per": 0,
-            "roe": 0
+            "roe": 1.52
         },
         {
             "ticker": "011070.KS",
@@ -12304,17 +12304,17 @@ const marketData = {
             "industry": "",
             "ath": 414500.0,
             "lowest_after_ath": 121000.0,
-            "price": 269500.0,
+            "price": 270500.0,
             "correction_ratio": 0.708,
-            "price_to_ath": 0.65,
+            "price_to_ath": 0.653,
             "days_since_ath": 1436,
-            "ma_spread_percentile": 65.98,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "ma_spread_percentile": 65.46,
+            "eps_q0": 22.3,
+            "eps_q1": 20.07,
+            "eps_q2": 17.84,
+            "eps_q3": 15.61,
             "per": 0,
-            "roe": 0
+            "roe": 5.96
         },
         {
             "ticker": "032640.KS",
@@ -12322,17 +12322,17 @@ const marketData = {
             "industry": "",
             "ath": 31400.0,
             "lowest_after_ath": 4050.0,
-            "price": 17400.0,
+            "price": 17430.0,
             "correction_ratio": 0.871,
-            "price_to_ath": 0.554,
+            "price_to_ath": 0.555,
             "days_since_ath": 6707,
-            "ma_spread_percentile": 84.02,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "ma_spread_percentile": 84.54,
+            "eps_q0": -63.9,
+            "eps_q1": -57.51,
+            "eps_q2": -51.12,
+            "eps_q3": -44.73,
             "per": 0,
-            "roe": 0
+            "roe": 3.51
         },
         {
             "ticker": "035420.KS",
@@ -12345,10 +12345,10 @@ const marketData = {
             "price_to_ath": 0.548,
             "days_since_ath": 1674,
             "ma_spread_percentile": 33.51,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -67.4,
+            "eps_q1": -60.66,
+            "eps_q2": -53.92,
+            "eps_q3": -47.18,
             "per": 0,
             "roe": 0
         },
@@ -12368,7 +12368,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": 0.81
         },
         {
             "ticker": "006400.KS",
@@ -12376,9 +12376,9 @@ const marketData = {
             "industry": "",
             "ath": 828000.0,
             "lowest_after_ath": 157700.0,
-            "price": 423500.0,
+            "price": 422000.0,
             "correction_ratio": 0.81,
-            "price_to_ath": 0.511,
+            "price_to_ath": 0.51,
             "days_since_ath": 1660,
             "ma_spread_percentile": 93.3,
             "eps_q0": 0,
@@ -12386,7 +12386,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -2.59
         },
         {
             "ticker": "259960.KS",
@@ -12394,17 +12394,17 @@ const marketData = {
             "industry": "",
             "ath": 580000.0,
             "lowest_after_ath": 145900.0,
-            "price": 263000.0,
+            "price": 264000.0,
             "correction_ratio": 0.748,
-            "price_to_ath": 0.453,
+            "price_to_ath": 0.455,
             "days_since_ath": 1562,
             "ma_spread_percentile": 20.1,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 201.0,
+            "eps_q1": 180.9,
+            "eps_q2": 160.8,
+            "eps_q3": 140.7,
             "per": 0,
-            "roe": 0
+            "roe": 18.43
         },
         {
             "ticker": "003490.KS",
@@ -12412,9 +12412,9 @@ const marketData = {
             "industry": "",
             "ath": 60214.96,
             "lowest_after_ath": 8685.87,
-            "price": 26500.0,
+            "price": 26600.0,
             "correction_ratio": 0.856,
-            "price_to_ath": 0.44,
+            "price_to_ath": 0.442,
             "days_since_ath": 6686,
             "ma_spread_percentile": 94.33,
             "eps_q0": 0,
@@ -12422,7 +12422,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": 8.48
         },
         {
             "ticker": "096770.KS",
@@ -12430,9 +12430,9 @@ const marketData = {
             "industry": "",
             "ath": 310181.78,
             "lowest_after_ath": 80800.0,
-            "price": 135800.0,
+            "price": 135700.0,
             "correction_ratio": 0.74,
-            "price_to_ath": 0.438,
+            "price_to_ath": 0.437,
             "days_since_ath": 1849,
             "ma_spread_percentile": 54.12,
             "eps_q0": 0,
@@ -12440,7 +12440,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -6.49
         },
         {
             "ticker": "326030.KS",
@@ -12448,17 +12448,17 @@ const marketData = {
             "industry": "",
             "ath": 269500.0,
             "lowest_after_ath": 50900.0,
-            "price": 117600.0,
+            "price": 117700.0,
             "correction_ratio": 0.811,
-            "price_to_ath": 0.436,
+            "price_to_ath": 0.437,
             "days_since_ath": 2059,
             "ma_spread_percentile": 78.35,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 667.9,
+            "eps_q1": 601.11,
+            "eps_q2": 534.32,
+            "eps_q3": 467.53,
             "per": 0,
-            "roe": 0
+            "roe": 58.15
         },
         {
             "ticker": "018260.KS",
@@ -12466,17 +12466,17 @@ const marketData = {
             "industry": "",
             "ath": 429500.0,
             "lowest_after_ath": 109000.0,
-            "price": 174400.0,
+            "price": 174900.0,
             "correction_ratio": 0.746,
-            "price_to_ath": 0.406,
+            "price_to_ath": 0.407,
             "days_since_ath": 4110,
             "ma_spread_percentile": 19.59,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -4.2,
+            "eps_q1": -3.78,
+            "eps_q2": -3.36,
+            "eps_q3": -2.94,
             "per": 0,
-            "roe": 0
+            "roe": 7.84
         },
         {
             "ticker": "090430.KS",
@@ -12484,17 +12484,17 @@ const marketData = {
             "industry": "",
             "ath": 455500.0,
             "lowest_after_ath": 86800.0,
-            "price": 158300.0,
+            "price": 158600.0,
             "correction_ratio": 0.809,
             "price_to_ath": 0.348,
             "days_since_ath": 3893,
             "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 75.4,
+            "eps_q1": 67.86,
+            "eps_q2": 60.32,
+            "eps_q3": 52.78,
             "per": 0,
-            "roe": 0
+            "roe": 3.31
         },
         {
             "ticker": "003670.KS",
@@ -12502,17 +12502,17 @@ const marketData = {
             "industry": "",
             "ath": 694000.0,
             "lowest_after_ath": 98500.0,
-            "price": 236000.0,
+            "price": 235000.0,
             "correction_ratio": 0.858,
-            "price_to_ath": 0.34,
+            "price_to_ath": 0.339,
             "days_since_ath": 946,
             "ma_spread_percentile": 84.54,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 1604.7,
+            "eps_q1": 1444.23,
+            "eps_q2": 1283.76,
+            "eps_q3": 1123.29,
             "per": 0,
-            "roe": 0
+            "roe": 0.43
         },
         {
             "ticker": "035720.KS",
@@ -12520,17 +12520,17 @@ const marketData = {
             "industry": "",
             "ath": 173000.0,
             "lowest_after_ath": 32550.0,
-            "price": 57900.0,
+            "price": 57800.0,
             "correction_ratio": 0.812,
-            "price_to_ath": 0.335,
+            "price_to_ath": 0.334,
             "days_since_ath": 1709,
             "ma_spread_percentile": 15.98,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 18.1,
+            "eps_q1": 16.29,
+            "eps_q2": 14.48,
+            "eps_q3": 12.67,
             "per": 0,
-            "roe": 0
+            "roe": 1.18
         },
         {
             "ticker": "051910.KS",
@@ -12538,9 +12538,9 @@ const marketData = {
             "industry": "",
             "ath": 1050000.0,
             "lowest_after_ath": 181500.0,
-            "price": 350500.0,
+            "price": 349000.0,
             "correction_ratio": 0.827,
-            "price_to_ath": 0.334,
+            "price_to_ath": 0.332,
             "days_since_ath": 1870,
             "ma_spread_percentile": 22.68,
             "eps_q0": 0,
@@ -12548,7 +12548,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": -2.06
         },
         {
             "ticker": "323410.KS",
@@ -12561,12 +12561,12 @@ const marketData = {
             "price_to_ath": 0.301,
             "days_since_ath": 1653,
             "ma_spread_percentile": 89.69,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -10.3,
+            "eps_q1": -9.27,
+            "eps_q2": -8.24,
+            "eps_q3": -7.21,
             "per": 0,
-            "roe": 0
+            "roe": 6.98
         },
         {
             "ticker": "377300.KS",
@@ -12574,9 +12574,9 @@ const marketData = {
             "industry": "",
             "ath": 248500.0,
             "lowest_after_ath": 21200.0,
-            "price": 65800.0,
+            "price": 66100.0,
             "correction_ratio": 0.915,
-            "price_to_ath": 0.265,
+            "price_to_ath": 0.266,
             "days_since_ath": 1548,
             "ma_spread_percentile": 80.93,
             "eps_q0": 0,
@@ -12584,7 +12584,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": 2.75
         },
         {
             "ticker": "042660.KS",
@@ -12602,7 +12602,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": 25.12
         },
         {
             "ticker": "034220.KS",
@@ -12610,9 +12610,9 @@ const marketData = {
             "industry": "",
             "ath": 54918.02,
             "lowest_after_ath": 7150.0,
-            "price": 13800.0,
+            "price": 13750.0,
             "correction_ratio": 0.87,
-            "price_to_ath": 0.251,
+            "price_to_ath": 0.25,
             "days_since_ath": 6686,
             "ma_spread_percentile": 9.79,
             "eps_q0": 0,
@@ -12620,7 +12620,7 @@ const marketData = {
             "eps_q2": 0.0,
             "eps_q3": 0.0,
             "per": 0,
-            "roe": 0
+            "roe": 3.82
         },
         {
             "ticker": "028050.KS",
@@ -12628,17 +12628,17 @@ const marketData = {
             "industry": "",
             "ath": 281000.0,
             "lowest_after_ath": 6910.0,
-            "price": 35800.0,
+            "price": 36050.0,
             "correction_ratio": 0.975,
-            "price_to_ath": 0.127,
+            "price_to_ath": 0.128,
             "days_since_ath": 5335,
             "ma_spread_percentile": 99.48,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -13.3,
+            "eps_q1": -11.97,
+            "eps_q2": -10.64,
+            "eps_q3": -9.31,
             "per": 0,
-            "roe": 0
+            "roe": 14.1
         },
         {
             "ticker": "011200.KS",
@@ -12651,12 +12651,12 @@ const marketData = {
             "price_to_ath": 0.072,
             "days_since_ath": 5629,
             "ma_spread_percentile": 41.75,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": -82.5,
+            "eps_q1": -74.25,
+            "eps_q2": -66.0,
+            "eps_q3": -57.75,
             "per": 0,
-            "roe": 0
+            "roe": 9.71
         },
         {
             "ticker": "001440.KS",
@@ -12664,17 +12664,17 @@ const marketData = {
             "industry": "",
             "ath": 19956508.0,
             "lowest_after_ath": 3288.19,
-            "price": 33900.0,
+            "price": 34000.0,
             "correction_ratio": 1.0,
             "price_to_ath": 0.002,
             "days_since_ath": 6679,
             "ma_spread_percentile": 93.81,
-            "eps_q0": 0,
-            "eps_q1": 0.0,
-            "eps_q2": 0.0,
-            "eps_q3": 0.0,
+            "eps_q0": 64.3,
+            "eps_q1": 57.87,
+            "eps_q2": 51.44,
+            "eps_q3": 45.01,
             "per": 0,
-            "roe": 0
+            "roe": 3.21
         }
     ]
 };
