@@ -190,6 +190,47 @@ document.addEventListener('DOMContentLoaded', () => {
         glossaryBox.classList.toggle('active');
     });
 
+    // Column Resizing Logic
+    const initResizer = () => {
+        const headers = document.querySelectorAll('th');
+        headers.forEach(th => {
+            // Add resizer element if not already present
+            if (!th.querySelector('.resizer')) {
+                const resizer = document.createElement('div');
+                resizer.classList.add('resizer');
+                th.appendChild(resizer);
+
+                let startX, startWidth;
+
+                const onMouseMove = (e) => {
+                    const width = startWidth + (e.pageX - startX);
+                    if (width > 50) { // Minimum width
+                        th.style.width = `${width}px`;
+                        th.style.minWidth = `${width}px`;
+                    }
+                };
+
+                const onMouseUp = () => {
+                    document.removeEventListener('mousemove', onMouseMove);
+                    document.removeEventListener('mouseup', onMouseUp);
+                    th.classList.remove('resizing');
+                };
+
+                resizer.addEventListener('mousedown', (e) => {
+                    e.stopPropagation(); // Prevent sorting trigger
+                    startX = e.pageX;
+                    startWidth = th.offsetWidth;
+                    th.classList.add('resizing');
+                    document.addEventListener('mousemove', onMouseMove);
+                    document.addEventListener('mouseup', onMouseUp);
+                });
+            }
+        });
+    };
+
+    // Call resizer init
+    initResizer();
+
     // Close glossary when clicking outside
     document.addEventListener('click', (e) => {
         if (!glossaryBox.contains(e.target) && e.target !== glossaryBtn) {

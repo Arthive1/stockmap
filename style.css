@@ -360,7 +360,34 @@ body {
     top: 0;
     backdrop-filter: blur(5px);
     z-index: 10;
+    position: relative;
+    /* For resizer positioning */
 }
+
+/* ===== COLUMN RESIZING ===== */
+.resizer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 6px;
+    background: transparent;
+    cursor: col-resize;
+    z-index: 20;
+    user-select: none;
+    transition: background 0.2s;
+}
+
+.resizer:hover,
+.resizing .resizer {
+    background: var(--primary-color);
+    opacity: 0.5;
+}
+
+.stock-table th.resizing {
+    border-right: 2px solid var(--primary-color);
+}
+
 
 /* Align text to left for Ticker, Name, and Industry */
 .stock-table th:nth-child(1),
