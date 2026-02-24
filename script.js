@@ -125,6 +125,14 @@ function renderRecommendations(data) {
         return cond1 && cond2 && cond3 && cond4;
     });
 
+    // Sort by ma_spread_percentile ascending (lowest first = moving averages are closest)
+    // Put missing values (-1) at the very end
+    recommendedStocks.sort((a, b) => {
+        const valA = a.ma_spread_percentile >= 0 ? a.ma_spread_percentile : Infinity;
+        const valB = b.ma_spread_percentile >= 0 ? b.ma_spread_percentile : Infinity;
+        return valA - valB;
+    });
+
     if (recommendedStocks.length === 0) {
         noMsgWrapper.style.display = 'block';
     } else {
@@ -137,8 +145,8 @@ function renderRecommendations(data) {
                 <div class="rec-ticker">${stock.ticker}</div>
                 <div class="rec-name">${stock.name}</div>
                 <div class="rec-metrics">
+                    <span title="이격도 하위 백분위수"><i class="ri-funds-line"></i> ${stock.ma_spread_percentile >= 0 ? formatNumber(stock.ma_spread_percentile) + '%' : '-'}</span>
                     <span title="종가/최고가 비율"><i class="ri-arrow-up-circle-line"></i> ${formatPercent(stock.price_to_ath)}</span>
-                    <span title="EPS Q0"><i class="ri-bar-chart-box-line"></i> ${formatNumber(stock.eps_q0)}%</span>
                 </div>
             `;
             // Click to search
