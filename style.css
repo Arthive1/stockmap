@@ -268,6 +268,11 @@ body {
     flex-shrink: 0;
 }
 
+.rec-card-container {
+    display: flex;
+    gap: 1rem;
+}
+
 .rec-card {
     background: var(--surface-color);
     border: 1px solid var(--border-color);
@@ -657,22 +662,131 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .title-container h1 {
-        font-size: 2.5rem;
-    }
-
     .app-container {
-        padding: 1rem;
-    }
-
-    .hero-section {
-        padding: 4rem 0 2rem;
+        padding: 1rem 0.5rem;
     }
 
     .logo {
-        position: relative;
-        top: 0;
-        left: 0;
+        position: static;
         margin-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .hero-section {
+        padding: 2rem 0 2rem;
+    }
+
+    .title-container h1 {
+        font-size: 2rem;
+    }
+
+    .title-container p {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+    }
+
+    .search-box {
+        padding: 0.8rem 1.2rem;
+        margin: 0 0.5rem;
+    }
+
+    .search-box input {
+        font-size: 0.95rem;
+    }
+
+    /* Recommendations Mobile */
+    .market-rec-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .market-label-card {
+        width: 100%;
+        height: 40px;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .recommendation-cards-wrapper {
+        gap: 1.5rem;
+    }
+
+    /* Wrap cards in its own scroll row if column layout for total row */
+    .market-rec-row {
+        display: block;
+        /* Switch from flex to allow inner scrolling */
+    }
+
+    .market-rec-row::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    /* Re-setup flex for cards only */
+    .market-rec-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .market-rec-row .rec-card-container {
+        display: flex;
+        overflow-x: auto;
+        gap: 0.8rem;
+        padding-bottom: 0.5rem;
+        scrollbar-width: none;
+    }
+
+    /* We need to wrap cards in a container for best mobile scoll experience if label is above */
+}
+
+/* More comprehensive mobile fix */
+@media (max-width: 600px) {
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .market-tabs {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+        scrollbar-width: none;
+    }
+
+    .tab-btn {
+        flex-shrink: 0;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .table-actions {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .action-btn {
+        flex: 1;
+        justify-content: center;
+        min-width: 120px;
+    }
+
+    .glossary-box {
+        position: fixed;
+        top: 20%;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    .stock-table {
+        font-size: 0.85rem;
     }
 }

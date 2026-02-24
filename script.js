@@ -190,6 +190,9 @@ function renderRecommendations() {
             emptyMsg.innerHTML = '추천 종목 없음';
             rowDiv.appendChild(emptyMsg);
         } else {
+            const cardsContainer = document.createElement('div');
+            cardsContainer.className = 'rec-card-container';
+
             topRecommendations.forEach(stock => {
                 const card = document.createElement('div');
                 card.className = 'rec-card';
@@ -212,8 +215,9 @@ function renderRecommendations() {
                     searchInput.value = stock.ticker;
                     searchInput.dispatchEvent(new Event('input'));
                 });
-                rowDiv.appendChild(card);
+                cardsContainer.appendChild(card);
             });
+            rowDiv.appendChild(cardsContainer);
         }
 
         wrapper.appendChild(rowDiv);
