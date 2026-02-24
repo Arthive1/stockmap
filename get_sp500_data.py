@@ -48,11 +48,15 @@ def fetch_data(item):
             price = info.get('regularMarketPrice', info.get('previousClose', 0))
         
         hist = t.history(period="20y", interval="1wk")
+        days_since_ath = 0
         if not hist.empty:
             ath_idx = hist['High'].idxmax()
             all_time_high = float(hist['High'].max())
             data_after_ath = hist.loc[ath_idx:]
             lowest_after_ath = float(data_after_ath['Low'].min()) if not data_after_ath.empty else price
+            if pd.notna(ath_idx):
+                ath_date = ath_idx.tz_localize(None) if ath_idx.tzinfo else ath_idx
+                days_since_ath = (datetime.now() - ath_date).days
         else:
             all_time_high = float(info.get('fiftyTwoWeekHigh', 0))
             lowest_after_ath = float(info.get('fiftyTwoWeekLow', 0))
@@ -82,6 +86,7 @@ def fetch_data(item):
             "price": round(price, 2) if price else 0,
             "correction_ratio": correction_ratio,
             "price_to_ath": price_to_ath,
+            "days_since_ath": days_since_ath,
             "eps_q0": round(eps_curr, 2),
             "eps_q1": round(eps_curr * 0.9, 2),
             "eps_q2": round(eps_curr * 0.8, 2),

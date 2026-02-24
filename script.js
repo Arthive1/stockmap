@@ -90,6 +90,7 @@ function renderTable(data) {
             <td>$${formatNumber(stock.price)}</td>
             <td class="${getCorrectionClass(stock.correction_ratio)}">${formatPercent(stock.correction_ratio)}</td>
             <td class="${getPriceToAthClass(stock.price_to_ath)}">${formatPercent(stock.price_to_ath)}</td>
+            <td>${formatNumber(stock.days_since_ath)}일</td>
             <td class="${getEpsClass(stock.eps_q0)}">${formatNumber(stock.eps_q0)}%</td>
             <td class="${getEpsClass(stock.eps_q1)}">${formatNumber(stock.eps_q1)}%</td>
             <td class="${getEpsClass(stock.eps_q2)}">${formatNumber(stock.eps_q2)}%</td>
