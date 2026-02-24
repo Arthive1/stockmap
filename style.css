@@ -254,7 +254,10 @@ body {
     border: 1px solid var(--primary-color);
     border-radius: 8px;
     padding: 1rem;
-    min-width: 130px;
+    width: 140px;
+    /* 고정 너비 */
+    height: 100px;
+    /* 고정 높이 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -270,10 +273,18 @@ body {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1rem;
-    min-width: 150px;
+    width: 180px;
+    /* 고정 너비 */
+    height: 100px;
+    /* 고정 높이 */
     flex-shrink: 0;
     cursor: pointer;
     transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    /* 영역 밖 숨김 */
 }
 
 .rec-card:hover {
@@ -295,7 +306,8 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 130px;
+    width: 100%;
+    /* 카드 너비에 맞춤 */
 }
 
 .rec-metrics {
