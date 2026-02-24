@@ -53,6 +53,29 @@ function getPerClass(val) {
     if (val >= 15 && val <= 50) return 'bg-lightgreen';
     return '';
 }
+function getDaysSinceAthClass(val) {
+    if (val >= 40 && val <= 365) return 'bg-lightgreen';
+    return '';
+}
+function getMaSpreadClass(val) {
+    if (val >= 0 && val <= 20) return 'bg-lightgreen';
+    return '';
+}
+
+// Function to calculate how many green cells a stock has
+function getGreenCellCount(stock) {
+    let count = 0;
+    if (getPriceToAthClass(stock.price_to_ath)) count++;
+    if (getDaysSinceAthClass(stock.days_since_ath)) count++;
+    if (getMaSpreadClass(stock.ma_spread_percentile)) count++;
+    if (getEpsClass(stock.eps_q0)) count++;
+    if (getEpsClass(stock.eps_q1)) count++;
+    if (getEpsClass(stock.eps_q2)) count++;
+    if (getEpsClass(stock.eps_q3)) count++;
+    if (getPerClass(stock.per) === 'bg-lightgreen') count++;
+    if (getRoeClass(stock.roe)) count++;
+    return count;
+}
 
 // Helper to format numbers and strings safely
 function formatNumber(num) {
@@ -93,8 +116,8 @@ function renderTable(data) {
             <td>${currentMarket === 'KOSPI' ? '₩' : '$'}${formatNumber(stock.price)}</td>
             <td class="${getCorrectionClass(stock.correction_ratio)}">${formatPercent(stock.correction_ratio)}</td>
             <td class="${getPriceToAthClass(stock.price_to_ath)}">${formatPercent(stock.price_to_ath)}</td>
-            <td>${formatNumber(stock.days_since_ath)}일</td>
-            <td>${stock.ma_spread_percentile >= 0 ? formatNumber(stock.ma_spread_percentile) + '%' : '-'}</td>
+            <td class="${getDaysSinceAthClass(stock.days_since_ath)}">${formatNumber(stock.days_since_ath)}일</td>
+            <td class="${getMaSpreadClass(stock.ma_spread_percentile)}">${stock.ma_spread_percentile >= 0 ? formatNumber(stock.ma_spread_percentile) + '%' : '-'}</td>
             <td class="${getEpsClass(stock.eps_q0)}">${formatNumber(stock.eps_q0)}%</td>
             <td class="${getEpsClass(stock.eps_q1)}">${formatNumber(stock.eps_q1)}%</td>
             <td class="${getEpsClass(stock.eps_q2)}">${formatNumber(stock.eps_q2)}%</td>
@@ -215,6 +238,9 @@ document.addEventListener('DOMContentLoaded', () => {
         nasdaqTab.textContent = 'NASDAQ 300';
     }
 
+    // Default sort by green cell count for the initial market (SP500)
+    displayData.sort((a, b) => getGreenCellCount(b) - getGreenCellCount(a));
+
     // Initial render
     renderTable(displayData);
     renderRecommendations();
@@ -230,6 +256,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Update current market and table data
             currentMarket = btn.getAttribute('data-market');
             displayData = [...(mockMarketData[currentMarket] || [])];
+
+            // Sort by green cell count by default
+            displayData.sort((a, b) => getGreenCellCount(b) - getGreenCellCount(a));
 
             // Reset sorting
             currentSortColumn = null;
