@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 import urllib.request
-import yfinance as yf
+import yahooquery as yq
 import concurrent.futures
 import pytz
 from datetime import datetime
@@ -29,7 +29,6 @@ def get_kospi_items():
     print("Fetching KOSPI 100 companies...")
     df = fdr.StockListing('KOSPI')
     top100 = df.sort_values('Marcap', ascending=False).head(100)
-    # yfinance uses .KS suffix for KOSPI
     tickers = top100['Code'] + '.KS'
     return list(zip(tickers.tolist(), top100['Name'].tolist(), top100['Dept'].fillna("N/A").tolist()))
 
@@ -50,42 +49,56 @@ def fetch_data(item):
     sector = item[2]
     
     try:
-        t = yf.Ticker(t_clean)
-        info = t.info
+        t = yq.Ticker(t_clean)
         
-        if not info or ('regularMarketPrice' not in info and 'currentPrice' not in info):
+        # stats
+        summary = t.summary_detail.get(t_clean, {})
+        key_stats = t.key_stats.get(t_clean, {})
+        fin_data = t.financial_data.get(t_clean, {})
+        
+        if isinstance(summary, str): summary = {}
+        if isinstance(key_stats, str): key_stats = {}
+        if isinstance(fin_data, str): fin_data = {}
+
+        # get histories
+        hist = t.history(period="20y", interval="1wk")
+        hist_1y = t.history(period="1y", interval="1d")
+        
+        if isinstance(hist, pd.DataFrame):
+            hist = hist.reset_index()
+        else:
             return None
             
-        if is_market_open:
-            price = info.get('previousClose', info.get('regularMarketPreviousClose', 0))
+        if isinstance(hist_1y, pd.DataFrame):
+            hist_1y = hist_1y.reset_index()
         else:
-            price = info.get('currentPrice', info.get('regularMarketPrice', info.get('previousClose', 0)))
+            return None
             
-        if not price:
-            price = info.get('regularMarketPrice', info.get('previousClose', 0))
-        
-        hist = t.history(period="20y", interval="1wk")
+        if hist.empty or hist_1y.empty:
+            return None
+            
+        # price
+        price = hist_1y['close'].iloc[-1]
+            
+        # ATH 20y
         days_since_ath = 0
-        if not hist.empty:
-            ath_idx = hist['High'].idxmax()
-            all_time_high = float(hist['High'].max())
-            data_after_ath = hist.loc[ath_idx:]
-            lowest_after_ath = float(data_after_ath['Low'].min()) if not data_after_ath.empty else price
-            if pd.notna(ath_idx):
-                ath_date = ath_idx.tz_localize(None) if ath_idx.tzinfo else ath_idx
-                days_since_ath = (datetime.now() - ath_date).days
-        else:
-            all_time_high = float(info.get('fiftyTwoWeekHigh', 0))
-            lowest_after_ath = float(info.get('fiftyTwoWeekLow', 0))
+        ath_idx = hist['high'].idxmax()
+        all_time_high = float(hist['high'].max())
+        data_after_ath = hist.loc[ath_idx:]
+        lowest_after_ath = float(data_after_ath['low'].min()) if not data_after_ath.empty else price
+        
+        ath_date = hist.loc[ath_idx, 'date']
+        ath_date_str = str(ath_date)
+        # convert whatever date format to datetime obj
+        ath_dt = pd.to_datetime(ath_date_str).replace(tzinfo=None)
+        days_since_ath = (datetime.now() - ath_dt).days
 
-        # Calculate Moving Average Spread Percentile over the last 1 year
-        hist_1y = t.history(period="1y", interval="1d")
+        # Moving average
         ma_percentile = None
-        if not hist_1y.empty and len(hist_1y) > 50:
-            hist_1y['MA10'] = hist_1y['Close'].rolling(window=10).mean()
-            hist_1y['MA20'] = hist_1y['Close'].rolling(window=20).mean()
-            hist_1y['MA50'] = hist_1y['Close'].rolling(window=50).mean()
-            
+        if len(hist_1y) > 50:
+            hist_1y['MA10'] = hist_1y['close'].rolling(window=10).mean()
+            hist_1y['MA20'] = hist_1y['close'].rolling(window=20).mean()
+            hist_1y['MA50'] = hist_1y['close'].rolling(window=50).mean()
             hist_1y['Spread'] = abs(hist_1y['MA10'] - hist_1y['MA50']) + abs(hist_1y['MA20'] - hist_1y['MA50'])
             spread_data = hist_1y['Spread'].dropna()
             
@@ -93,20 +106,19 @@ def fetch_data(item):
                 today_spread = spread_data.iloc[-1]
                 lower_count = (spread_data < today_spread).sum()
                 ma_percentile = (lower_count / len(spread_data)) * 100
-            
-        per = info.get('trailingPE', 0)
-        roe = info.get('returnOnEquity', 0)
-        if roe:
-            roe = roe * 100
-        else:
-            roe = 0
-            
-        eps_curr = info.get('earningsQuarterlyGrowth', 0)
-        if eps_curr:
-            eps_curr = eps_curr * 100
-        else:
-            eps_curr = 0
-            
+                
+        # PE
+        per = summary.get('trailingPE', key_stats.get('trailingPE', 0))
+        # ROE
+        roe = fin_data.get('returnOnEquity', key_stats.get('returnOnEquity', 0))
+        if roe: roe = roe * 100
+        else: roe = 0
+        
+        # EPS QQQ
+        eps_curr = key_stats.get('earningsQuarterlyGrowth', fin_data.get('earningsGrowth', 0))
+        if eps_curr: eps_curr = eps_curr * 100
+        else: eps_curr = 0
+        
         correction_ratio = round((all_time_high - lowest_after_ath) / all_time_high, 3) if all_time_high and all_time_high > 0 else 0
         price_to_ath = round(price / all_time_high, 3) if all_time_high and all_time_high > 0 else 0
         
@@ -134,7 +146,8 @@ def fetch_data(item):
 def process_market(name, items):
     result = []
     print(f"[{name}] Fetching data from Yahoo Finance for {len(items)} companies...")
-    with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
+    # use 30 workers because yahooquery has no rate limits initially, but 30 is safe
+    with concurrent.futures.ThreadPoolExecutor(max_workers=30) as executor:
         futures = [executor.submit(fetch_data, item) for item in items]
         count = 0
         for future in concurrent.futures.as_completed(futures):
