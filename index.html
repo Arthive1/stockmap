@@ -45,17 +45,21 @@
 
         <!-- Recommendations Section -->
         <section class="recommendations-section" id="recommendationsSection">
-            <h3 class="recommendations-title"><i class="ri-thumb-up-line"></i> 오늘의 매수 추천 후보군</h3>
-            <div class="recommendation-cards" id="recommendationCards">
-                <!-- Recommended stock cards will be inserted here -->
+            <h3 class="recommendations-title"><i class="ri-thumb-up-line"></i> 오늘의 매수 추천 후보군 (상위 6개)</h3>
+            <div class="recommendation-cards-wrapper" id="recommendationsWrapper">
+                <!-- Market rows will be dynamically populated here -->
             </div>
-            <p id="noRecommendationsMessage" class="no-recommendations" style="display: none;">매수 추천 종목 없음</p>
         </section>
 
         <!-- Main Content Section -->
         <main class="main-content">
             <div class="section-header">
-                <h2 class="section-title">S&P 500 주요 종목 분석</h2>
+                <div class="market-tabs">
+                    <button class="tab-btn active" data-market="SP500">S&P 500</button>
+                    <button class="tab-btn" data-market="NASDAQ">NASDAQ 100</button>
+                    <button class="tab-btn" data-market="KOSPI">KOSPI 100</button>
+                </div>
+                <!-- <h2 class="section-title">주요 종목 분석</h2> -->
                 <div class="table-actions">
                     <div class="glossary-wrapper">
                         <button class="action-btn" id="glossaryBtn">
@@ -127,7 +131,7 @@
             </div>
         </main>
     </div>
-    <script src="sp500_data.js"></script>
+    <script src="market_data.js"></script>
     <script src="script.js"></script>
 </body>
 

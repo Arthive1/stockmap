@@ -181,6 +181,35 @@ body {
     color: var(--border-color);
 }
 
+/* ===== MARKET TABS ===== */
+.market-tabs {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tab-btn {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--secondary-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tab-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.tab-btn.active {
+    background: rgba(88, 166, 255, 0.15);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
 /* ===== RECOMMENDATIONS SECTION ===== */
 .recommendations-section {
     margin-bottom: 2rem;
@@ -199,10 +228,41 @@ body {
     gap: 0.5rem;
 }
 
-.recommendation-cards {
+.recommendation-cards-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.market-rec-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     gap: 1rem;
+    padding-bottom: 0.5rem;
+    /* hide scrollbar */
+    scrollbar-width: none;
+}
+
+.market-rec-row::-webkit-scrollbar {
+    display: none;
+}
+
+/* Special styling for the Market Name Card */
+.market-label-card {
+    background: linear-gradient(135deg, rgba(88, 166, 255, 0.1), rgba(139, 148, 158, 0.1));
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    text-align: center;
+    flex-shrink: 0;
 }
 
 .rec-card {
@@ -211,6 +271,7 @@ body {
     border-radius: 8px;
     padding: 1rem;
     min-width: 150px;
+    flex-shrink: 0;
     cursor: pointer;
     transition: all 0.2s;
 }

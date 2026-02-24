@@ -1,13 +1,14 @@
-// We are now using the actual S&P 500 list from sp500_data.js which defines `sp500Data`
-const mockStockData = typeof sp500Data !== 'undefined' ? sp500Data : [];
-let displayData = [...mockStockData];
+// We are now using the actual data from market_data.js which defines `marketData`
+const mockMarketData = typeof marketData !== 'undefined' ? marketData : { "SP500": [], "NASDAQ": [], "KOSPI": [] };
+let currentMarket = 'SP500';
+let displayData = [...(mockMarketData[currentMarket] || [])];
 let currentSortColumn = null;
 let currentSortOrder = null; // 'desc', 'asc', or null
 
 // Function to sort data
 function sortData(column, order) {
     if (order === null) {
-        displayData = [...mockStockData];
+        displayData = [...(mockMarketData[currentMarket] || [])];
         return;
     }
 
@@ -104,60 +105,86 @@ function renderTable(data) {
     });
 }
 
-// Function to find and render recommended stocks
-function renderRecommendations(data) {
-    const cardsContainer = document.getElementById('recommendationCards');
-    const noMsgWrapper = document.getElementById('noRecommendationsMessage');
-    cardsContainer.innerHTML = '';
+// Function to find and render recommended stocks for all markets
+function renderRecommendations() {
+    const wrapper = document.getElementById('recommendationsWrapper');
+    wrapper.innerHTML = '';
 
-    // Filter logic based on criteria:
-    // 1. 조정 비율(correction_ratio) <= 0.40 (40% 이하)
-    // 2. 종가/최고가 비율(price_to_ath) >= 0.90 (90% 이상)
-    // 3. 최고가 경과일(days_since_ath) >= 40 && <= 365 (40일~365일 범위 이내)
-    // 4. EPS Q0 >= 20 && EPS Q1 >= 20 (모두 20% 이상)
+    const markets = [
+        { key: 'SP500', name: 'S&P 500' },
+        { key: 'NASDAQ', name: 'NASDAQ' },
+        { key: 'KOSPI', name: 'KOSPI' }
+    ];
 
-    const recommendedStocks = data.filter(stock => {
-        const cond1 = stock.correction_ratio <= 0.40;
-        const cond2 = stock.price_to_ath >= 0.90;
-        const cond3 = stock.days_since_ath >= 40 && stock.days_since_ath <= 365;
-        const cond4 = stock.eps_q0 >= 20 && stock.eps_q1 >= 20;
+    markets.forEach(m => {
+        const marketItems = mockMarketData[m.key] || [];
 
-        return cond1 && cond2 && cond3 && cond4;
-    });
-
-    // Sort by ma_spread_percentile ascending (lowest first = moving averages are closest)
-    // Put missing values (-1) at the very end
-    recommendedStocks.sort((a, b) => {
-        const valA = a.ma_spread_percentile >= 0 ? a.ma_spread_percentile : Infinity;
-        const valB = b.ma_spread_percentile >= 0 ? b.ma_spread_percentile : Infinity;
-        return valA - valB;
-    });
-
-    if (recommendedStocks.length === 0) {
-        noMsgWrapper.style.display = 'block';
-    } else {
-        noMsgWrapper.style.display = 'none';
-
-        recommendedStocks.forEach(stock => {
-            const card = document.createElement('div');
-            card.className = 'rec-card';
-            card.innerHTML = `
-                <div class="rec-ticker">${stock.ticker}</div>
-                <div class="rec-name">${stock.name}</div>
-                <div class="rec-metrics">
-                    <span title="이격도 하위 백분위수"><i class="ri-funds-line"></i> ${stock.ma_spread_percentile >= 0 ? formatNumber(stock.ma_spread_percentile) + '%' : '-'}</span>
-                    <span title="종가/최고가 비율"><i class="ri-arrow-up-circle-line"></i> ${formatPercent(stock.price_to_ath)}</span>
-                </div>
-            `;
-            // Click to search
-            card.addEventListener('click', () => {
-                const searchInput = document.getElementById('searchInput');
-                searchInput.value = stock.ticker;
-                searchInput.dispatchEvent(new Event('input'));
-            });
-            cardsContainer.appendChild(card);
+        // Filter logic based on criteria:
+        const recommendedStocks = marketItems.filter(stock => {
+            const cond1 = stock.correction_ratio <= 0.40;
+            const cond2 = stock.price_to_ath >= 0.90;
+            const cond3 = stock.days_since_ath >= 40 && stock.days_since_ath <= 365;
+            const cond4 = stock.eps_q0 >= 20 && stock.eps_q1 >= 20;
+            return cond1 && cond2 && cond3 && cond4;
         });
-    }
+
+        recommendedStocks.sort((a, b) => {
+            const valA = a.ma_spread_percentile >= 0 ? a.ma_spread_percentile : Infinity;
+            const valB = b.ma_spread_percentile >= 0 ? b.ma_spread_percentile : Infinity;
+            return valA - valB;
+        });
+
+        // Take only top 6 recommendations per market
+        const topRecommendations = recommendedStocks.slice(0, 6);
+
+        // Create row container
+        const rowDiv = document.createElement('div');
+        rowDiv.className = 'market-rec-row';
+
+        // Create Market Label Card
+        const labelCard = document.createElement('div');
+        labelCard.className = 'market-label-card';
+        labelCard.textContent = m.name;
+        rowDiv.appendChild(labelCard);
+
+        if (topRecommendations.length === 0) {
+            const emptyMsg = document.createElement('div');
+            emptyMsg.className = 'rec-card';
+            emptyMsg.style.display = 'flex';
+            emptyMsg.style.alignItems = 'center';
+            emptyMsg.style.justifyContent = 'center';
+            emptyMsg.style.color = 'var(--secondary-color)';
+            emptyMsg.innerHTML = '추천 종목 없음';
+            rowDiv.appendChild(emptyMsg);
+        } else {
+            topRecommendations.forEach(stock => {
+                const card = document.createElement('div');
+                card.className = 'rec-card';
+                card.innerHTML = `
+                    <div class="rec-ticker">${stock.ticker}</div>
+                    <div class="rec-name">${stock.name}</div>
+                    <div class="rec-metrics">
+                        <span title="이격도 하위 백분위수"><i class="ri-funds-line"></i> ${stock.ma_spread_percentile >= 0 ? formatNumber(stock.ma_spread_percentile) + '%' : '-'}</span>
+                        <span title="종가/최고가 비율"><i class="ri-arrow-up-circle-line"></i> ${formatPercent(stock.price_to_ath)}</span>
+                    </div>
+                `;
+                // Click to focus and switch to that market tab
+                card.addEventListener('click', () => {
+                    // Switch tab
+                    const tabBtn = document.querySelector(`.tab-btn[data-market="${m.key}"]`);
+                    if (tabBtn) tabBtn.click();
+
+                    // Search
+                    const searchInput = document.getElementById('searchInput');
+                    searchInput.value = stock.ticker;
+                    searchInput.dispatchEvent(new Event('input'));
+                });
+                rowDiv.appendChild(card);
+            });
+        }
+
+        wrapper.appendChild(rowDiv);
+    });
 }
 
 
@@ -165,7 +192,33 @@ function renderRecommendations(data) {
 document.addEventListener('DOMContentLoaded', () => {
     // Initial render
     renderTable(displayData);
-    renderRecommendations(mockStockData);
+    renderRecommendations();
+
+    // Tab switching logic
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Update active styling
+            tabBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Update current market and table data
+            currentMarket = btn.getAttribute('data-market');
+            displayData = [...(mockMarketData[currentMarket] || [])];
+
+            // Reset sorting
+            currentSortColumn = null;
+            currentSortOrder = null;
+            document.querySelectorAll('th.sortable .sort-icon').forEach(icon => {
+                icon.className = 'ri-expand-up-down-line sort-icon';
+            });
+
+            // Clear search
+            document.getElementById('searchInput').value = '';
+
+            renderTable(displayData);
+        });
+    });
 
     // Setup sorting
     const sortableHeaders = document.querySelectorAll('th.sortable');
@@ -222,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 2. Try prefix ticker match
         if (!targetRow) {
-            const matchedTicker = mockStockData.find(s => s.ticker.toUpperCase().startsWith(query));
+            const matchedTicker = displayData.find(s => s.ticker.toUpperCase().startsWith(query));
             if (matchedTicker) {
                 targetRow = document.getElementById(`row-${matchedTicker.ticker.toUpperCase()}`);
             }
@@ -231,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // 3. Try partial name match (case-insensitive)
         if (!targetRow) {
             const lowerQuery = e.target.value.trim().toLowerCase();
-            const matchedName = mockStockData.find(s => s.name.toLowerCase().includes(lowerQuery));
+            const matchedName = displayData.find(s => s.name.toLowerCase().includes(lowerQuery));
             if (matchedName) {
                 targetRow = document.getElementById(`row-${matchedName.ticker.toUpperCase()}`);
             }
