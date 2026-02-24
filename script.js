@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (theadRow && !theadRow.querySelector('.index-col')) {
         const indexTh = document.createElement('th');
         indexTh.className = 'sticky-col index-col';
-        indexTh.textContent = '#';
+        indexTh.textContent = '구분';
         theadRow.insertBefore(indexTh, theadRow.firstChild);
     }
     // 2. Ensure NASDAQ tab says 300 (for cached HTML)
