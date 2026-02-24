@@ -201,6 +201,21 @@ function renderRecommendations() {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
+    // --- Cache Invalid/Sync Fixes ---
+    // 1. Ensure the index column (#) header exists (for cached HTML)
+    const theadRow = document.querySelector('#stockTable thead tr');
+    if (theadRow && !theadRow.querySelector('.index-col')) {
+        const indexTh = document.createElement('th');
+        indexTh.className = 'sticky-col index-col';
+        indexTh.textContent = '#';
+        theadRow.insertBefore(indexTh, theadRow.firstChild);
+    }
+    // 2. Ensure NASDAQ tab says 300 (for cached HTML)
+    const nasdaqTab = document.querySelector('.tab-btn[data-market="NASDAQ"]');
+    if (nasdaqTab && nasdaqTab.textContent.includes('100')) {
+        nasdaqTab.textContent = 'NASDAQ 300';
+    }
+
     // Initial render
     renderTable(displayData);
     renderRecommendations();
