@@ -77,6 +77,16 @@ function getGreenCellCount(stock) {
     return count;
 }
 
+// Helper to get current price for a ticker
+function getCurrentPrice(ticker) {
+    if (typeof mockMarketData === 'undefined') return null;
+    for (const market in mockMarketData) {
+        const stock = mockMarketData[market].find(s => s.ticker === ticker);
+        if (stock) return stock.price;
+    }
+    return null;
+}
+
 // Helper to format numbers and strings safely
 function formatNumber(num) {
     if (num === null || num === undefined) return '-';
@@ -84,7 +94,7 @@ function formatNumber(num) {
     if (isNaN(num)) return '-';
     return Number.isInteger(num)
         ? num.toLocaleString('en-US')
-        : num.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        : num.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 2 });
 }
 
 // Helper to format percentages
@@ -227,6 +237,364 @@ function renderRecommendations() {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
+    // --- View Switching ---
+    const navBtns = document.querySelectorAll('.nav-btn');
+    const fundermentalsView = document.getElementById('fundermentalsView');
+    const tradeHistoryView = document.getElementById('tradeHistoryView');
+    const headerContent = document.querySelector('.header-content');
+
+    navBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            navBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const view = btn.getAttribute('data-view');
+            if (view === 'fundermentals') {
+                fundermentalsView.style.display = 'block';
+                tradeHistoryView.style.display = 'none';
+                headerContent.style.display = 'block';
+            } else {
+                fundermentalsView.style.display = 'none';
+                tradeHistoryView.style.display = 'block';
+                headerContent.style.display = 'none';
+                renderTradeHistory();
+            }
+        });
+    });
+
+    // --- Modal Logic ---
+    const modal = document.getElementById('tradeModal');
+    const closeModal = document.querySelector('.close-modal');
+    const tradeForm = document.getElementById('tradeForm');
+    const modalTicker = document.getElementById('modalTicker');
+    const modalDate = document.getElementById('modalDate');
+
+    // Close modal when clicking X or outside
+    closeModal.onclick = () => modal.style.display = 'none';
+    window.onclick = (event) => {
+        if (event.target == modal) modal.style.display = 'none';
+    };
+
+    // Open modal when clicking a row in the stock table
+    document.getElementById('stockTableBody').addEventListener('click', (e) => {
+        const row = e.target.closest('tr');
+        if (row && !row.querySelector('td.glossary-box')) { // Ensure we didn't click glossary
+            const tickerCell = row.querySelector('.ticker');
+            if (tickerCell) {
+                const ticker = tickerCell.textContent;
+                modalTicker.value = ticker;
+                modalDate.value = new Date().toISOString().split('T')[0];
+                modal.style.display = 'flex';
+            }
+        }
+    });
+
+    // Handle trade form submission
+    tradeForm.onsubmit = (e) => {
+        e.preventDefault();
+        const tradeData = {
+            ticker: modalTicker.value,
+            date: modalDate.value,
+            quantity: parseFloat(document.getElementById('modalQuantity').value),
+            price: parseFloat(document.getElementById('modalPrice').value),
+            id: Date.now()
+        };
+
+        // Save to localStorage with averaging logic
+        let trades = JSON.parse(localStorage.getItem('stockTrades') || '[]');
+        const existingTradeIndex = trades.findIndex(t => t.ticker === tradeData.ticker);
+
+        if (existingTradeIndex !== -1) {
+            const existing = trades[existingTradeIndex];
+            const totalQuantity = existing.quantity + tradeData.quantity;
+            const totalCost = (existing.quantity * existing.price) + (tradeData.quantity * tradeData.price);
+            const avgPrice = totalCost / totalQuantity;
+
+            trades[existingTradeIndex] = {
+                ...existing,
+                quantity: totalQuantity,
+                price: avgPrice,
+                date: tradeData.date // Update with latest buy date
+            };
+        } else {
+            trades.push(tradeData);
+        }
+
+        localStorage.setItem('stockTrades', JSON.stringify(trades));
+
+        // Reset and close
+        tradeForm.reset();
+        modal.style.display = 'none';
+        alert('기록되었습니다. 거래내역에서 확인하세요.');
+    };
+
+    // --- Sell Modal Logic ---
+    const sellModal = document.getElementById('sellModal');
+    const sellForm = document.getElementById('sellForm');
+    const sellTickerInput = document.getElementById('sellTicker');
+    const sellDateInput = document.getElementById('sellDate');
+    const sellQtyInput = document.getElementById('sellQuantity');
+    const sellPriceInput = document.getElementById('sellPrice');
+    const maxSellQtySpan = document.getElementById('maxSellQty');
+
+    // Handle sell form submission
+    sellForm.onsubmit = (e) => {
+        e.preventDefault();
+        const ticker = sellTickerInput.value;
+        const sellQty = parseFloat(sellQtyInput.value);
+        const sellPrice = parseFloat(sellPriceInput.value);
+        const sellDate = sellDateInput.value;
+
+        let trades = JSON.parse(localStorage.getItem('stockTrades') || '[]');
+        const tradeIndex = trades.findIndex(t => t.ticker === ticker);
+
+        if (tradeIndex === -1 || trades[tradeIndex].quantity < sellQty) {
+            alert('보유 수량이 부족하거나 오류가 발생했습니다.');
+            return;
+        }
+
+        const trade = trades[tradeIndex];
+
+        // Fee Calculation (Toss Securities)
+        const isKR = ticker.endsWith('.KS') || ticker.endsWith('.KQ');
+        const buyFeeRate = isKR ? 0.00015 : 0.001;
+        const sellFeeRate = isKR ? 0.00195 : 0.001; // Domestic Sell: 0.015% fee + 0.18% tax
+
+        const costBasis = sellQty * trade.price * (1 + buyFeeRate);
+        const revenue = sellQty * sellPrice * (1 - sellFeeRate);
+        const profit = revenue - costBasis;
+
+        // Load History
+        let history = JSON.parse(localStorage.getItem('stockHistory') || '[]');
+        const existingHistoryIndex = history.findIndex(h => h.ticker === ticker);
+
+        if (existingHistoryIndex !== -1) {
+            // Aggregate with existing history
+            const existing = history[existingHistoryIndex];
+
+            const totalQty = existing.quantity + sellQty;
+
+            // Recalculate average buy price based on quantities and their respective buy prices
+            const totalBuyCost = (existing.quantity * existing.buyPrice) + (sellQty * trade.price);
+            const avgBuyPrice = totalBuyCost / totalQty;
+
+            // Recalculate average sell price
+            const totalSellRevenue = (existing.quantity * existing.sellPrice) + (sellQty * sellPrice);
+            const avgSellPrice = totalSellRevenue / totalQty;
+
+            // Recalculate total profit
+            const totalProfit = existing.profit + profit;
+
+            // Approximate profit rate based on new averages
+            const totalCostBasis = totalQty * avgBuyPrice * (1 + buyFeeRate);
+            const profitRate = (totalProfit / totalCostBasis) * 100;
+
+            history[existingHistoryIndex] = {
+                ...existing,
+                sellDate: sellDate > existing.sellDate ? sellDate : existing.sellDate, // Keep the latest sell date
+                quantity: totalQty,
+                buyPrice: avgBuyPrice,
+                sellPrice: avgSellPrice,
+                profit: totalProfit,
+                profitRate: profitRate
+            };
+        } else {
+            // Create new history entry
+            const profitRate = (profit / costBasis) * 100;
+            const historyEntry = {
+                ticker: ticker,
+                buyDate: trade.date,
+                sellDate: sellDate,
+                quantity: sellQty,
+                buyPrice: trade.price,
+                sellPrice: sellPrice,
+                profit: profit,
+                profitRate: profitRate,
+                isKR: isKR,
+                id: Date.now()
+            };
+            history.push(historyEntry);
+        }
+
+        // Save History
+        localStorage.setItem('stockHistory', JSON.stringify(history));
+
+        // Update Trades (Handle partial sell)
+        if (trade.quantity === sellQty) {
+            trades.splice(tradeIndex, 1);
+        } else {
+            trade.quantity -= sellQty;
+        }
+        localStorage.setItem('stockTrades', JSON.stringify(trades));
+
+        sellForm.reset();
+        sellModal.style.display = 'none';
+        renderTradeHistory();
+        alert('매도가 완료되었습니다.');
+    };
+
+    // Close sell modal logic (shared style)
+    sellModal.querySelector('.close-modal').onclick = () => sellModal.style.display = 'none';
+
+    // Function to render trade history
+    function renderTradeHistory() {
+        const trades = JSON.parse(localStorage.getItem('stockTrades') || '[]');
+        const historyList = JSON.parse(localStorage.getItem('stockHistory') || '[]');
+
+        // --- Calculate Summary Stats ---
+        let evalKRW = 0, costKRW = 0;
+        let evalUSD = 0, costUSD = 0;
+        let realizedProfitKRW = 0, realizedProfitUSD = 0;
+
+        trades.forEach(t => {
+            const isKR = t.ticker.endsWith('.KS') || t.ticker.endsWith('.KQ');
+            const currentPrice = getCurrentPrice(t.ticker) || t.price;
+            const evalAmount = t.quantity * currentPrice;
+            const costAmount = t.quantity * t.price;
+            if (isKR) {
+                evalKRW += evalAmount;
+                costKRW += costAmount;
+            } else {
+                evalUSD += evalAmount;
+                costUSD += costAmount;
+            }
+        });
+
+        historyList.forEach(h => {
+            const isKR = h.ticker.endsWith('.KS') || h.ticker.endsWith('.KQ');
+            if (isKR) realizedProfitKRW += h.profit;
+            else realizedProfitUSD += h.profit;
+        });
+
+        // Update Summary UI - Evaluation & Holding Profit
+        const holdingProfitKRW = evalKRW - costKRW;
+        const holdingProfitRateKRW = costKRW > 0 ? (holdingProfitKRW / costKRW) * 100 : 0;
+
+        const holdingProfitUSD = evalUSD - costUSD;
+        const holdingProfitRateUSD = costUSD > 0 ? (holdingProfitUSD / costUSD) * 100 : 0;
+
+        document.getElementById('holdingEvalKRW').textContent = `₩${formatNumber(evalKRW)}`;
+        const krwHoldingProfitEl = document.getElementById('holdingProfitKRW');
+        krwHoldingProfitEl.textContent = `${holdingProfitKRW >= 0 ? '+' : '-'}${holdingProfitKRW >= 0 ? '₩' : '₩'}${formatNumber(Math.abs(holdingProfitKRW))} (${holdingProfitRateKRW.toFixed(2)}%)`;
+        krwHoldingProfitEl.className = `summary-sub ${holdingProfitKRW >= 0 ? 'positive' : 'negative'}`;
+
+        document.getElementById('holdingEvalUSD').textContent = `$${formatNumber(evalUSD)}`;
+        const usdHoldingProfitEl = document.getElementById('holdingProfitUSD');
+        usdHoldingProfitEl.textContent = `${holdingProfitUSD >= 0 ? '+' : '-'}${holdingProfitUSD >= 0 ? '$' : '$'}${formatNumber(Math.abs(holdingProfitUSD))} (${holdingProfitRateUSD.toFixed(2)}%)`;
+        usdHoldingProfitEl.className = `summary-sub ${holdingProfitUSD >= 0 ? 'positive' : 'negative'}`;
+
+        // Update Summary UI - Realized Profit
+        const krwRealizedEl = document.getElementById('totalProfitKRW');
+        krwRealizedEl.textContent = `${realizedProfitKRW >= 0 ? '₩' : '-₩'}${formatNumber(Math.abs(realizedProfitKRW))}`;
+        krwRealizedEl.className = `value ${realizedProfitKRW >= 0 ? 'positive' : 'negative'}`;
+
+        const usdRealizedEl = document.getElementById('totalProfitUSD');
+        usdRealizedEl.textContent = `${realizedProfitUSD >= 0 ? '$' : '-$'}${formatNumber(Math.abs(realizedProfitUSD))}`;
+        usdRealizedEl.className = `value ${realizedProfitUSD >= 0 ? 'positive' : 'negative'}`;
+
+        // --- Render Holding Table ---
+        const entryTableBody = document.getElementById('entryTableBody');
+        entryTableBody.innerHTML = '';
+
+        if (trades.length === 0) {
+            entryTableBody.innerHTML = '<tr><td colspan="9" style="text-align:center; padding: 2rem;">입력된 매수 정보가 없습니다.</td></tr>';
+        } else {
+            trades.forEach(trade => {
+                const row = document.createElement('tr');
+                const totalCost = trade.quantity * trade.price;
+                const isKR = trade.ticker.endsWith('.KS') || trade.ticker.endsWith('.KQ');
+                const currency = isKR ? '₩' : '$';
+
+                const currentPrice = getCurrentPrice(trade.ticker) || trade.price; // Fallback to buy price
+                const evalAmount = trade.quantity * currentPrice;
+                const pl = evalAmount - totalCost;
+                const plClass = pl >= 0 ? 'positive' : 'negative';
+
+                row.innerHTML = `
+                    <td>
+                        <div class="ticker-cell">
+                            <button class="delete-item-btn" data-type="trade" data-ticker="${trade.ticker}">&times;</button>
+                            <span>${trade.ticker}</span>
+                        </div>
+                    </td>
+                    <td>${trade.date}</td>
+                    <td>${formatNumber(trade.quantity)}</td>
+                    <td>${currency}${formatNumber(trade.price)}</td>
+                    <td>${currency}${formatNumber(totalCost)}</td>
+                    <td>${currency}${formatNumber(currentPrice)}</td>
+                    <td>${currency}${formatNumber(evalAmount)}</td>
+                    <td class="${plClass}">${pl >= 0 ? currency : '-' + currency}${formatNumber(Math.abs(pl))}</td>
+                    <td><button class="sell-btn" data-ticker="${trade.ticker}">매도</button></td>
+                `;
+
+                // Add delete event listener
+                row.querySelector('.delete-item-btn').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (confirm(`${trade.ticker} 정보를 삭제하시겠습니까?`)) {
+                        let trades = JSON.parse(localStorage.getItem('stockTrades') || '[]');
+                        trades = trades.filter(t => t.ticker !== trade.ticker);
+                        localStorage.setItem('stockTrades', JSON.stringify(trades));
+                        renderTradeHistory();
+                    }
+                });
+
+                // Add event listener to sell button
+                row.querySelector('.sell-btn').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    sellTickerInput.value = trade.ticker;
+                    sellDateInput.value = new Date().toISOString().split('T')[0];
+                    sellQtyInput.value = trade.quantity;
+                    maxSellQtySpan.textContent = formatNumber(trade.quantity);
+                    sellModal.style.display = 'flex';
+                });
+
+                entryTableBody.appendChild(row);
+            });
+        }
+
+        // --- Render History Table ---
+        const historyTableBody = document.getElementById('historyTableBody');
+        historyTableBody.innerHTML = '';
+
+        if (historyList.length === 0) {
+            historyTableBody.innerHTML = '<tr><td colspan="8" style="text-align:center; padding: 2rem;">거래 완료 내역이 없습니다.</td></tr>';
+        } else {
+            historyList.forEach(item => {
+                const row = document.createElement('tr');
+                const currency = item.isKR ? '₩' : '$';
+                const profitClass = item.profit >= 0 ? 'positive' : 'negative';
+
+                row.innerHTML = `
+                    <td>
+                        <div class="ticker-cell">
+                            <button class="delete-item-btn" data-type="history" data-id="${item.id}">&times;</button>
+                            <span>${item.ticker}</span>
+                        </div>
+                    </td>
+                    <td>${item.buyDate}</td>
+                    <td>${item.sellDate}</td>
+                    <td>${formatNumber(item.quantity)}</td>
+                    <td>${currency}${formatNumber(item.buyPrice)}</td>
+                    <td>${currency}${formatNumber(item.sellPrice)}</td>
+                    <td class="${profitClass}">${item.profit >= 0 ? currency : '-' + currency}${formatNumber(Math.abs(item.profit))}</td>
+                    <td class="${profitClass}">${item.profitRate.toFixed(2)}%</td>
+                `;
+
+                // Add delete event listener
+                row.querySelector('.delete-item-btn').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (confirm(`해당 거래 기록을 삭제하시겠습니까?`)) {
+                        let history = JSON.parse(localStorage.getItem('stockHistory') || '[]');
+                        history = history.filter(h => h.id !== item.id);
+                        localStorage.setItem('stockHistory', JSON.stringify(history));
+                        renderTradeHistory();
+                    }
+                });
+                historyTableBody.appendChild(row);
+            });
+        }
+    }
+
     // --- Cache Invalid/Sync Fixes ---
     // 1. Ensure the index column (#) header exists (for cached HTML)
     const theadRow = document.querySelector('#stockTable thead tr');
