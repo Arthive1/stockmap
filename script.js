@@ -33,11 +33,12 @@ function sortData(column, order) {
 
 // Helper for specific metric colors
 function getCorrectionClass(val) {
+    if (val <= 0.40) return 'bg-lightgreen';
     if (val > 0.50) return 'bg-orange';
     return '';
 }
 function getPriceToAthClass(val) {
-    if (val >= 0.90) return 'bg-lightgreen';
+    if (val >= 0.80) return 'bg-lightgreen';
     return '';
 }
 function getEpsClass(val) {
@@ -174,7 +175,7 @@ function renderRecommendations() {
             }
 
             const cond1 = stock.correction_ratio <= 0.40;
-            const cond2 = stock.price_to_ath >= 0.90;
+            const cond2 = stock.price_to_ath >= 0.80;
             const cond3 = stock.days_since_ath >= 40 && stock.days_since_ath <= 365;
             // Allow EPS check to pass if data is 0 (missing from Yahoo API) OR if it meets the >= 20 criterion.
             const cond4 = (stock.eps_q0 === 0 && stock.eps_q1 === 0) || (stock.eps_q0 >= 20 && stock.eps_q1 >= 20);
@@ -651,7 +652,7 @@ document.addEventListener('DOMContentLoaded', () => {
                      <td class="${plClass}">${pl >= 0 ? currency : '-' + currency}${formatNumber(Math.abs(pl))}</td>
                     <td>
                         <div class="reason-chart-cell">
-                            ${(trade.buyDetails && trade.buyDetails.some(d => d.reason)) || trade.reason ? `<button class="icon-btn reason-btn" title="매수근거 보기"><i class="ri-chat-bubble-3-line"></i></button>` : '-'}
+                            ${(trade.buyDetails && trade.buyDetails.some(d => d.reason)) || trade.reason ? `<button class="icon-btn reason-btn" title="매수근거 보기"><i class="ri-kakao-talk-fill" style="color: #FEE500; font-size: 1.2rem; filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));"></i></button>` : '-'}
                         </div>
                     </td>
                     <td>
@@ -742,7 +743,7 @@ document.addEventListener('DOMContentLoaded', () => {
                      <td class="${profitClass}">${item.profitRate.toFixed(2)}%</td>
                     <td>
                         <div class="reason-chart-cell">
-                            ${(item.sellDetails && item.sellDetails.some(d => d.reason)) || item.sellReason ? `<button class="icon-btn sell-reason-btn" title="매도근거 보기"><i class="ri-chat-bubble-3-line"></i></button>` : '-'}
+                            ${(item.sellDetails && item.sellDetails.some(d => d.reason)) || item.sellReason ? `<button class="icon-btn sell-reason-btn" title="매도근거 보기"><i class="ri-kakao-talk-fill" style="color: #FEE500; font-size: 1.2rem; filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));"></i></button>` : '-'}
                         </div>
                     </td>
                     <td>
