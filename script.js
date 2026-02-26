@@ -57,6 +57,10 @@ function getDaysSinceAthClass(val) {
     if (val >= 40 && val <= 365) return 'bg-lightgreen';
     return '';
 }
+function getMaSpreadClass(val) {
+    if (val >= -0.03 && val <= 0.03) return 'bg-lightgreen';
+    return '';
+}
 
 
 // Function to calculate how many green cells a stock has
@@ -64,6 +68,9 @@ function getGreenCellCount(stock) {
     let count = 0;
     if (getPriceToAthClass(stock.price_to_ath)) count++;
     if (getDaysSinceAthClass(stock.days_since_ath)) count++;
+    if (getMaSpreadClass(stock.ma_20_spread)) count++;
+    if (getMaSpreadClass(stock.ma_50_spread)) count++;
+    if (getMaSpreadClass(stock.ma_20_50_spread)) count++;
     if (getEpsClass(stock.eps_q0)) count++;
     if (getEpsClass(stock.eps_q1)) count++;
     if (getEpsClass(stock.eps_q2)) count++;
@@ -123,9 +130,9 @@ function renderTable(data) {
             <td class="${getCorrectionClass(stock.correction_ratio)}">${formatPercent(stock.correction_ratio)}</td>
             <td class="${getPriceToAthClass(stock.price_to_ath)}">${formatPercent(stock.price_to_ath)}</td>
             <td class="${getDaysSinceAthClass(stock.days_since_ath)}">${formatNumber(stock.days_since_ath)}일</td>
-            <td>${stock.ma_20_spread !== undefined && stock.ma_20_spread !== null ? formatPercent(stock.ma_20_spread) : '-'}</td>
-            <td>${stock.ma_50_spread !== undefined && stock.ma_50_spread !== null ? formatPercent(stock.ma_50_spread) : '-'}</td>
-            <td>${stock.ma_20_50_spread !== undefined && stock.ma_20_50_spread !== null ? formatPercent(stock.ma_20_50_spread) : '-'}</td>
+            <td class="${stock.ma_20_spread !== undefined && stock.ma_20_spread !== null ? getMaSpreadClass(stock.ma_20_spread) : ''}">${stock.ma_20_spread !== undefined && stock.ma_20_spread !== null ? formatPercent(stock.ma_20_spread) : '-'}</td>
+            <td class="${stock.ma_50_spread !== undefined && stock.ma_50_spread !== null ? getMaSpreadClass(stock.ma_50_spread) : ''}">${stock.ma_50_spread !== undefined && stock.ma_50_spread !== null ? formatPercent(stock.ma_50_spread) : '-'}</td>
+            <td class="${stock.ma_20_50_spread !== undefined && stock.ma_20_50_spread !== null ? getMaSpreadClass(stock.ma_20_50_spread) : ''}">${stock.ma_20_50_spread !== undefined && stock.ma_20_50_spread !== null ? formatPercent(stock.ma_20_50_spread) : '-'}</td>
             <td class="${getEpsClass(stock.eps_q0)}">${formatNumber(stock.eps_q0)}%</td>
             <td class="${getEpsClass(stock.eps_q1)}">${formatNumber(stock.eps_q1)}%</td>
             <td class="${getEpsClass(stock.eps_q2)}">${formatNumber(stock.eps_q2)}%</td>
@@ -161,12 +168,23 @@ function renderRecommendations() {
                 return false;
             }
 
+            // Exclude ADRs (Depositary Receipts) if market is NASDAQ
+            if (m.key === 'NASDAQ' && stock.name && (stock.name.includes('ADR') || stock.name.includes('Depositary'))) {
+                return false;
+            }
+
             const cond1 = stock.correction_ratio <= 0.40;
             const cond2 = stock.price_to_ath >= 0.90;
             const cond3 = stock.days_since_ath >= 40 && stock.days_since_ath <= 365;
             // Allow EPS check to pass if data is 0 (missing from Yahoo API) OR if it meets the >= 20 criterion.
             const cond4 = (stock.eps_q0 === 0 && stock.eps_q1 === 0) || (stock.eps_q0 >= 20 && stock.eps_q1 >= 20);
-            return cond1 && cond2 && cond3 && cond4;
+
+            // Condition 5: Either MA20 spread or MA50 spread is in the 'green' range (-3% to +3%)
+            const isMa20Green = stock.ma_20_spread !== undefined && stock.ma_20_spread !== null && stock.ma_20_spread >= -0.03 && stock.ma_20_spread <= 0.03;
+            const isMa50Green = stock.ma_50_spread !== undefined && stock.ma_50_spread !== null && stock.ma_50_spread >= -0.03 && stock.ma_50_spread <= 0.03;
+            const cond5 = isMa20Green || isMa50Green;
+
+            return cond1 && cond2 && cond3 && cond4 && cond5;
         });
 
         recommendedStocks.sort((a, b) => {
