@@ -402,16 +402,111 @@ body {
     font-family: inherit;
     font-size: 1rem;
     transition: border-color 0.2s;
+    color-scheme: dark;
 }
 
-.form-group input:focus {
+.form-group input:focus,
+.form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
+}
+
+.form-group textarea {
+    width: 100%;
+    background: #0d1117;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    min-height: 80px;
+    resize: vertical;
 }
 
 .form-group input[readonly] {
     opacity: 0.6;
     cursor: not-allowed;
+}
+
+.reason-chart-cell {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Detail Modal Body Styles */
+.detail-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.detail-modal-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.detail-modal-body::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 3px;
+}
+
+.detail-item-row {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.detail-date {
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.detail-content {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    white-space: pre-wrap;
+    line-height: 1.5;
+}
+
+.detail-chart-link {
+    width: auto !important;
+    padding: 0 1rem !important;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--primary-color) !important;
+}
+
+.icon-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--secondary-color);
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.icon-btn:hover {
+    background: rgba(88, 166, 255, 0.1);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
 }
 
 .submit-btn {
@@ -1102,4 +1197,53 @@ body {
     .stock-table {
         font-size: 0.85rem;
     }
+}
+
+.reason-cell {
+    max-width: 250px;
+    white-space: normal;
+    word-break: keep-all;
+    text-align: left !important;
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    padding: 0.8rem !important;
+}
+
+.chart-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== FLATPICKR CUSTOM STYLING (둥글둥글한 UI) ===== */
+.flatpickr-calendar {
+    border-radius: 16px !important;
+    padding: 10px !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6) !important;
+    background: #161b22 !important;
+    border: 1px solid #30363d !important;
+}
+
+.flatpickr-months .flatpickr-month {
+    font-weight: 700;
+}
+
+.flatpickr-current-month .numInputWrapper {
+    border-radius: 8px !important;
+}
+
+.flatpickr-day {
+    border-radius: 50% !important;
+    /* 날짜 영역을 완벽한 원으로 */
+    font-weight: 600;
+}
+
+.flatpickr-day.selected {
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+span.flatpickr-weekday {
+    font-weight: 700 !important;
+    color: var(--primary-color) !important;
 }

@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Remix Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Flatpickr (커스텀 캘린더) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/dark.css">
 </head>
 
 <body>
@@ -24,13 +27,13 @@
     <div class="app-container">
         <!-- Header / Search Section -->
         <header class="hero-section">
-            <div class="logo">
+            <div class="logo" style="cursor: pointer;" onclick="window.location.reload();">
                 <i class="ri-stock-line logo-icon"></i>
                 <span class="logo-text">StockMap</span>
             </div>
 
             <nav class="main-nav">
-                <button class="nav-btn active" data-view="fundermentals">기본분석</button>
+                <button class="nav-btn active" data-view="fundermentals">주식분석</button>
                 <button class="nav-btn" data-view="tradeHistory">거래내역</button>
             </nav>
 
@@ -83,9 +86,9 @@
                                     <li><strong>조정 비율:</strong> 역사적 최고가 이후 가장 최저가까지의 주식 조정 비율 (하락폭)</li>
                                     <li><strong>종가/최고가 비율:</strong> 오늘 종가를 역사적 최고가로 나눈 값 (최고가에 얼마나 근접했는지 비율)</li>
                                     <li><strong>최고가 경과일:</strong> 역사적 최고가를 기록한 이후 오늘까지 경과한 일수</li>
-                                    <li><strong>이격도 퍼센타일:</strong> 최근 1년간 각 일자의 (|10일선-50일선| + |20일선-50일선|) 값을 기준으로, 오늘
-                                        수치가
-                                        과거 1년 중 하위 몇 %에 위치하는지 나타내는 지표</li>
+                                    <li><strong>20 이평선 이격도:</strong> (오늘 주가의 종가 - 20일 이동평균선) / 20일 이동평균선</li>
+                                    <li><strong>50 이평선 이격도:</strong> (오늘 주가의 종가 - 50일 이동평균선) / 50일 이동평균선</li>
+                                    <li><strong>20-50 이평선 이격도:</strong> (20일 이동평균선 - 50일 이동평균선) / 50일 이동평균선</li>
                                     <li><strong>EPS Q0 ~ Q-3:</strong> 분기별 EPS(주당순이익) 상승률 (Q0: 최근, Q-3: 3분기 전)</li>
                                     <li><strong>PER (Price-to-Earnings Ratio):</strong> 주가 수익 비율 (시가총액 / 순이익)</li>
                                     <li><strong>ROE (Return on Equity):</strong> 자기자본 이익률 (순이익 / 자기자본)</li>
@@ -118,7 +121,11 @@
                                         class="ri-expand-up-down-line sort-icon"></i></th>
                                 <th class="sortable" data-sort="days_since_ath">최고가 경과일 <i
                                         class="ri-expand-up-down-line sort-icon"></i></th>
-                                <th class="sortable" data-sort="ma_spread_percentile">이동평균 이격도 <br>(하위 백분위수) <i
+                                <th class="sortable" data-sort="ma_20_spread">20 이평선 이격도 <i
+                                        class="ri-expand-up-down-line sort-icon"></i></th>
+                                <th class="sortable" data-sort="ma_50_spread">50 이평선 이격도 <i
+                                        class="ri-expand-up-down-line sort-icon"></i></th>
+                                <th class="sortable" data-sort="ma_20_50_spread">20-50 이평선 이격도 <i
                                         class="ri-expand-up-down-line sort-icon"></i></th>
                                 <th class="sortable" data-sort="eps_q0">EPS Q0 <i
                                         class="ri-expand-up-down-line sort-icon"></i></th>
@@ -207,6 +214,8 @@
                                     <th>오늘 주가</th>
                                     <th>평가금</th>
                                     <th>손익</th>
+                                    <th>매수근거</th>
+                                    <th>차트</th>
                                     <th>매도</th>
                                 </tr>
                             </thead>
@@ -228,8 +237,10 @@
                                     <th>수량</th>
                                     <th>매수평단</th>
                                     <th>매도평단</th>
-                                    <th>수익</th>
+                                    <th>수수료제외 수익</th>
                                     <th>수익률</th>
+                                    <th>매도근거</th>
+                                    <th>차트</th>
                                 </tr>
                             </thead>
                             <tbody id="historyTableBody">
@@ -256,7 +267,7 @@
                 </div>
                 <div class="form-group">
                     <label for="modalDate">매수일</label>
-                    <input type="date" id="modalDate" required>
+                    <input type="text" id="modalDate" required placeholder="날짜 선택" style="cursor: pointer;">
                 </div>
                 <div class="form-group">
                     <label for="modalQuantity">매수량</label>
@@ -265,6 +276,14 @@
                 <div class="form-group">
                     <label for="modalPrice">매수가격</label>
                     <input type="number" id="modalPrice" min="0" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="modalReason">매수근거</label>
+                    <textarea id="modalReason" placeholder="매수하게 된 이유를 입력하세요..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="modalChart">차트 (트레이딩뷰 링크)</label>
+                    <input type="url" id="modalChart" placeholder="https://kr.tradingview.com/chart/...">
                 </div>
                 <button type="submit" class="submit-btn primary-btn">입력하기</button>
             </form>
@@ -285,7 +304,7 @@
                 </div>
                 <div class="form-group">
                     <label for="sellDate">매도일</label>
-                    <input type="date" id="sellDate" required>
+                    <input type="text" id="sellDate" required placeholder="날짜 선택" style="cursor: pointer;">
                 </div>
                 <div class="form-group">
                     <label for="sellQuantity">매도수량 (보유: <span id="maxSellQty">0</span>)</label>
@@ -295,12 +314,35 @@
                     <label for="sellPrice">매도평단가</label>
                     <input type="number" id="sellPrice" min="0" step="0.01" required>
                 </div>
+                <div class="form-group">
+                    <label for="sellReason">매도근거</label>
+                    <textarea id="sellReason" placeholder="매도하게 된 이유를 입력하세요..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="sellChart">차트 (트레이딩뷰 링크)</label>
+                    <input type="url" id="sellChart" placeholder="https://kr.tradingview.com/chart/...">
+                </div>
                 <button type="submit" class="submit-btn secondary-btn" style="background: var(--negative-color);">매도
                     완료</button>
             </form>
         </div>
     </div>
 
+    <!-- Detail View Modal -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content" style="max-width: 500px;">
+            <div class="modal-header">
+                <h2 id="detailModalTitle">상세 내역</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div id="detailModalBody" class="detail-modal-body">
+                <!-- Content will be dynamic -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
     <script src="market_data.js"></script>
     <script src="script.js"></script>
 </body>

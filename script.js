@@ -57,17 +57,13 @@ function getDaysSinceAthClass(val) {
     if (val >= 40 && val <= 365) return 'bg-lightgreen';
     return '';
 }
-function getMaSpreadClass(val) {
-    if (val >= 0 && val <= 20) return 'bg-lightgreen';
-    return '';
-}
+
 
 // Function to calculate how many green cells a stock has
 function getGreenCellCount(stock) {
     let count = 0;
     if (getPriceToAthClass(stock.price_to_ath)) count++;
     if (getDaysSinceAthClass(stock.days_since_ath)) count++;
-    if (getMaSpreadClass(stock.ma_spread_percentile)) count++;
     if (getEpsClass(stock.eps_q0)) count++;
     if (getEpsClass(stock.eps_q1)) count++;
     if (getEpsClass(stock.eps_q2)) count++;
@@ -109,7 +105,7 @@ function renderTable(data) {
     tableBody.innerHTML = '';
 
     if (data.length === 0) {
-        tableBody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding: 2rem;">검색 결과가 없습니다.</td></tr>';
+        tableBody.innerHTML = '<tr><td colspan="16" style="text-align:center; padding: 2rem;">검색 결과가 없습니다.</td></tr>';
         return;
     }
 
@@ -127,7 +123,9 @@ function renderTable(data) {
             <td class="${getCorrectionClass(stock.correction_ratio)}">${formatPercent(stock.correction_ratio)}</td>
             <td class="${getPriceToAthClass(stock.price_to_ath)}">${formatPercent(stock.price_to_ath)}</td>
             <td class="${getDaysSinceAthClass(stock.days_since_ath)}">${formatNumber(stock.days_since_ath)}일</td>
-            <td class="${getMaSpreadClass(stock.ma_spread_percentile)}">${stock.ma_spread_percentile >= 0 ? formatNumber(stock.ma_spread_percentile) + '%' : '-'}</td>
+            <td>${stock.ma_20_spread !== undefined && stock.ma_20_spread !== null ? formatPercent(stock.ma_20_spread) : '-'}</td>
+            <td>${stock.ma_50_spread !== undefined && stock.ma_50_spread !== null ? formatPercent(stock.ma_50_spread) : '-'}</td>
+            <td>${stock.ma_20_50_spread !== undefined && stock.ma_20_50_spread !== null ? formatPercent(stock.ma_20_50_spread) : '-'}</td>
             <td class="${getEpsClass(stock.eps_q0)}">${formatNumber(stock.eps_q0)}%</td>
             <td class="${getEpsClass(stock.eps_q1)}">${formatNumber(stock.eps_q1)}%</td>
             <td class="${getEpsClass(stock.eps_q2)}">${formatNumber(stock.eps_q2)}%</td>
@@ -172,9 +170,9 @@ function renderRecommendations() {
         });
 
         recommendedStocks.sort((a, b) => {
-            const valA = a.ma_spread_percentile >= 0 ? a.ma_spread_percentile : Infinity;
-            const valB = b.ma_spread_percentile >= 0 ? b.ma_spread_percentile : Infinity;
-            return valA - valB;
+            const valA = a.price_to_ath >= 0 ? a.price_to_ath : 0;
+            const valB = b.price_to_ath >= 0 ? b.price_to_ath : 0;
+            return valB - valA;
         });
 
         // Take only top 6 recommendations per market
@@ -210,7 +208,7 @@ function renderRecommendations() {
                     <div class="rec-ticker">${stock.ticker}</div>
                     <div class="rec-name">${stock.name}</div>
                     <div class="rec-metrics">
-                        <span title="이격도 하위 백분위수"><i class="ri-funds-line"></i> ${stock.ma_spread_percentile >= 0 ? formatNumber(stock.ma_spread_percentile) + '%' : '-'}</span>
+                        <span title="20-50 이평선 이격도"><i class="ri-funds-line"></i> ${stock.ma_20_50_spread !== undefined && stock.ma_20_50_spread !== null ? formatPercent(stock.ma_20_50_spread) : '-'}</span>
                         <span title="종가/최고가 비율"><i class="ri-arrow-up-circle-line"></i> ${formatPercent(stock.price_to_ath)}</span>
                     </div>
                 `;
@@ -268,12 +266,66 @@ document.addEventListener('DOMContentLoaded', () => {
     const tradeForm = document.getElementById('tradeForm');
     const modalTicker = document.getElementById('modalTicker');
     const modalDate = document.getElementById('modalDate');
+    const fpModalDate = flatpickr(modalDate, {
+        "locale": "ko",
+        dateFormat: "Y-m-d",
+        defaultDate: "today",
+        disableMobile: true
+    });
 
-    // Close modal when clicking X or outside
-    closeModal.onclick = () => modal.style.display = 'none';
-    window.onclick = (event) => {
-        if (event.target == modal) modal.style.display = 'none';
+    // Close modals when clicking X
+    closeModal.onclick = () => {
+        modal.style.display = 'none';
     };
+
+    // Close detail modal when clicking X
+    const detailModal = document.getElementById('detailModal');
+    const closeDetailModal = detailModal.querySelector('.close-modal');
+    closeDetailModal.onclick = () => {
+        detailModal.style.display = 'none';
+    };
+
+    // Generalized modal closing when clicking outside
+    window.onclick = (event) => {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = 'none';
+        }
+    };
+
+    // Function to show detail modal
+    function showDetailModal(title, details) {
+        const titleEl = document.getElementById('detailModalTitle');
+        const bodyEl = document.getElementById('detailModalBody');
+
+        titleEl.textContent = title;
+        bodyEl.innerHTML = '';
+
+        if (!details || details.length === 0) {
+            bodyEl.innerHTML = '<div style="text-align:center; padding: 2rem;">내역이 없습니다.</div>';
+        } else {
+            details.forEach(item => {
+                if (!item.content && !item.chart) return; // Skip empty entries
+
+                const row = document.createElement('div');
+                row.className = 'detail-item-row';
+
+                let contentHtml = '';
+                if (item.content) {
+                    contentHtml = `<div class="detail-content">${item.content}</div>`;
+                } else if (item.chart) {
+                    contentHtml = `<a href="${item.chart}" target="_blank" class="icon-btn detail-chart-link"><i class="ri-line-chart-line"></i> 차트 보기</a>`;
+                }
+
+                row.innerHTML = `
+                    <div class="detail-date">${item.date}</div>
+                    ${contentHtml}
+                `;
+                bodyEl.appendChild(row);
+            });
+        }
+
+        detailModal.style.display = 'flex';
+    }
 
     // Open modal when clicking a row in the stock table
     document.getElementById('stockTableBody').addEventListener('click', (e) => {
@@ -282,8 +334,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const tickerCell = row.querySelector('.ticker');
             if (tickerCell) {
                 const ticker = tickerCell.textContent;
+                tradeForm.reset();
                 modalTicker.value = ticker;
-                modalDate.value = new Date().toISOString().split('T')[0];
+                fpModalDate.setDate(new Date());
                 modal.style.display = 'flex';
             }
         }
@@ -297,6 +350,8 @@ document.addEventListener('DOMContentLoaded', () => {
             date: modalDate.value,
             quantity: parseFloat(document.getElementById('modalQuantity').value),
             price: parseFloat(document.getElementById('modalPrice').value),
+            reason: document.getElementById('modalReason').value,
+            chart: document.getElementById('modalChart').value,
             id: Date.now()
         };
 
@@ -310,13 +365,38 @@ document.addEventListener('DOMContentLoaded', () => {
             const totalCost = (existing.quantity * existing.price) + (tradeData.quantity * tradeData.price);
             const avgPrice = totalCost / totalQuantity;
 
+            // Update buyDetails array
+            let buyDetails = existing.buyDetails || [];
+            if (buyDetails.length === 0 && (existing.reason || existing.chart)) {
+                buyDetails.push({ date: existing.date, reason: existing.reason, chart: existing.chart });
+            }
+            if (tradeData.reason || tradeData.chart) {
+                buyDetails.push({
+                    date: tradeData.date,
+                    reason: tradeData.reason,
+                    chart: tradeData.chart
+                });
+            }
+
             trades[existingTradeIndex] = {
                 ...existing,
                 quantity: totalQuantity,
                 price: avgPrice,
-                date: tradeData.date // Update with latest buy date
+                date: tradeData.date, // Update with latest buy date
+                reason: tradeData.reason || existing.reason,
+                chart: tradeData.chart || existing.chart,
+                buyDetails: buyDetails
             };
         } else {
+            if (tradeData.reason || tradeData.chart) {
+                tradeData.buyDetails = [{
+                    date: tradeData.date,
+                    reason: tradeData.reason,
+                    chart: tradeData.chart
+                }];
+            } else {
+                tradeData.buyDetails = [];
+            }
             trades.push(tradeData);
         }
 
@@ -333,6 +413,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const sellForm = document.getElementById('sellForm');
     const sellTickerInput = document.getElementById('sellTicker');
     const sellDateInput = document.getElementById('sellDate');
+    const fpSellDate = flatpickr(sellDateInput, {
+        "locale": "ko",
+        dateFormat: "Y-m-d",
+        defaultDate: "today",
+        disableMobile: true
+    });
     const sellQtyInput = document.getElementById('sellQuantity');
     const sellPriceInput = document.getElementById('sellPrice');
     const maxSellQtySpan = document.getElementById('maxSellQty');
@@ -344,6 +430,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const sellQty = parseFloat(sellQtyInput.value);
         const sellPrice = parseFloat(sellPriceInput.value);
         const sellDate = sellDateInput.value;
+        const sellReason = document.getElementById('sellReason').value;
+        const sellChart = document.getElementById('sellChart').value;
 
         let trades = JSON.parse(localStorage.getItem('stockTrades') || '[]');
         const tradeIndex = trades.findIndex(t => t.ticker === ticker);
@@ -374,7 +462,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const totalQty = existing.quantity + sellQty;
 
-            // Recalculate average buy price based on quantities and their respective buy prices
+            // Recalculate average buy price
             const totalBuyCost = (existing.quantity * existing.buyPrice) + (sellQty * trade.price);
             const avgBuyPrice = totalBuyCost / totalQty;
 
@@ -385,18 +473,32 @@ document.addEventListener('DOMContentLoaded', () => {
             // Recalculate total profit
             const totalProfit = existing.profit + profit;
 
-            // Approximate profit rate based on new averages
+            // Approximate profit rate
             const totalCostBasis = totalQty * avgBuyPrice * (1 + buyFeeRate);
             const profitRate = (totalProfit / totalCostBasis) * 100;
 
+            // Update sellDetails array
+            let sellDetails = existing.sellDetails || [];
+            if (sellDetails.length === 0 && (existing.sellReason || existing.sellChart)) {
+                sellDetails.push({ date: existing.sellDate, reason: existing.sellReason, chart: existing.sellChart });
+            }
+            if (sellReason || sellChart) {
+                sellDetails.push({
+                    date: sellDate,
+                    reason: sellReason,
+                    chart: sellChart
+                });
+            }
+
             history[existingHistoryIndex] = {
                 ...existing,
-                sellDate: sellDate > existing.sellDate ? sellDate : existing.sellDate, // Keep the latest sell date
+                sellDate: sellDate > existing.sellDate ? sellDate : existing.sellDate,
                 quantity: totalQty,
                 buyPrice: avgBuyPrice,
                 sellPrice: avgSellPrice,
                 profit: totalProfit,
-                profitRate: profitRate
+                profitRate: profitRate,
+                sellDetails: sellDetails
             };
         } else {
             // Create new history entry
@@ -411,6 +513,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 profit: profit,
                 profitRate: profitRate,
                 isKR: isKR,
+                sellDetails: [{
+                    date: sellDate,
+                    reason: sellReason,
+                    chart: sellChart
+                }],
                 id: Date.now()
             };
             history.push(historyEntry);
@@ -497,7 +604,7 @@ document.addEventListener('DOMContentLoaded', () => {
         entryTableBody.innerHTML = '';
 
         if (trades.length === 0) {
-            entryTableBody.innerHTML = '<tr><td colspan="9" style="text-align:center; padding: 2rem;">입력된 매수 정보가 없습니다.</td></tr>';
+            entryTableBody.innerHTML = '<tr><td colspan="11" style="text-align:center; padding: 2rem;">입력된 매수 정보가 없습니다.</td></tr>';
         } else {
             trades.forEach(trade => {
                 const row = document.createElement('tr');
@@ -523,9 +630,46 @@ document.addEventListener('DOMContentLoaded', () => {
                     <td>${currency}${formatNumber(totalCost)}</td>
                     <td>${currency}${formatNumber(currentPrice)}</td>
                     <td>${currency}${formatNumber(evalAmount)}</td>
-                    <td class="${plClass}">${pl >= 0 ? currency : '-' + currency}${formatNumber(Math.abs(pl))}</td>
+                     <td class="${plClass}">${pl >= 0 ? currency : '-' + currency}${formatNumber(Math.abs(pl))}</td>
+                    <td>
+                        <div class="reason-chart-cell">
+                            ${(trade.buyDetails && trade.buyDetails.some(d => d.reason)) || trade.reason ? `<button class="icon-btn reason-btn" title="매수근거 보기"><i class="ri-chat-bubble-3-line"></i></button>` : '-'}
+                        </div>
+                    </td>
+                    <td>
+                        <div class="reason-chart-cell">
+                            ${(trade.buyDetails && trade.buyDetails.some(d => d.chart)) || trade.chart ? `<button class="icon-btn chart-btn" title="차트 보기"><i class="ri-line-chart-line"></i></button>` : '-'}
+                        </div>
+                    </td>
                     <td><button class="sell-btn" data-ticker="${trade.ticker}">매도</button></td>
                 `;
+
+                // Add detail view listener for reason
+                const reasonBtn = row.querySelector('.reason-btn');
+                if (reasonBtn) {
+                    reasonBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        let details = trade.buyDetails || [];
+                        if (details.length === 0 && trade.reason) {
+                            details = [{ date: trade.date, reason: trade.reason }];
+                        }
+                        showDetailModal('매수 근거', details.map(d => ({ date: d.date, content: d.reason })));
+                    });
+                }
+
+                // Add detail view listener for chart
+                const chartBtn = row.querySelector('.chart-btn');
+                if (chartBtn) {
+                    chartBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        let details = trade.buyDetails || [];
+                        if (details.length === 0 && trade.chart) {
+                            details = [{ date: trade.date, chart: trade.chart }];
+                        }
+                        showDetailModal('매수 차트', details.map(d => ({ date: d.date, chart: d.chart })));
+                    });
+                }
+
 
                 // Add delete event listener
                 row.querySelector('.delete-item-btn').addEventListener('click', (e) => {
@@ -542,7 +686,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 row.querySelector('.sell-btn').addEventListener('click', (e) => {
                     e.stopPropagation();
                     sellTickerInput.value = trade.ticker;
-                    sellDateInput.value = new Date().toISOString().split('T')[0];
+                    fpSellDate.setDate(new Date());
                     sellQtyInput.value = trade.quantity;
                     maxSellQtySpan.textContent = formatNumber(trade.quantity);
                     sellModal.style.display = 'flex';
@@ -557,7 +701,7 @@ document.addEventListener('DOMContentLoaded', () => {
         historyTableBody.innerHTML = '';
 
         if (historyList.length === 0) {
-            historyTableBody.innerHTML = '<tr><td colspan="8" style="text-align:center; padding: 2rem;">거래 완료 내역이 없습니다.</td></tr>';
+            historyTableBody.innerHTML = '<tr><td colspan="10" style="text-align:center; padding: 2rem;">거래 완료 내역이 없습니다.</td></tr>';
         } else {
             historyList.forEach(item => {
                 const row = document.createElement('tr');
@@ -577,13 +721,47 @@ document.addEventListener('DOMContentLoaded', () => {
                     <td>${currency}${formatNumber(item.buyPrice)}</td>
                     <td>${currency}${formatNumber(item.sellPrice)}</td>
                     <td class="${profitClass}">${item.profit >= 0 ? currency : '-' + currency}${formatNumber(Math.abs(item.profit))}</td>
-                    <td class="${profitClass}">${item.profitRate.toFixed(2)}%</td>
+                     <td class="${profitClass}">${item.profitRate.toFixed(2)}%</td>
+                    <td>
+                        <div class="reason-chart-cell">
+                            ${(item.sellDetails && item.sellDetails.some(d => d.reason)) || item.sellReason ? `<button class="icon-btn sell-reason-btn" title="매도근거 보기"><i class="ri-chat-bubble-3-line"></i></button>` : '-'}
+                        </div>
+                    </td>
+                    <td>
+                        <div class="reason-chart-cell">
+                            ${(item.sellDetails && item.sellDetails.some(d => d.chart)) || item.sellChart ? `<button class="icon-btn sell-chart-btn" title="차트 보기"><i class="ri-line-chart-line"></i></button>` : '-'}
+                        </div>
+                    </td>
                 `;
+
+                // Add detail view listeners
+                const reasonBtn = row.querySelector('.sell-reason-btn');
+                if (reasonBtn) {
+                    reasonBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        let details = item.sellDetails || [];
+                        if (details.length === 0 && item.sellReason) {
+                            details = [{ date: item.sellDate, reason: item.sellReason }];
+                        }
+                        showDetailModal('매도 근거', details.map(d => ({ date: d.date, content: d.reason })));
+                    });
+                }
+                const chartBtn = row.querySelector('.sell-chart-btn');
+                if (chartBtn) {
+                    chartBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        let details = item.sellDetails || [];
+                        if (details.length === 0 && item.sellChart) {
+                            details = [{ date: item.sellDate, chart: item.sellChart }];
+                        }
+                        showDetailModal('매도 차트', details.map(d => ({ date: d.date, chart: d.chart })));
+                    });
+                }
 
                 // Add delete event listener
                 row.querySelector('.delete-item-btn').addEventListener('click', (e) => {
                     e.stopPropagation();
-                    if (confirm(`해당 거래 기록을 삭제하시겠습니까?`)) {
+                    if (confirm(`해당 거래 기록을 삭제하시겠습니까 ? `)) {
                         let history = JSON.parse(localStorage.getItem('stockHistory') || '[]');
                         history = history.filter(h => h.id !== item.id);
                         localStorage.setItem('stockHistory', JSON.stringify(history));
@@ -797,20 +975,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // CSV Header
             let csvContent = "data:text/csv;charset=utf-8,\uFEFF"; // \uFEFF for UTF-8 BOM (Excel support)
-            csvContent += "티커,기업명,역사적 최고가,최고가 이후 최저가,오늘 종가,조정 비율,종가/최고가 비율,최고가 경과일,이동평균 이격도(하위 백분위수),EPS Q0,EPS Q-1,EPS Q-2,EPS Q-3,PER,ROE\n";
+            csvContent += "티커,기업명,역사적 최고가,최고가 이후 최저가,오늘 종가,조정 비율,종가/최고가 비율,최고가 경과일,20 이평선 이격도,50 이평선 이격도,20-50 이평선 이격도,EPS Q0,EPS Q-1,EPS Q-2,EPS Q-3,PER,ROE\n";
 
             // CSV Rows
             displayData.forEach(row => {
                 const rowData = [
                     row.ticker,
-                    `"${row.name.replace(/"/g, '""')}"`, // Handle commas quoting in names
+                    '"' + row.name.split('"').join('""') + '"', // Handle commas quoting in names
                     row.ath,
                     row.lowest_after_ath,
                     row.price,
                     row.correction_ratio,
                     row.price_to_ath,
                     row.days_since_ath,
-                    row.ma_spread_percentile,
+                    row.ma_20_spread,
+                    row.ma_50_spread,
+                    row.ma_20_50_spread,
                     row.eps_q0,
                     row.eps_q1,
                     row.eps_q2,

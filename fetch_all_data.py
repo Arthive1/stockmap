@@ -109,13 +109,16 @@ def process_market(name, items):
             except Exception:
                 pass
                 
-            if hist_1y_df is None or hist_1y_df.empty or hist_20y_df is None or hist_20y_df.empty:
+            # Clean data and ensure enough rows
+            hist_1y_df = hist_1y_df.dropna(subset=['close']).copy()
+            if len(hist_1y_df) < 50:
                 continue
-                
-            # price
+
+            # price (latest valid close)
             price = hist_1y_df['close'].iloc[-1]
                 
             # ATH 20y
+            # Note: hist_20y_df should also be cleaned if necessary, but 1wk interval is usually stable
             days_since_ath = 0
             if 'high' in hist_20y_df.columns:
                 ath_idx = hist_20y_df['high'].idxmax()
@@ -133,19 +136,23 @@ def process_market(name, items):
                 lowest_after_ath = price
 
             # Moving average
-            ma_percentile = None
-            if len(hist_1y_df) > 50:
-                hist_1y_df = hist_1y_df.copy()
-                hist_1y_df['MA10'] = hist_1y_df['close'].rolling(window=10).mean()
-                hist_1y_df['MA20'] = hist_1y_df['close'].rolling(window=20).mean()
-                hist_1y_df['MA50'] = hist_1y_df['close'].rolling(window=50).mean()
-                hist_1y_df['Spread'] = abs(hist_1y_df['MA10'] - hist_1y_df['MA50']) + abs(hist_1y_df['MA20'] - hist_1y_df['MA50'])
-                spread_data = hist_1y_df['Spread'].dropna()
-                
-                if not spread_data.empty:
-                    today_spread = spread_data.iloc[-1]
-                    lower_count = (spread_data < today_spread).sum()
-                    ma_percentile = (lower_count / len(spread_data)) * 100
+            ma_20_spread = None
+            ma_50_spread = None
+            ma_20_50_spread = None
+            
+            hist_1y_df['MA20'] = hist_1y_df['close'].rolling(window=20).mean()
+            hist_1y_df['MA50'] = hist_1y_df['close'].rolling(window=50).mean()
+            
+            # Use the latest available MA values (iloc[-1])
+            ma_20 = hist_1y_df['MA20'].iloc[-1]
+            ma_50 = hist_1y_df['MA50'].iloc[-1]
+            
+            if pd.notna(ma_20) and ma_20 > 0:
+                ma_20_spread = (price - ma_20) / ma_20
+            if pd.notna(ma_50) and ma_50 > 0:
+                ma_50_spread = (price - ma_50) / ma_50
+                if pd.notna(ma_20) and ma_20 > 0:
+                    ma_20_50_spread = (ma_20 - ma_50) / ma_50
                     
             # PE
             per = s.get('trailingPE', ks.get('trailingPE'))
@@ -178,7 +185,9 @@ def process_market(name, items):
                 "correction_ratio": correction_ratio,
                 "price_to_ath": price_to_ath,
                 "days_since_ath": days_since_ath,
-                "ma_spread_percentile": round(ma_percentile, 2) if ma_percentile is not None else -1,
+                "ma_20_spread": round(ma_20_spread, 4) if ma_20_spread is not None and pd.notna(ma_20_spread) else None,
+                "ma_50_spread": round(ma_50_spread, 4) if ma_50_spread is not None and pd.notna(ma_50_spread) else None,
+                "ma_20_50_spread": round(ma_20_50_spread, 4) if ma_20_50_spread is not None and pd.notna(ma_20_50_spread) else None,
                 "eps_q0": round(eps_curr, 2),
                 "eps_q1": round(eps_curr * 0.9, 2),
                 "eps_q2": round(eps_curr * 0.8, 2),
